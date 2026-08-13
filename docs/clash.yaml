@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-08-13T22:34:48.458085+00:00'
+generated-at: '2026-08-13T23:34:58.611495+00:00'
 proxies:
 - name: 🇭🇰 香港 | HKG 6
   server: v9.hdacd.com
@@ -63,6 +63,20 @@ proxies:
   type: trojan
   password: AE62539071
   skip-cert-verify: true
+- name: 🇯🇵 日本 | JPN 4
+  server: xmmcf.130209.xyz
+  port: 8443
+  type: vless
+  uuid: 65c56e1f-5c41-40bc-b0b5-9346772476ca
+  tls: true
+  servername: japan.520785.xyz
+  client-fingerprint: edge
+  network: ws
+  ws-opts:
+    path: /static/media/video-chunk.f4v
+    headers:
+      Host: japan.520785.xyz
+  udp: true
 - name: 🇭🇰 香港 | HKG
   server: strong-haddock.rooster465.autos
   port: 443
@@ -127,20 +141,6 @@ proxies:
     grpc-mode: gun
     grpc-service-name: movie
   udp: true
-- name: 🇺🇸 美国 | USA 8
-  server: fast.nanniang.top
-  port: 8443
-  type: vless
-  uuid: 916e3030-6eac-418b-9402-7508ca7d6280
-  tls: true
-  servername: us-akile.nanniang.top
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: us-akile.nanniang.top
-  udp: true
 - name: 🇺🇸 美国 | USA 25
   server: 104.16.150.130
   port: 2087
@@ -154,6 +154,20 @@ proxies:
     path: /
     headers:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  udp: true
+- name: 🇺🇸 美国 | USA 8
+  server: fast.nanniang.top
+  port: 8443
+  type: vless
+  uuid: 916e3030-6eac-418b-9402-7508ca7d6280
+  tls: true
+  servername: us-akile.nanniang.top
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: us-akile.nanniang.top
   udp: true
 - name: 🇺🇸 美国 | USA 31
   server: 144.34.170.18
@@ -243,6 +257,21 @@ proxies:
     grpc-mode: gun
     grpc-service-name: update
   udp: true
+- name: 🇷🇺 俄罗斯 | RUS 2
+  server: 104.18.32.47
+  port: 443
+  type: vless
+  uuid: a5a544bf-e4b3-4651-9ff4-de3461910d87
+  tls: true
+  alpn:
+  - h3
+  servername: rus.aba-hum.store
+  client-fingerprint: chrome
+  network: xhttp
+  xhttp-opts:
+    path: /
+    mode: auto
+  udp: true
 - name: 🇰🇷 韩国 | KOR 4
   server: kr2-r.link-t7.com
   port: 10047
@@ -259,28 +288,6 @@ proxies:
     grpc-mode: gun
     grpc-service-name: update
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS 2
-  server: 104.18.32.47
-  port: 443
-  type: vless
-  uuid: a5a544bf-e4b3-4651-9ff4-de3461910d87
-  tls: true
-  alpn:
-  - h3
-  servername: rus.aba-hum.store
-  client-fingerprint: chrome
-  network: xhttp
-  xhttp-opts:
-    path: /
-    mode: auto
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 10
-  server: emerging-weevil.rooster465.autos
-  port: 443
-  type: trojan
-  password: AE62539071
-  skip-cert-verify: true
-  udp: true
 - name: 🇸🇪 瑞典 | SWE 3
   server: 62.60.159.137
   port: 50443
@@ -293,6 +300,13 @@ proxies:
   servername: www.icloud.com
   client-fingerprint: firefox
   network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 10
+  server: emerging-weevil.rooster465.autos
+  port: 443
+  type: trojan
+  password: AE62539071
+  skip-cert-verify: true
   udp: true
 - name: 🇷🇺 俄罗斯 | RUS 3
   server: 217.198.169.86
@@ -354,15 +368,15 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇩🇪 德国 | DEU 6
-  server: proper-marlin.rooster465.autos
+- name: 🇵🇱 波兰 | POL
+  server: enough-basilisk.rooster465.autos
   port: 443
   type: trojan
   password: AE62539071
   skip-cert-verify: true
   udp: true
-- name: 🇵🇱 波兰 | POL
-  server: enough-basilisk.rooster465.autos
+- name: 🇩🇪 德国 | DEU 6
+  server: proper-marlin.rooster465.autos
   port: 443
   type: trojan
   password: AE62539071
@@ -432,14 +446,6 @@ proxies:
   auth: Apt1923_N9x234gn_Nal5Nx3j_s
   sni: grape-power-pl.ddnsguru.com
   skip-cert-verify: true
-- name: 🇱🇻 拉脱维亚 | LVA
-  server: 104.165.205.226
-  port: 9443
-  type: hysteria2
-  password: b8f1b61e-d5c4-4765-866d-ece1fc8e590b
-  auth: b8f1b61e-d5c4-4765-866d-ece1fc8e590b
-  sni: onecloudstream.com
-  skip-cert-verify: true
 - name: 🇨🇴 哥伦比亚 | COL 2
   server: 149.130.172.133
   port: 62145
@@ -462,6 +468,14 @@ proxies:
     path: /
     headers:
       host: d1yxsk0zprgivr.cloudfront.net
+- name: 🇱🇻 拉脱维亚 | LVA
+  server: 104.165.205.226
+  port: 9443
+  type: hysteria2
+  password: b8f1b61e-d5c4-4765-866d-ece1fc8e590b
+  auth: b8f1b61e-d5c4-4765-866d-ece1fc8e590b
+  sni: onecloudstream.com
+  skip-cert-verify: true
 - name: 🇷🇸 塞尔维亚 | SRB
   server: 176.109.106.34
   port: 9888
@@ -508,13 +522,14 @@ proxy-groups:
   - 🇸🇬 新加坡 | SGP 5
   - 🇭🇰 香港 | HKG 3
   - 🇯🇵 日本 | JPN 2
+  - 🇯🇵 日本 | JPN 4
   - 🇭🇰 香港 | HKG
   - 🇯🇵 日本 | JPN
   - 🇺🇸 美国 | USA 30
   - 🇺🇸 美国 | USA 26
   - 🇺🇸 美国 | USA 9
-  - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 25
+  - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 31
   - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA
@@ -522,25 +537,25 @@ proxy-groups:
   - 🇫🇷 法国 | FRA 5
   - 🇩🇪 德国 | DEU 2
   - 🇰🇷 韩国 | KOR 2
-  - 🇰🇷 韩国 | KOR 4
   - 🇷🇺 俄罗斯 | RUS 2
-  - 🇳🇱 荷兰 | NLD 10
+  - 🇰🇷 韩国 | KOR 4
   - 🇸🇪 瑞典 | SWE 3
+  - 🇳🇱 荷兰 | NLD 10
   - 🇷🇺 俄罗斯 | RUS 3
   - 🇰🇷 韩国 | KOR 3
   - 🇸🇪 瑞典 | SWE 2
   - 🇸🇪 瑞典 | SWE 4
-  - 🇩🇪 德国 | DEU 6
   - 🇵🇱 波兰 | POL
+  - 🇩🇪 德国 | DEU 6
   - 🇷🇴 罗马尼亚 | ROU
   - 🇳🇱 荷兰 | NLD 11
   - 未知TROJAN-230|free-nodes
   - 🇸🇪 瑞典 | SWE
   - 🇨🇴 哥伦比亚 | COL
   - 🇩🇪 德国 | DEU
-  - 🇱🇻 拉脱维亚 | LVA
   - 🇨🇴 哥伦比亚 | COL 2
   - 未知VLESS-641|free-nodes
+  - 🇱🇻 拉脱维亚 | LVA
   - 🇷🇸 塞尔维亚 | SRB
   - 🇳🇱 荷兰 | NLD 3
   - 🇫🇷 法国 | FRA 11
@@ -560,6 +575,7 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇯🇵 日本 | JPN 2
+  - 🇯🇵 日本 | JPN 4
   - 🇯🇵 日本 | JPN
   url: http://www.gstatic.com/generate_204
   interval: 120
@@ -569,8 +585,8 @@ proxy-groups:
   - 🇺🇸 美国 | USA 30
   - 🇺🇸 美国 | USA 26
   - 🇺🇸 美国 | USA 9
-  - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 25
+  - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 31
   - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA
@@ -583,11 +599,11 @@ proxy-groups:
   - 🇺🇸 美国 | USA 25
   - 🇺🇸 美国 | USA 26
   - 🇺🇸 美国 | USA 9
+  - 🇷🇺 俄罗斯 | RUS 2
   - 🇨🇴 哥伦比亚 | COL
   - 🇨🇴 哥伦比亚 | COL 2
-  - 🇸🇪 瑞典 | SWE 4
-  - 🇫🇷 法国 | FRA 11
-  - 🇩🇪 德国 | DEU 10
+  - 未知TROJAN-230|free-nodes
+  - 🇩🇪 德国 | DEU 2
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
