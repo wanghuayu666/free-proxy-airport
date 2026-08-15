@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-08-15T08:19:36.560157+00:00'
+generated-at: '2026-08-15T08:53:56.591935+00:00'
 proxies:
 - name: 🇯🇵 日本 | JPN 5
   server: 151.101.193.242
@@ -32,12 +32,14 @@ proxies:
   auth: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: https://t.me/clashv8🇨🇳
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 | SGP 5
-  server: 54.254.235.88
-  port: 443
-  type: trojan
-  password: FH72359861
-  sni: charming-ox.rooster465.autos
+- name: 🇭🇰 香港 | HKG 4
+  server: v9.hdacd.com
+  port: 30809
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
   skip-cert-verify: true
 - name: 🇭🇰 香港 | HKG 3
   server: 95.40.100.129
@@ -54,6 +56,13 @@ proxies:
   grpc-opts:
     grpc-mode: gun
     grpc-service-name: update
+- name: 🇸🇬 新加坡 | SGP 5
+  server: 54.254.235.88
+  port: 443
+  type: trojan
+  password: FH72359861
+  sni: charming-ox.rooster465.autos
+  skip-cert-verify: true
 - name: 🇯🇵 日本 | JPN 2
   server: bright-quagga.rooster465.autos
   port: 443
@@ -119,12 +128,18 @@ proxies:
     grpc-mode: gun
     grpc-service-name: update
   udp: true
-- name: 🇺🇸 美国 | USA 10
-  server: 15.204.247.124
-  port: 2375
-  type: ss
-  cipher: aes-256-gcm
-  password: faBAoD54k87UJG7
+- name: 🇺🇸 美国 | USA 30
+  server: cf.130209.xyz
+  port: 2053
+  type: trojan
+  password: 65c56e1f-5c41-40bc-b0b5-9346772476ca
+  sni: v4.ipsb.us.ci
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /api/v2/check_update
+    headers:
+      Host: v4.ipsb.us.ci
   udp: true
 - name: 🇺🇸 美国 | USA 11
   server: 169.40.42.229
@@ -154,22 +169,19 @@ proxies:
     headers:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
   udp: true
-- name: 🇺🇸 美国 | USA 31
-  server: one-for-all.levikogjgfdd.ir
+- name: 🇺🇸 美国 | USA 6
+  server: www.wto.org
   port: 2053
   type: vless
-  uuid: e7961655-9674-4cbd-a36f-ec0d5d7d660c
+  uuid: 65c56e1f-5c41-40bc-b0b5-9346772476ca
   tls: true
-  alpn:
-  - h3
-  - h2
-  servername: po.fastbrokencompony.com
-  client-fingerprint: chrome
+  servername: usa.105794.xyz
+  client-fingerprint: edge
   network: ws
   ws-opts:
-    path: /
+    path: /download/v3/installer-x64.bin
     headers:
-      Host: po.fastbrokencompony.com
+      Host: usa.105794.xyz
   udp: true
 - name: 🇺🇸 美国 | USA 3
   server: france.io-com-de-dev.org
@@ -217,6 +229,13 @@ proxies:
   sni: warm-aardvark.rooster465.autos
   skip-cert-verify: true
   udp: true
+- name: 🇺🇸 美国 | USA 10
+  server: 15.204.247.124
+  port: 2375
+  type: ss
+  cipher: aes-256-gcm
+  password: faBAoD54k87UJG7
+  udp: true
 - name: 🇺🇸 美国 | USA 13
   server: comic-poodle.rooster465.autos
   port: 443
@@ -224,21 +243,6 @@ proxies:
   password: FH72359861
   sni: comic-poodle.rooster465.autos
   skip-cert-verify: true
-  udp: true
-- name: 🇺🇸 美国 | USA 17
-  server: 45.151.30.127
-  port: 9873
-  type: vless
-  uuid: 2a650f3b-d95b-4bd6-aadf-16ccc0717155
-  tls: true
-  reality-opts:
-    public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
-  servername: dl.google.com
-  client-fingerprint: edge
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: grpc-tunnel
   udp: true
 - name: 🇺🇸 美国 | USA 15
   server: a2.arshia-nova.ir
@@ -267,22 +271,6 @@ proxies:
     path: /pyip=ProxyIP.US.CMLiussss.net
     headers:
       Host: lively-dream-d892.262.workers.dev
-  udp: true
-- name: 🇺🇸 美国 | USA 14
-  server: 151.101.56.6
-  port: 443
-  type: vless
-  uuid: 79c9514e-aa3c-4cd0-bf0d-dd6df42039f6
-  tls: true
-  alpn:
-  - h2
-  servername: ssl.fastly.com
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: c12.com
   udp: true
 - name: 🇺🇸 美国 | USA 18
   server: communal-squid.rooster465.autos
@@ -317,6 +305,18 @@ proxies:
   password: FH72359861
   sni: precise-locust.rooster465.autos
   skip-cert-verify: true
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS 6
+  server: 104.171.132.128
+  port: 2200
+  type: vless
+  uuid: 6c0ced37-dd9c-43f2-b474-6dafe036c44b
+  tls: false
+  network: ws
+  ws-opts:
+    path: /v1
+    headers:
+      Host: rzd.ru
   udp: true
 - name: 🇧🇬 保加利亚 | BGR 2
   server: 195.123.226.114
@@ -417,20 +417,15 @@ proxies:
     headers:
       Host: www.calmlunch.com
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS 7
-  server: 104.18.32.47
-  port: 443
+- name: 🇷🇺 俄罗斯 | RUS
+  server: 185.185.142.79
+  port: 2200
   type: vless
-  uuid: a5a544bf-e4b3-4651-9ff4-de3461910d87
-  tls: true
-  alpn:
-  - h3
-  servername: rus.aba-hum.store
-  client-fingerprint: chrome
-  network: xhttp
-  xhttp-opts:
-    path: /
-    mode: auto
+  uuid: 0c4f46c2-afb7-4a80-8f6e-10258d80333e
+  tls: false
+  network: ws
+  ws-opts:
+    path: /v1
   udp: true
 - name: 🇧🇬 保加利亚 | BGR
   server: 195.123.226.21
@@ -449,27 +444,16 @@ proxies:
   password: FH72359861
   sni: loyal-molly.rooster465.autos
   skip-cert-verify: true
-- name: 🇪🇪 爱沙尼亚 | EST
-  server: one.alpheratzz.org
-  port: 443
+- name: 🇷🇺 俄罗斯 | RUS 8
+  server: 104.171.132.128
+  port: 4100
   type: vless
-  uuid: 78eb741d-579e-4738-b647-9a850646060f
-  tls: true
-  servername: app-6a7eb845.adhil.uk
-  client-fingerprint: firefox
-  network: xhttp
-  xhttp-opts:
-    path: /
-    host: one.alpheratzz.org
-    mode: stream-one
+  uuid: 6c0ced37-dd9c-43f2-b474-6dafe036c44b
+  tls: false
+  network: ws
+  ws-opts:
+    path: /v1
   udp: true
-- name: 🇮🇪 爱尔兰 | IRL 2
-  server: 3.253.78.205
-  port: 443
-  type: trojan
-  password: FH72359861
-  sni: balanced-heron.rooster465.autos
-  skip-cert-verify: true
 - name: 🇩🇰 丹麦 | DNK
   server: dk86.mechvpn.online
   port: 443
@@ -480,11 +464,12 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: 🇮🇪 爱尔兰 | IRL
-  server: balanced-heron.rooster465.autos
+- name: 🇮🇪 爱尔兰 | IRL 2
+  server: 3.253.78.205
   port: 443
   type: trojan
   password: FH72359861
+  sni: balanced-heron.rooster465.autos
   skip-cert-verify: true
 - name: 🇦🇺 澳大利亚 | AUS
   server: 159.13.40.41
@@ -496,27 +481,12 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: b42d90fa667942aebc734d60
-- name: 🇳🇱 荷兰 | NLD 6
-  server: 188.114.97.3
-  port: 2083
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: newwk1.f1w.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: newwk1.f1w.de5.net
-  udp: true
-- name: 🇵🇱 波兰 | POL
-  server: 54.36.174.140
+- name: 🇮🇪 爱尔兰 | IRL
+  server: balanced-heron.rooster465.autos
   port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: ytw2awn
-  udp: true
+  type: trojan
+  password: FH72359861
+  skip-cert-verify: true
 - name: 🇩🇪 德国 | DEU 6
   server: 199.232.78.159
   port: 443
@@ -530,6 +500,13 @@ proxies:
     path: /
     headers:
       Host: lsjaoijji.global.ssl.fastly.neT.
+  udp: true
+- name: 🇵🇱 波兰 | POL
+  server: 54.36.174.140
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: ytw2awn
   udp: true
 - name: 🇩🇪 德国 | DEU 11
   server: 89.167.12.115
@@ -552,6 +529,20 @@ proxies:
   servername: yandex.ru
   client-fingerprint: firefox
   network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 6
+  server: 188.114.97.3
+  port: 2083
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: newwk1.f1w.de5.net
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: newwk1.f1w.de5.net
   udp: true
 - name: 🇷🇺 俄罗斯 | RUS 5
   server: 168.222.203.14
@@ -606,14 +597,6 @@ proxies:
   cipher: aes-256-gcm
   password: PCnnH6SQSnfoS27
   udp: true
-- name: 🇩🇪 德国 | DEU 9
-  server: 162.249.124.103
-  port: 8443
-  type: hysteria2
-  password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
-  auth: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
-  sni: mercedes-grape.yyuyy.com
-  skip-cert-verify: true
 - name: 🇹🇭 泰国 | THA
   server: gorbachev-new-th.kvnfreetest.uk
   port: 55443
@@ -621,6 +604,14 @@ proxies:
   password: 083417772bc618cd61f0cca23dd91680
   auth: 083417772bc618cd61f0cca23dd91680
   sni: gorbachev-new-th.kvnfreetest.uk
+  skip-cert-verify: true
+- name: 🇩🇪 德国 | DEU 9
+  server: 162.249.124.103
+  port: 8443
+  type: hysteria2
+  password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
+  auth: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
+  sni: mercedes-grape.yyuyy.com
   skip-cert-verify: true
 - name: 🇳🇱 荷兰 | NLD 2
   server: 217.19.122.234
@@ -637,6 +628,14 @@ proxies:
     grpc-mode: gun
     grpc-service-name: grpc-reality
   udp: true
+- name: 🇱🇻 拉脱维亚 | LVA 2
+  server: 104.165.205.77
+  port: 8443
+  type: hysteria2
+  password: b8f1b61e-d5c4-4765-866d-ece1fc8e590b
+  auth: b8f1b61e-d5c4-4765-866d-ece1fc8e590b
+  sni: speedtestmark.com
+  skip-cert-verify: true
 - name: 🇩🇪 德国 | DEU
   server: 78.159.247.253
   port: 2027
@@ -651,14 +650,6 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇱🇻 拉脱维亚 | LVA 2
-  server: 104.165.205.77
-  port: 8443
-  type: hysteria2
-  password: b8f1b61e-d5c4-4765-866d-ece1fc8e590b
-  auth: b8f1b61e-d5c4-4765-866d-ece1fc8e590b
-  sni: speedtestmark.com
-  skip-cert-verify: true
 - name: 🇱🇻 拉脱维亚 | LVA
   server: 104.165.205.239
   port: 9443
@@ -705,28 +696,6 @@ proxies:
   auth: 0wdsa_nJXEWRj9jz9J9xMgtx_n7gzfK_m8
   sni: grape-honk.yyuyy.com
   skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 | RUS 9
-  server: 168.222.140.236
-  port: 4100
-  type: vless
-  uuid: 155e8dd4-a559-407a-9ea8-13a5e829f066
-  tls: false
-  network: ws
-  ws-opts:
-    path: /v1
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 5
-  server: skk.moe
-  port: 8880
-  type: vless
-  uuid: ba746959-18e7-471c-b00f-fa5cdd930abf
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: crimson-bread-c38e.295.workers.dev
-  udp: true
 - name: 🇬🇧 英国 | GBR
   server: api.ferrin.uk
   port: 443
@@ -742,6 +711,18 @@ proxies:
     path: /nl
     host: api.ferrin.uk
     mode: stream-one
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 5
+  server: skk.moe
+  port: 8880
+  type: vless
+  uuid: ba746959-18e7-471c-b00f-fa5cdd930abf
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+    headers:
+      Host: crimson-bread-c38e.295.workers.dev
   udp: true
 - name: 🇩🇪 德国 | DEU 10
   server: 162.249.124.102
@@ -778,31 +759,32 @@ proxy-groups:
   proxies:
   - 🇯🇵 日本 | JPN 5
   - 🇭🇰 香港 | HKG 2
-  - 🇸🇬 新加坡 | SGP 5
+  - 🇭🇰 香港 | HKG 4
   - 🇭🇰 香港 | HKG 3
+  - 🇸🇬 新加坡 | SGP 5
   - 🇯🇵 日本 | JPN 2
   - 🇯🇵 日本 | JPN 3
   - 🇸🇬 新加坡 | SGP 3
   - 🇯🇵 日本 | JPN 4
   - 🇭🇰 香港 | HKG
   - 🇸🇬 新加坡 | SGP 2
-  - 🇺🇸 美国 | USA 10
+  - 🇺🇸 美国 | USA 30
   - 🇺🇸 美国 | USA 11
   - 🇺🇸 美国 | USA 33
-  - 🇺🇸 美国 | USA 31
+  - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA
+  - 🇺🇸 美国 | USA 10
   - 🇺🇸 美国 | USA 13
-  - 🇺🇸 美国 | USA 17
   - 🇺🇸 美国 | USA 15
   - 🇺🇸 美国 | USA 23
-  - 🇺🇸 美国 | USA 14
   - 🇺🇸 美国 | USA 18
   - 🇺🇸 美国 | USA 22
   - 🇫🇷 法国 | FRA 7
   - 🇰🇷 韩国 | KOR 6
+  - 🇷🇺 俄罗斯 | RUS 6
   - 🇧🇬 保加利亚 | BGR 2
   - 🇷🇺 俄罗斯 | RUS 4
   - 🇳🇱 荷兰 | NLD 8
@@ -812,36 +794,35 @@ proxy-groups:
   - 🇰🇷 韩国 | KOR 3
   - 🇷🇺 俄罗斯 | RUS 3
   - 🇫🇷 法国 | FRA 15
-  - 🇷🇺 俄罗斯 | RUS 7
+  - 🇷🇺 俄罗斯 | RUS
   - 🇧🇬 保加利亚 | BGR
   - 🇰🇷 韩国 | KOR 5
-  - 🇪🇪 爱沙尼亚 | EST
-  - 🇮🇪 爱尔兰 | IRL 2
+  - 🇷🇺 俄罗斯 | RUS 8
   - 🇩🇰 丹麦 | DNK
-  - 🇮🇪 爱尔兰 | IRL
+  - 🇮🇪 爱尔兰 | IRL 2
   - 🇦🇺 澳大利亚 | AUS
-  - 🇳🇱 荷兰 | NLD 6
-  - 🇵🇱 波兰 | POL
+  - 🇮🇪 爱尔兰 | IRL
   - 🇩🇪 德国 | DEU 6
+  - 🇵🇱 波兰 | POL
   - 🇩🇪 德国 | DEU 11
   - 🇩🇪 德国 | DEU 8
+  - 🇳🇱 荷兰 | NLD 6
   - 🇷🇺 俄罗斯 | RUS 5
   - 🇰🇬 KG_60
   - 未知TROJAN-230|free-nodes
   - 🇩🇪 德国 | DEU 4
   - 🇨🇴 哥伦比亚 | COL
-  - 🇩🇪 德国 | DEU 9
   - 🇹🇭 泰国 | THA
+  - 🇩🇪 德国 | DEU 9
   - 🇳🇱 荷兰 | NLD 2
-  - 🇩🇪 德国 | DEU
   - 🇱🇻 拉脱维亚 | LVA 2
+  - 🇩🇪 德国 | DEU
   - 🇱🇻 拉脱维亚 | LVA
   - 未知VLESS-641|free-nodes
   - 🇳🇱 荷兰 | NLD 3
   - 🇨🇳 CN_03
-  - 🇷🇺 俄罗斯 | RUS 9
-  - 🇳🇱 荷兰 | NLD 5
   - 🇬🇧 英国 | GBR
+  - 🇳🇱 荷兰 | NLD 5
   - 🇩🇪 德国 | DEU 10
   - 🇰🇷 韩国 | KOR 7
   - 🇪🇸 西班牙 | ESP
@@ -851,6 +832,7 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇭🇰 香港 | HKG 2
+  - 🇭🇰 香港 | HKG 4
   - 🇭🇰 香港 | HKG 3
   - 🇭🇰 香港 | HKG
   url: http://www.gstatic.com/generate_204
@@ -867,19 +849,18 @@ proxy-groups:
 - name: US-POOL
   type: url-test
   proxies:
-  - 🇺🇸 美国 | USA 10
+  - 🇺🇸 美国 | USA 30
   - 🇺🇸 美国 | USA 11
   - 🇺🇸 美国 | USA 33
-  - 🇺🇸 美国 | USA 31
+  - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA
+  - 🇺🇸 美国 | USA 10
   - 🇺🇸 美国 | USA 13
-  - 🇺🇸 美国 | USA 17
   - 🇺🇸 美国 | USA 15
   - 🇺🇸 美国 | USA 23
-  - 🇺🇸 美国 | USA 14
   - 🇺🇸 美国 | USA 18
   - 🇺🇸 美国 | USA 22
   url: http://www.gstatic.com/generate_204
@@ -887,19 +868,19 @@ proxy-groups:
 - name: AI-POOL
   type: url-test
   proxies:
-  - 🇺🇸 美国 | USA 10
-  - 🇳🇱 荷兰 | NLD 6
   - 🇺🇸 美国 | USA 23
-  - 🇺🇸 美国 | USA 33
   - 🇸🇬 新加坡 | SGP 3
-  - 🇳🇱 荷兰 | NLD 5
-  - 🇯🇵 日本 | JPN 5
-  - 🇺🇸 美国 | USA 11
-  - 🇺🇸 美国 | USA 5
-  - 🇮🇪 爱尔兰 | IRL 2
-  - 🇵🇱 波兰 | POL
+  - 🇳🇱 荷兰 | NLD 6
+  - 🇺🇸 美国 | USA 33
+  - 🇺🇸 美国 | USA 18
+  - 🇺🇸 美国 | USA 10
+  - 🇺🇸 美国 | USA
   - 🇨🇴 哥伦比亚 | COL
-  - 🇮🇪 爱尔兰 | IRL
+  - 🇺🇸 美国 | USA 13
+  - 🇺🇸 美国 | USA 5
+  - 🇯🇵 日本 | JPN 5
+  - 🇩🇪 德国 | DEU 11
+  - 🇮🇪 爱尔兰 | IRL 2
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
