@@ -7,22 +7,8 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-08-15T18:54:42.703730+00:00'
+generated-at: '2026-08-15T19:17:28.637934+00:00'
 proxies:
-- name: 🇭🇰 香港 | HKG 6
-  server: 156.248.10.58
-  port: 443
-  type: vless
-  uuid: 93a9d63a-03b8-4167-92bd-3fa932af1c91
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: EXIEsAJq-s30mA0r997iwrR8ijvGLZ7DOTkr_R39QCE
-    short-id: 54fc3827c8
-  servername: nono.hhhkkhktt.xyz
-  client-fingerprint: safari
-  network: tcp
-  udp: true
 - name: 🇭🇰 香港 | HKG 7
   server: hy2-tw.starq.me
   port: 24443
@@ -35,6 +21,20 @@ proxies:
     short-id: ba2e8b0452447037
   servername: www.cloudflare.com
   client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇭🇰 香港 | HKG 6
+  server: 156.248.10.58
+  port: 443
+  type: vless
+  uuid: 93a9d63a-03b8-4167-92bd-3fa932af1c91
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: EXIEsAJq-s30mA0r997iwrR8ijvGLZ7DOTkr_R39QCE
+    short-id: 54fc3827c8
+  servername: nono.hhhkkhktt.xyz
+  client-fingerprint: safari
   network: tcp
   udp: true
 - name: 🇯🇵 日本 | JPN 5
@@ -72,6 +72,14 @@ proxies:
   password: FH72359861
   skip-cert-verify: true
   udp: true
+- name: 🇯🇵 日本 | JPN 10
+  server: endless-kiwi.rooster465.autos
+  port: 443
+  type: trojan
+  password: FH72359861
+  sni: endless-kiwi.rooster465.autos
+  skip-cert-verify: true
+  udp: true
 - name: 🇯🇵 日本 | JPN 11
   server: 151.101.193.242
   port: 443
@@ -86,14 +94,6 @@ proxies:
     path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/D-e2@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
     headers:
       Host: mitivpn.lifestyle
-  udp: true
-- name: 🇯🇵 日本 | JPN 10
-  server: endless-kiwi.rooster465.autos
-  port: 443
-  type: trojan
-  password: FH72359861
-  sni: endless-kiwi.rooster465.autos
-  skip-cert-verify: true
   udp: true
 - name: 🇯🇵 日本 | JPN 8
   server: champion-panther.rooster465.autos
@@ -225,20 +225,6 @@ proxies:
   password: FH72359861
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸 美国 | USA 20
-  server: 104.19.215.97
-  port: 2087
-  type: vless
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
-  tls: true
-  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-  udp: true
 - name: 🇺🇸 美国 | USA 11
   server: 154.17.0.91
   port: 50159
@@ -261,6 +247,20 @@ proxies:
   auth: b268a3a1-3826-44a3-9ffb-3ac2095300ca
   sni: nlgas.hambot.ru
   skip-cert-verify: true
+- name: 🇺🇸 美国 | USA 20
+  server: 104.19.215.97
+  port: 2087
+  type: vless
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  tls: true
+  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  udp: true
 - name: 🇺🇸 美国 | USA 8
   server: 139.28.168.55
   port: 8443
@@ -400,13 +400,6 @@ proxies:
   auth: 2a0099ded5baa93c55823af39229c5b1
   sni: 185-22-155-81.liao.kdns.fr
   skip-cert-verify: true
-- name: 🇳🇱 荷兰 | NLD 4
-  server: renewed-chigger.rooster465.autos
-  port: 443
-  type: trojan
-  password: FH72359861
-  skip-cert-verify: true
-  udp: true
 - name: 🇰🇬 KG_63
   server: 81.85.75.85
   port: 443
@@ -420,6 +413,13 @@ proxies:
   servername: baltic.cendora.ru
   client-fingerprint: firefox
   network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 4
+  server: renewed-chigger.rooster465.autos
+  port: 443
+  type: trojan
+  password: FH72359861
+  skip-cert-verify: true
   udp: true
 - name: 🇰🇷 韩国 | KOR 3
   server: complete-narwhal.rooster465.autos
@@ -489,22 +489,6 @@ proxies:
   password: FH72359861
   skip-cert-verify: true
   udp: true
-- name: 🇮🇪 爱尔兰 | IRL 2
-  server: balanced-heron.rooster465.autos
-  port: 443
-  type: trojan
-  password: FH72359861
-  skip-cert-verify: true
-- name: 🇩🇰 丹麦 | DNK
-  server: dk86.mechvpn.online
-  port: 443
-  type: hysteria2
-  password: 53c76647-14d1-4df5-99cb-be99ad2e6bd9
-  auth: 53c76647-14d1-4df5-99cb-be99ad2e6bd9
-  sni: dk86.mechvpn.online
-  skip-cert-verify: true
-  alpn:
-  - h3
 - name: 🇩🇪 德国 | DEU 5
   server: 78.159.247.253
   port: 2027
@@ -519,14 +503,22 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇮🇪 爱尔兰 | IRL
-  server: 54.216.139.140
+- name: 🇩🇰 丹麦 | DNK
+  server: dk86.mechvpn.online
+  port: 443
+  type: hysteria2
+  password: 53c76647-14d1-4df5-99cb-be99ad2e6bd9
+  auth: 53c76647-14d1-4df5-99cb-be99ad2e6bd9
+  sni: dk86.mechvpn.online
+  skip-cert-verify: true
+  alpn:
+  - h3
+- name: 🇮🇪 爱尔兰 | IRL 2
+  server: balanced-heron.rooster465.autos
   port: 443
   type: trojan
   password: FH72359861
-  sni: cunning-grub.rooster465.autos
   skip-cert-verify: true
-  udp: true
 - name: 🇨🇳 CN_01
   server: 139.28.168.55
   port: 9080
@@ -542,6 +534,14 @@ proxies:
   password: FH72359861
   sni: national-stingray.rooster465.autos
   skip-cert-verify: true
+- name: 🇮🇪 爱尔兰 | IRL
+  server: 54.216.139.140
+  port: 443
+  type: trojan
+  password: FH72359861
+  sni: cunning-grub.rooster465.autos
+  skip-cert-verify: true
+  udp: true
 - name: 🇵🇱 波兰 | POL
   server: 94.183.157.121
   port: 443
@@ -584,14 +584,6 @@ proxies:
   client-fingerprint: qq
   network: tcp
   udp: true
-- name: 🇩🇪 德国 | DEU 4
-  server: 212.100.171.149
-  port: 5025
-  type: vless
-  uuid: 1c2b69b0-c777-40fc-8a29-f87c28a451cd
-  tls: false
-  network: tcp
-  udp: true
 - type: trojan
   name: 未知TROJAN-230|free-nodes
   server: 104.19.64.105
@@ -605,6 +597,14 @@ proxies:
     path: /assignment
     headers:
       host: www.calmlunch.com
+- name: 🇩🇪 德国 | DEU 4
+  server: 212.100.171.149
+  port: 5025
+  type: vless
+  uuid: 1c2b69b0-c777-40fc-8a29-f87c28a451cd
+  tls: false
+  network: tcp
+  udp: true
 - name: 🇮🇪 爱尔兰 | IRL 4
   server: v4.hdacd.com
   port: 30804
@@ -652,13 +652,6 @@ proxies:
     path: /
     headers:
       host: d1yxsk0zprgivr.cloudfront.net
-- name: 🇮🇪 爱尔兰 | IRL 3
-  server: 3.253.78.205
-  port: 443
-  type: trojan
-  password: FH72359861
-  sni: balanced-heron.rooster465.autos
-  skip-cert-verify: true
 - name: 🇳🇱 荷兰 | NLD 3
   server: 85.155.226.31
   port: 443
@@ -673,6 +666,13 @@ proxies:
   client-fingerprint: qq
   network: tcp
   udp: true
+- name: 🇮🇪 爱尔兰 | IRL 3
+  server: 3.253.78.205
+  port: 443
+  type: trojan
+  password: FH72359861
+  sni: balanced-heron.rooster465.autos
+  skip-cert-verify: true
 - name: 🇳🇱 荷兰 | NLD 9
   server: 85.155.226.87
   port: 443
@@ -687,13 +687,6 @@ proxies:
   client-fingerprint: qq
   network: tcp
   udp: true
-- name: 🇬🇧 英国 | GBR
-  server: 144.24.229.230
-  port: 61312
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: EOMKHJ7htCaQWlQV7lWfaNS5jnhWg94TbhEMDEby7sE=
-  udp: true
 - name: 🇹🇷 土耳其 | TUR 2
   server: sb1.artinnet.shop
   port: 443
@@ -707,6 +700,13 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
+- name: 🇬🇧 英国 | GBR
+  server: 144.24.229.230
+  port: 61312
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: EOMKHJ7htCaQWlQV7lWfaNS5jnhWg94TbhEMDEby7sE=
+  udp: true
 - name: 🇳🇱 荷兰 | NLD 5
   server: 191.44.90.4
   port: 8444
@@ -714,13 +714,6 @@ proxies:
   password: e8c93f75-4ed5-41b1-a32e-a846e54582e8
   auth: e8c93f75-4ed5-41b1-a32e-a846e54582e8
   sni: premium-nl.geodema.network
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 | KOR 7
-  server: 43.202.61.210
-  port: 443
-  type: trojan
-  password: FH72359861
-  sni: loyal-molly.rooster465.autos
   skip-cert-verify: true
 - name: 🇪🇸 西班牙 | ESP
   server: 185.18.250.252
@@ -735,18 +728,25 @@ proxies:
     headers:
       Host: www.calmlunch.com
   udp: true
+- name: 🇰🇷 韩国 | KOR 7
+  server: 43.202.61.210
+  port: 443
+  type: trojan
+  password: FH72359861
+  sni: loyal-molly.rooster465.autos
+  skip-cert-verify: true
 proxy-groups:
 - name: AUTO-FAST
   type: url-test
   proxies:
-  - 🇭🇰 香港 | HKG 6
   - 🇭🇰 香港 | HKG 7
+  - 🇭🇰 香港 | HKG 6
   - 🇯🇵 日本 | JPN 5
   - 🇭🇰 香港 | HKG 2
   - 🇭🇰 香港 | HKG 4
   - 🇯🇵 日本 | JPN 12
-  - 🇯🇵 日本 | JPN 11
   - 🇯🇵 日本 | JPN 10
+  - 🇯🇵 日本 | JPN 11
   - 🇯🇵 日本 | JPN 8
   - 🇯🇵 日本 | JPN 2
   - 🇯🇵 日本 | JPN 6
@@ -760,9 +760,9 @@ proxy-groups:
   - 🇭🇰 香港 | HKG 11
   - 🇯🇵 日本 | JPN
   - 🇭🇰 香港 | HKG 8
-  - 🇺🇸 美国 | USA 20
   - 🇺🇸 美国 | USA 11
   - 🇺🇸 美国 | USA 9
+  - 🇺🇸 美国 | USA 20
   - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 5
@@ -778,8 +778,8 @@ proxy-groups:
   - 🇰🇷 韩国 | KOR 2
   - 🇰🇷 韩国 | KOR 4
   - 🇷🇺 俄罗斯 | RUS 2
-  - 🇳🇱 荷兰 | NLD 4
   - 🇰🇬 KG_63
+  - 🇳🇱 荷兰 | NLD 4
   - 🇰🇷 韩国 | KOR 3
   - 🇰🇷 韩国 | KOR 9
   - 🇹🇼 🇨🇳 台湾 | TWN
@@ -788,37 +788,37 @@ proxy-groups:
   - 🇩🇪 德国 | DEU 3
   - 🇰🇷 韩国 | KOR 5
   - 🇮🇪 爱尔兰 | IRL 6
-  - 🇮🇪 爱尔兰 | IRL 2
-  - 🇩🇰 丹麦 | DNK
   - 🇩🇪 德国 | DEU 5
-  - 🇮🇪 爱尔兰 | IRL
+  - 🇩🇰 丹麦 | DNK
+  - 🇮🇪 爱尔兰 | IRL 2
   - 🇨🇳 CN_01
   - 🇦🇺 澳大利亚 | AUS
+  - 🇮🇪 爱尔兰 | IRL
   - 🇵🇱 波兰 | POL
   - 🇩🇪 德国 | DEU 8
   - 🇵🇱 波兰 | POL 2
-  - 🇩🇪 德国 | DEU 4
   - 未知TROJAN-230|free-nodes
+  - 🇩🇪 德国 | DEU 4
   - 🇮🇪 爱尔兰 | IRL 4
   - 🇰🇷 韩国 | KOR
   - 🇳🇱 荷兰 | NLD 2
   - 🇨🇴 哥伦比亚 | COL
   - 未知VLESS-641|free-nodes
-  - 🇮🇪 爱尔兰 | IRL 3
   - 🇳🇱 荷兰 | NLD 3
+  - 🇮🇪 爱尔兰 | IRL 3
   - 🇳🇱 荷兰 | NLD 9
-  - 🇬🇧 英国 | GBR
   - 🇹🇷 土耳其 | TUR 2
+  - 🇬🇧 英国 | GBR
   - 🇳🇱 荷兰 | NLD 5
-  - 🇰🇷 韩国 | KOR 7
   - 🇪🇸 西班牙 | ESP
+  - 🇰🇷 韩国 | KOR 7
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: HK-POOL
   type: url-test
   proxies:
-  - 🇭🇰 香港 | HKG 6
   - 🇭🇰 香港 | HKG 7
+  - 🇭🇰 香港 | HKG 6
   - 🇭🇰 香港 | HKG 2
   - 🇭🇰 香港 | HKG 4
   - 🇭🇰 香港 | HKG 5
@@ -834,8 +834,8 @@ proxy-groups:
   proxies:
   - 🇯🇵 日本 | JPN 5
   - 🇯🇵 日本 | JPN 12
-  - 🇯🇵 日本 | JPN 11
   - 🇯🇵 日本 | JPN 10
+  - 🇯🇵 日本 | JPN 11
   - 🇯🇵 日本 | JPN 8
   - 🇯🇵 日本 | JPN 2
   - 🇯🇵 日本 | JPN 6
@@ -847,9 +847,9 @@ proxy-groups:
 - name: US-POOL
   type: url-test
   proxies:
-  - 🇺🇸 美国 | USA 20
   - 🇺🇸 美国 | USA 11
   - 🇺🇸 美国 | USA 9
+  - 🇺🇸 美国 | USA 20
   - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 5
@@ -862,20 +862,20 @@ proxy-groups:
 - name: AI-POOL
   type: url-test
   proxies:
-  - 🇺🇸 美国 | USA 20
-  - 🇺🇸 美国 | USA 6
+  - 🇭🇰 香港 | HKG 7
+  - 🇭🇰 香港 | HKG 6
+  - 🇯🇵 日本 | JPN 5
+  - 🇭🇰 香港 | HKG 2
+  - 🇭🇰 香港 | HKG 4
+  - 🇯🇵 日本 | JPN 12
+  - 🇯🇵 日本 | JPN 10
   - 🇯🇵 日本 | JPN 11
-  - 🇨🇴 哥伦比亚 | COL
-  - 🇺🇸 美国 | USA 10
-  - 🇳🇱 荷兰 | NLD 2
-  - 🇳🇱 荷兰 | NLD 8
-  - 🇩🇪 德国 | DEU 4
-  - 🇬🇧 英国 | GBR
-  - 🇮🇪 爱尔兰 | IRL 3
-  - 🇮🇪 爱尔兰 | IRL 5
-  - 🇮🇪 爱尔兰 | IRL 6
-  - 🇮🇪 爱尔兰 | IRL 2
-  - 🇮🇪 爱尔兰 | IRL
+  - 🇯🇵 日本 | JPN 8
+  - 🇯🇵 日本 | JPN 2
+  - 🇯🇵 日本 | JPN 6
+  - 🇯🇵 日本 | JPN 3
+  - 🇭🇰 香港 | HKG 5
+  - 🇭🇰 香港 | HKG 10
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
