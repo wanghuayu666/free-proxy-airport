@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-08-16T21:43:01.871801+00:00'
+generated-at: '2026-08-16T22:14:13.745665+00:00'
 proxies:
 - name: 🇭🇰 香港 | HKG 7
   server: planb.mojcn.com.linuxlh.xin
@@ -224,6 +224,19 @@ proxies:
   client-fingerprint: ios
   network: tcp
   udp: true
+- name: 🇺🇸 美国 | USA 29
+  server: 154.17.4.70
+  port: 13779
+  type: vless
+  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
+  tls: true
+  reality-opts:
+    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
+    short-id: af1bdd293097b664
+  servername: tesla.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
 - name: 🇺🇸 美国 | USA 17
   server: 188.114.97.3
   port: 443
@@ -279,14 +292,6 @@ proxies:
     headers:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
   udp: true
-- name: 🇺🇸 美国 | USA 15
-  server: 18.226.172.222
-  port: 443
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  auth: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-us-003.fastervpn.world
-  skip-cert-verify: true
 - name: 🇺🇸 美国 | USA 27
   server: 51.81.223.225
   port: 11094
@@ -301,6 +306,14 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
+- name: 🇺🇸 美国 | USA 15
+  server: 18.226.172.222
+  port: 443
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  auth: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-us-003.fastervpn.world
+  skip-cert-verify: true
 - name: 🇺🇸 美国 | USA 14
   server: 169.40.42.89
   port: 443
@@ -314,6 +327,18 @@ proxies:
   servername: yahoo.com
   client-fingerprint: ios
   network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 23
+  server: 104.17.185.207
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fangbinxingnmsl.pusytroller.gq
   udp: true
 - name: 🇺🇸 美国 | USA 12
   server: 104.16.150.130
@@ -430,6 +455,20 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
+- name: 🇬🇷 希腊 | GRC
+  server: grek.helper-internet.com
+  port: 443
+  type: vless
+  uuid: 670decfe-68cc-499e-8cb1-22b39c20acbb
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
+    short-id: ff776ff77be48b88
+  servername: grek.helper-internet.com
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
 - name: 🇷🇺 俄罗斯 | RUS 3
   server: 104.18.32.47
   port: 443
@@ -444,20 +483,6 @@ proxies:
   xhttp-opts:
     path: /
     mode: auto
-  udp: true
-- name: 🇬🇷 希腊 | GRC
-  server: grek.helper-internet.com
-  port: 443
-  type: vless
-  uuid: 670decfe-68cc-499e-8cb1-22b39c20acbb
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
-    short-id: ff776ff77be48b88
-  servername: grek.helper-internet.com
-  client-fingerprint: firefox
-  network: tcp
   udp: true
 - name: 🇱🇹 立陶宛 | LTU
   server: latvia.koalaexpress.ru
@@ -597,14 +622,6 @@ proxies:
   auth: 725bc0b69e720cd5a2cd209252507c6e
   sni: 94-229-64-108.liao.kdns.fr
   skip-cert-verify: true
-- name: 🇰🇷 韩国 | KOR
-  server: 193.122.104.200
-  port: 50160
-  type: hysteria2
-  password: dfb54e674104158210fdfcac45e5679d
-  auth: dfb54e674104158210fdfcac45e5679d
-  sni: 193-122-104-200.liao.kdns.fr
-  skip-cert-verify: true
 - name: 🇳🇱 荷兰 | NLD 6
   server: 85.155.226.75
   port: 443
@@ -619,6 +636,14 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
+- name: 🇰🇷 韩国 | KOR
+  server: 193.122.104.200
+  port: 50160
+  type: hysteria2
+  password: dfb54e674104158210fdfcac45e5679d
+  auth: dfb54e674104158210fdfcac45e5679d
+  sni: 193-122-104-200.liao.kdns.fr
+  skip-cert-verify: true
 - name: 🇫🇷 法国 | FRA 26
   server: 15.237.189.197
   port: 443
@@ -729,13 +754,15 @@ proxy-groups:
   - 🇺🇸 美国 | USA 34
   - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA 36
+  - 🇺🇸 美国 | USA 29
   - 🇺🇸 美国 | USA 17
   - 🇺🇸 美国 | USA 10
   - 美國丨yoyapai.com_8
   - 🇺🇸 美国 | USA 35
-  - 🇺🇸 美国 | USA 15
   - 🇺🇸 美国 | USA 27
+  - 🇺🇸 美国 | USA 15
   - 🇺🇸 美国 | USA 14
+  - 🇺🇸 美国 | USA 23
   - 🇺🇸 美国 | USA 12
   - 🇺🇸 美国 | USA 28
   - 🇳🇱 荷兰 | NLD 7
@@ -746,8 +773,8 @@ proxy-groups:
   - 🇩🇪 德国 | DEU 7
   - 🇷🇺 俄罗斯 | RUS 2
   - 🇳🇱 荷兰 | NLD 4
-  - 🇷🇺 俄罗斯 | RUS 3
   - 🇬🇷 希腊 | GRC
+  - 🇷🇺 俄罗斯 | RUS 3
   - 🇱🇹 立陶宛 | LTU
   - 🇫🇮 荷蘭
   - 🇩🇪 德国 | DEU 15
@@ -760,8 +787,8 @@ proxy-groups:
   - 🇸🇪 瑞典 | SWE
   - 🇩🇪 德国 | DEU 4
   - 🇬🇧 英国 | GBR 2
-  - 🇰🇷 韩国 | KOR
   - 🇳🇱 荷兰 | NLD 6
+  - 🇰🇷 韩国 | KOR
   - 🇫🇷 法国 | FRA 26
   - 🇩🇪 德国 | DEU
   - 🇳🇱 荷兰 | NLD 3
@@ -807,13 +834,15 @@ proxy-groups:
   - 🇺🇸 美国 | USA 34
   - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA 36
+  - 🇺🇸 美国 | USA 29
   - 🇺🇸 美国 | USA 17
   - 🇺🇸 美国 | USA 10
   - 美國丨yoyapai.com_8
   - 🇺🇸 美国 | USA 35
-  - 🇺🇸 美国 | USA 15
   - 🇺🇸 美国 | USA 27
+  - 🇺🇸 美国 | USA 15
   - 🇺🇸 美国 | USA 14
+  - 🇺🇸 美国 | USA 23
   - 🇺🇸 美国 | USA 12
   - 🇺🇸 美国 | USA 28
   url: http://www.gstatic.com/generate_204
@@ -822,16 +851,17 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇺🇸 美国 | USA 16
-  - 🇺🇸 美国 | USA 30
   - 🇺🇸 美国 | USA 17
   - 🇺🇸 美国 | USA 35
   - 🇺🇸 美国 | USA 12
+  - 🇺🇸 美国 | USA 30
+  - 🇺🇸 美国 | USA 23
   - 🇺🇸 美国 | USA 27
   - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 10
+  - 🇺🇸 美国 | USA 15
   - 🇺🇸 美国 | USA 14
   - 🇺🇸 美国 | USA 36
-  - 🇺🇸 美国 | USA 15
-  - 🇷🇺 俄罗斯 | RUS 3
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
