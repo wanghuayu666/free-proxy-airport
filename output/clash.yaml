@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-08-17T21:20:03.234730+00:00'
+generated-at: '2026-08-17T21:49:02.966531+00:00'
 proxies:
 - name: 🇸🇬 新加坡 | SGP 13
   server: stable-python.rooster465.autos
@@ -83,15 +83,15 @@ proxies:
   password: PQ05174892
   skip-cert-verify: true
   udp: true
-- name: 🇭🇰 香港 | HKG
-  server: glad-roughy.rooster465.autos
+- name: 🇸🇬 新加坡 | SGP 6
+  server: intense-sole.rooster465.autos
   port: 443
   type: trojan
   password: PQ05174892
   skip-cert-verify: true
   udp: true
-- name: 🇸🇬 新加坡 | SGP 6
-  server: intense-sole.rooster465.autos
+- name: 🇭🇰 香港 | HKG
+  server: glad-roughy.rooster465.autos
   port: 443
   type: trojan
   password: PQ05174892
@@ -143,6 +143,15 @@ proxies:
   auth: qQe1z5kU8kN6SlKnDt9Ru3Qp
   sni: vpn-us-002.fastervpn.world
   skip-cert-verify: true
+- name: 🇺🇸 美国 | USA 21
+  server: starlink-ft.251313.xyz
+  port: 443
+  type: hysteria2
+  password: https://xship.top
+  auth: https://xship.top
+  sni: xship.top
+  skip-cert-verify: true
+  udp: true
 - name: 🇺🇸 美国 | USA 25
   server: 104.16.150.130
   port: 2087
@@ -156,29 +165,6 @@ proxies:
     path: /
     headers:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-  udp: true
-- name: 🇺🇸 美国 | USA 21
-  server: starlink-ft.251313.xyz
-  port: 443
-  type: hysteria2
-  password: https://xship.top
-  auth: https://xship.top
-  sni: xship.top
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸 美国 | USA 24
-  server: 169.40.42.35
-  port: 443
-  type: vless
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  servername: yahoo.com
-  client-fingerprint: ios
-  network: tcp
   udp: true
 - name: 🇺🇸 美国 | USA 7
   server: 51.81.223.225
@@ -194,6 +180,20 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
+- name: 🇺🇸 美国 | USA 24
+  server: 169.40.42.35
+  port: 443
+  type: vless
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
+  client-fingerprint: ios
+  network: tcp
+  udp: true
 - name: 🇺🇸 美国 | USA 6
   server: starlink-ft.251313.xyz
   port: 443
@@ -202,6 +202,20 @@ proxies:
   auth: https://xship.2fa.cat
   sni: xship.top
   skip-cert-verify: true
+  udp: true
+- name: 🇺🇸 美国 | USA 10
+  server: 169.40.42.229
+  port: 443
+  type: vless
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
+  client-fingerprint: ios
+  network: tcp
   udp: true
 - name: 🇺🇸 美国 | USA 13
   server: us1-r.link-t7.com
@@ -218,20 +232,6 @@ proxies:
   grpc-opts:
     grpc-mode: gun
     grpc-service-name: movie
-  udp: true
-- name: 🇺🇸 美国 | USA 10
-  server: 169.40.42.229
-  port: 443
-  type: vless
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  servername: yahoo.com
-  client-fingerprint: ios
-  network: tcp
   udp: true
 - name: 美國丨yoyapai.com_8
   type: vless
@@ -459,19 +459,6 @@ proxies:
   auth: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
   sni: admin.wwwinternetvideo.click
   skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 | ROU
-  server: 45.13.151.46
-  port: 48689
-  type: vless
-  uuid: e25486c7-3342-4777-a82d-89d485f844dc
-  tls: false
-  network: ws
-  ws-opts:
-    path: /host
-    headers:
-      Host: www.filimo.com
-    v2ray-http-upgrade: true
-  udp: true
 - name: 🇸🇰 斯洛伐克 | SVK
   server: 185.112.249.201
   port: 8443
@@ -552,6 +539,20 @@ proxies:
   password: PQ05174892
   skip-cert-verify: true
   udp: true
+- name: 🇹🇭 Thailand泰国丨yoyapai.com
+  type: vless
+  server: 18.239.134.69
+  port: 80
+  uuid: de27291c-15a9-4256-9ba7-ad517569877e
+  network: ws
+  tls: false
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: d2e1v87ko56lyw.cloudfront.net:assets.opensignal.com
+  skip-cert-verify: true
+  udp: true
 - name: 🇫🇷 法国 | FRA 11
   server: humane-bird.rooster465.autos
   port: 443
@@ -586,19 +587,19 @@ proxy-groups:
   - 🇯🇵 日本 | JPN 6
   - 🇸🇬 新加坡 | SGP 7
   - 🇸🇬 新加坡 | SGP 3
-  - 🇭🇰 香港 | HKG
   - 🇸🇬 新加坡 | SGP 6
+  - 🇭🇰 香港 | HKG
   - 🇭🇰 香港 | HKG 11
   - 🇸🇬 新加坡 | SGP 4
   - 🇺🇸 美国 | USA 11
   - 🇺🇸 美国 | USA 9
-  - 🇺🇸 美国 | USA 25
   - 🇺🇸 美国 | USA 21
-  - 🇺🇸 美国 | USA 24
+  - 🇺🇸 美国 | USA 25
   - 🇺🇸 美国 | USA 7
+  - 🇺🇸 美国 | USA 24
   - 🇺🇸 美国 | USA 6
-  - 🇺🇸 美国 | USA 13
   - 🇺🇸 美国 | USA 10
+  - 🇺🇸 美国 | USA 13
   - 美國丨yoyapai.com_8
   - 🇺🇸 美国 | USA 19
   - 🇺🇸 美国 | USA 17
@@ -620,7 +621,6 @@ proxy-groups:
   - 🇰🇷 韩国 | KOR 5
   - 🇳🇱_NL荷蘭丨yoyapai.com
   - 🇵🇱 波兰 | POL
-  - 🇷🇴 罗马尼亚 | ROU
   - 🇸🇰 斯洛伐克 | SVK
   - 🇹🇭泰国丨yoyapai.com
   - 🇵🇱 波兰 | POL 2
@@ -629,6 +629,7 @@ proxy-groups:
   - 🇳🇱 荷兰 | NLD 2
   - 🇩🇪 德国 | DEU
   - 🇳🇱 荷兰 | NLD 3
+  - 🇹🇭 Thailand泰国丨yoyapai.com
   - 🇫🇷 法国 | FRA 11
   - 🇳🇱 荷兰 | NLD 5
   - 🇰🇷 韩国 | KOR 7
@@ -656,13 +657,13 @@ proxy-groups:
   proxies:
   - 🇺🇸 美国 | USA 11
   - 🇺🇸 美国 | USA 9
-  - 🇺🇸 美国 | USA 25
   - 🇺🇸 美国 | USA 21
-  - 🇺🇸 美国 | USA 24
+  - 🇺🇸 美国 | USA 25
   - 🇺🇸 美国 | USA 7
+  - 🇺🇸 美国 | USA 24
   - 🇺🇸 美国 | USA 6
-  - 🇺🇸 美国 | USA 13
   - 🇺🇸 美国 | USA 10
+  - 🇺🇸 美国 | USA 13
   - 美國丨yoyapai.com_8
   - 🇺🇸 美国 | USA 19
   - 🇺🇸 美国 | USA 17
@@ -675,16 +676,16 @@ proxy-groups:
 - name: AI-POOL
   type: url-test
   proxies:
+  - 🇺🇸 美国 | USA 7
   - 🇺🇸 美国 | USA 25
   - 🇺🇸 美国 | USA 9
-  - 🇺🇸 美国 | USA 7
-  - 🇺🇸 美国 | USA 13
   - 🇺🇸 美国 | USA 21
-  - 🇯🇵 日本 | JPN 3
+  - 🇺🇸 美国 | USA 13
   - 🇺🇸 美国 | USA 11
-  - 🇺🇸 美国 | USA 24
   - 🇺🇸 美国 | USA 6
+  - 🇯🇵 日本 | JPN 3
   - 🇺🇸 美国 | USA 10
+  - 🇺🇸 美国 | USA 23
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
