@@ -7,23 +7,8 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-08-18T17:25:05.737542+00:00'
+generated-at: '2026-08-18T17:52:55.106578+00:00'
 proxies:
-- name: 🇭🇰 香港 | HKG 7
-  server: hk01.vpn.taiaise.cn
-  port: 443
-  type: vmess
-  uuid: 060aede7-11ea-4032-b025-6c4168a5182e
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: hk01.vpn.taiaise.cn
-  network: ws
-  ws-opts:
-    path: /xray
-    headers:
-      Host: hk01.vpn.taiaise.cn
 - name: 🇯🇵 日本 | JPN 5
   server: legible-ocelot.rooster465.autos
   port: 443
@@ -57,14 +42,6 @@ proxies:
   password: HC04361579
   sni: settling-shad.rooster465.autos
   skip-cert-verify: true
-- name: 🇯🇵 日本 | JPN 3
-  server: 139.180.198.220
-  port: 52143
-  type: vless
-  uuid: 2942bae7-9dcf-4a2e-f928-933c0ab3eab0
-  tls: false
-  network: tcp
-  udp: true
 - name: 🇭🇰 香港 | HKG 10
   server: planb.mojcn.com.linuxlh.xin
   port: 16632
@@ -193,13 +170,6 @@ proxies:
   auth: 6f65680b8d4de72e9f7c030e92e27a32
   sni: 166-0-16-52.liao.kdns.fr
   skip-cert-verify: true
-- name: 🇳🇱 荷兰 | NLD 7
-  server: 92.5.228.26
-  port: 45819
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 5Xn2qHoVdu6aJjp6R2KjKrk10+qFniNh5OjKW93TdWk=
-  udp: true
 - name: 🇬🇧 英国 | GBR 4
   server: 129.151.77.35
   port: 61312
@@ -326,21 +296,6 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇹🇭泰国丨yoyapai.com
-  type: vless
-  server: 3.170.185.91
-  port: 443
-  uuid: 7ce54bb3-d612-4aa7-be08-089d3c461d53
-  network: ws
-  servername: d1yxsk0zprgivr.cloudfront.net
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: d1yxsk0zprgivr.cloudfront.net
-  skip-cert-verify: true
-  udp: true
 - name: 🇧🇷 巴西 | BRA
   server: 146.235.35.83
   port: 59319
@@ -363,6 +318,14 @@ proxies:
   auth: 3JdcAYVWhBbZrVNi
   sni: kor-akile-a3.nebulacloud.win
   skip-cert-verify: true
+- name: 🇨🇴 哥伦比亚 | COL 3
+  server: 157.137.217.159
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+  udp: true
 - name: 🇩🇪 德国 | DEU
   server: swe2.frkn.org
   port: 443
@@ -432,12 +395,10 @@ proxy-groups:
 - name: AUTO-FAST
   type: url-test
   proxies:
-  - 🇭🇰 香港 | HKG 7
   - 🇯🇵 日本 | JPN 5
   - 🇭🇰 香港 | HKG 4
   - 🇯🇵 日本 | JPN 8
   - 🇯🇵 日本 | JPN 6
-  - 🇯🇵 日本 | JPN 3
   - 🇭🇰 香港 | HKG 10
   - 🇸🇬 新加坡 | SGP 3
   - 🇸🇬 新加坡 | SGP 2
@@ -449,7 +410,6 @@ proxy-groups:
   - 🇺🇸 美国 | USA 14
   - 🇺🇸 美国 | USA 12
   - 🇺🇸 美国 | USA 22
-  - 🇳🇱 荷兰 | NLD 7
   - 🇬🇧 英国 | GBR 4
   - 🇳🇱 荷兰 | NLD 8
   - 🇰🇷 韩国 | KOR 4
@@ -463,10 +423,10 @@ proxy-groups:
   - 🇳🇱_NL荷蘭丨yoyapai.com
   - 🇩🇪 德国 | DEU 6
   - 🇨🇭 瑞士 | CHE 2
-  - 🇹🇭泰国丨yoyapai.com
   - 🇧🇷 巴西 | BRA
   - 🇸🇪 瑞典 | SWE
   - 🇰🇷 韩国 | KOR
+  - 🇨🇴 哥伦比亚 | COL 3
   - 🇩🇪 德国 | DEU
   - 🇳🇴 挪威 | NOR
   - 🇬🇧 英国 | GBR 3
@@ -478,7 +438,6 @@ proxy-groups:
 - name: HK-POOL
   type: url-test
   proxies:
-  - 🇭🇰 香港 | HKG 7
   - 🇭🇰 香港 | HKG 4
   - 🇭🇰 香港 | HKG 10
   url: http://www.gstatic.com/generate_204
@@ -489,7 +448,6 @@ proxy-groups:
   - 🇯🇵 日本 | JPN 5
   - 🇯🇵 日本 | JPN 8
   - 🇯🇵 日本 | JPN 6
-  - 🇯🇵 日本 | JPN 3
   - 🇯🇵 日本 | JPN
   url: http://www.gstatic.com/generate_204
   interval: 120
@@ -509,13 +467,12 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇸🇬 新加坡 | SGP 2
-  - 🇺🇸 美国 | USA 20
-  - 🇳🇱 荷兰 | NLD 4
   - 🇺🇸 美国 | USA 14
-  - 🇳🇱 荷兰 | NLD 7
-  - 🇬🇧 英国 | GBR 5
+  - 🇺🇸 美国 | USA 22
+  - 🇳🇱 荷兰 | NLD 4
+  - 🇺🇸 美国 | USA 5
+  - 🇺🇸 美国 | USA 20
   - 🇺🇸 美国 | USA 12
-  - 🇬🇧 英国 | GBR 4
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
