@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-08-18T15:01:29.329405+00:00'
+generated-at: '2026-08-18T15:56:12.632505+00:00'
 proxies:
 - name: 🇭🇰 香港 | HKG 6
   server: 260323.1.0.l3.unclemanco.com
@@ -53,6 +53,17 @@ proxies:
     mode: http
     host: 9c16582738.download.windowsupdate.com
   udp: true
+- name: 🇭🇰 香港 | HKG 4
+  server: bns.taiaise.cn
+  port: 9444
+  type: vless
+  uuid: 060aede7-11ea-4032-b025-6c4168a5182e
+  tls: true
+  flow: xtls-rprx-vision
+  servername: bns.taiaise.cn
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
 - name: 🇯🇵 日本 | JPN 10
   server: 260323.1.0.l3.unclemanco.com
   port: 9021
@@ -86,6 +97,14 @@ proxies:
     mode: http
     host: 9c16582738.download.windowsupdate.com
   udp: true
+- name: 🇯🇵 日本 | JPN 8
+  server: exact-sawfish.rooster465.autos
+  port: 443
+  type: trojan
+  password: HC04361579
+  sni: exact-sawfish.rooster465.autos
+  skip-cert-verify: true
+  udp: true
 - name: 🇯🇵 日本 | JPN 7
   server: 260323.1.0.l3.unclemanco.com
   port: 1313
@@ -108,14 +127,6 @@ proxies:
     mode: http
     host: 9c16582738.download.windowsupdate.com
   udp: true
-- name: 🇯🇵 日本 | JPN 8
-  server: exact-sawfish.rooster465.autos
-  port: 443
-  type: trojan
-  password: HC04361579
-  sni: exact-sawfish.rooster465.autos
-  skip-cert-verify: true
-  udp: true
 - name: 🇯🇵 日本 | JPN 3
   server: 139.180.198.220
   port: 52143
@@ -131,23 +142,6 @@ proxies:
   password: HC04361579
   sni: settling-shad.rooster465.autos
   skip-cert-verify: true
-- name: 🇭🇰 香港 | HKG 10
-  server: planb.mojcn.com.linuxlh.xin
-  port: 16632
-  type: vmess
-  uuid: 0c657913-e593-4893-9555-f88478c33a4b
-  alterId: 0
-  cipher: auto
-  tls: false
-  alpn:
-  - ''
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: f784fdb75e4fc8a478c10d9acff513d3.mobgslb.tbcache.com
-  udp: true
 - name: 🇸🇬 新加坡 | SGP 3
   server: 168.107.81.254
   port: 56927
@@ -211,22 +205,6 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 9
-  server: k2.cloud--vpn.site
-  port: 443
-  type: vless
-  uuid: 8f20ce8e-917f-4946-e03f-31a7bbf8a965
-  tls: true
-  alpn:
-  - h2
-  servername: ssl.fastly.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: c12.com
-  udp: true
 - name: 🇺🇸 美国 | USA 20
   server: 107.172.243.149
   port: 8443
@@ -238,20 +216,6 @@ proxies:
     public-key: VJwBthRcBwhGwneFMFK-9IsC-TbEgs7ZvIVn2bg6oQo
     short-id: f444
   servername: services.digitaleast.mobi
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 6
-  server: us2.miyazono-kaori.com
-  port: 443
-  type: vless
-  uuid: 757ea408-8207-4850-b23f-f2082243288d
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: w5egR8fKNXrEJns2AfwStSzRQ9yHY_invtW7tnqm8Dk
-    short-id: 297842ea18bf
-  servername: download-porter.hoyoverse.com
   client-fingerprint: chrome
   network: tcp
   udp: true
@@ -281,16 +245,19 @@ proxies:
     headers:
       Host: zero.csmaster.ggff.net
   udp: true
-- name: 🇺🇸 美国 | USA 17
-  server: 260323.1.0.l3.unclemanco.com
-  port: 906
-  type: ss
-  cipher: aes-128-gcm
-  password: ay2loud1
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 9c16582738.download.windowsupdate.com
+- name: 🇺🇸 美国 | USA 6
+  server: us2.miyazono-kaori.com
+  port: 443
+  type: vless
+  uuid: 757ea408-8207-4850-b23f-f2082243288d
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: w5egR8fKNXrEJns2AfwStSzRQ9yHY_invtW7tnqm8Dk
+    short-id: 297842ea18bf
+  servername: download-porter.hoyoverse.com
+  client-fingerprint: chrome
+  network: tcp
   udp: true
 - name: 🇺🇸 美国 | USA 4
   server: 185.227.252.204
@@ -319,6 +286,17 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
+- name: 🇺🇸 美国 | USA 17
+  server: 260323.1.0.l3.unclemanco.com
+  port: 906
+  type: ss
+  cipher: aes-128-gcm
+  password: ay2loud1
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 9c16582738.download.windowsupdate.com
+  udp: true
 - name: 🇺🇸 美国 | USA 13
   server: 104.225.232.25
   port: 10877
@@ -331,17 +309,6 @@ proxies:
   servername: www.paypal.com
   client-fingerprint: chrome
   network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 18
-  server: 260323.1.0.l3.unclemanco.com
-  port: 911
-  type: ss
-  cipher: aes-128-gcm
-  password: QHPy2u
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 9c16582738.download.windowsupdate.com
   udp: true
 - name: 美國丨yoyapai.com_8
   type: vless
@@ -364,6 +331,17 @@ proxies:
   auth: daca6264-bd96-48d4-a0ff-c96e50a00aa0
   sni: uswx4.wxgqlfx.vip
   skip-cert-verify: true
+- name: 🇺🇸 美国 | USA 18
+  server: 260323.1.0.l3.unclemanco.com
+  port: 911
+  type: ss
+  cipher: aes-128-gcm
+  password: QHPy2u
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 9c16582738.download.windowsupdate.com
+  udp: true
 - name: 🇺🇸 美国 | USA 2
   server: 260323.1.0.l3.unclemanco.com
   port: 903
@@ -374,20 +352,6 @@ proxies:
   plugin-opts:
     mode: http
     host: 9c16582738.download.windowsupdate.com
-  udp: true
-- name: 🇺🇸 美国 | USA 12
-  server: 51.81.223.225
-  port: 11094
-  type: vless
-  uuid: f1fa0ad9-b122-4b7c-da82-4bea9edc48dd
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 9dnXiXxP4xgvtTVRj9SBFdyO6mjGvVhWD8qVZZLCCCk
-    short-id: a356addf
-  servername: www.yahoo.com
-  client-fingerprint: chrome
-  network: tcp
   udp: true
 - name: 🇺🇸 美国 | USA 22
   server: 166-0-16-52.liao.kdns.fr
@@ -418,6 +382,14 @@ proxies:
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: sC1RiQOK5Ts5zgUYDwB/AGFbqjpytI0/AczgkgCCnew=
+- name: 🇳🇱 荷兰 | NLD 8
+  server: 206.189.7.80
+  port: 5446
+  type: trojan
+  password: fg20mtCFHy
+  sni: inxgc.southbyte.xyz
+  skip-cert-verify: true
+  udp: true
 - name: 🇧🇪 比利时 | BEL
   server: 260323.1.0.l3.unclemanco.com
   port: 10072
@@ -428,14 +400,6 @@ proxies:
   plugin-opts:
     mode: http
     host: 9c16582738.download.windowsupdate.com
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 8
-  server: 206.189.7.80
-  port: 5446
-  type: trojan
-  password: fg20mtCFHy
-  sni: inxgc.southbyte.xyz
-  skip-cert-verify: true
   udp: true
 - name: 🇳🇬 尼日利亚 | NGA
   server: 260323.1.0.l2.unclemanco.com
@@ -476,20 +440,6 @@ proxies:
   type: ss
   cipher: aes-256-gcm
   password: 81a20429165df87e
-- name: 🇳🇱 荷兰 | NLD 4
-  server: one-for-all.levikogjgfdd.ir
-  port: 443
-  type: vless
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  tls: true
-  servername: hhlfy.twiladaphne.ndjp.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /sg-melbi
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-  udp: true
 - name: 🇳🇱 荷兰 | NLD
   server: one-for-all.levikogjgfdd.ir
   port: 443
@@ -504,6 +454,20 @@ proxies:
     headers:
       Host: josni.hoyes.cloudns.ch
   udp: true
+- name: 🇳🇱 荷兰 | NLD 4
+  server: one-for-all.levikogjgfdd.ir
+  port: 443
+  type: vless
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  tls: true
+  servername: hhlfy.twiladaphne.ndjp.net
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+  udp: true
 - name: 🇰🇷 韩国 | KOR 3
   server: 15.165.42.204
   port: 46001
@@ -512,13 +476,6 @@ proxies:
   auth: DWUWPXNSLv23EqVH
   sni: kor-ls-c-4.nebulacloud.win
   skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 | RUS 3
-  server: 45.8.158.176
-  port: 10801
-  type: ss
-  cipher: aes-256-gcm
-  password: 1eadd4e4a37b6601
-  udp: true
 - name: 🇹🇼 🇨🇳 台湾 | TWN
   server: tw4.miyazono-kaori.com
   port: 443
@@ -533,25 +490,19 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇰🇷 韩国 | KOR 8
-  server: 188.253.123.164
-  port: 38551
-  type: vless
-  uuid: f06c6039-a489-3d78-a676-ed43be6deca3
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: JrWOojSFwFA93YjsiQkDydTItQzNAsXsHU24HuWGWjA
-    short-id: bc8e3658db7d1323
-  servername: cdnjs.cloudflare.com
-  client-fingerprint: chrome
-  network: tcp
 - name: 🇷🇺 俄罗斯 | RUS
   server: 195.133.23.5
   port: 20998
   type: ss
   cipher: aes-256-gcm
   password: d99c422199e62b6b
+- name: 🇫🇷 法国 | FRA 20
+  server: 15.237.189.197
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
 - name: 🇩🇪 德国 | DEU 3
   server: 63.187.235.95
   port: 22224
@@ -677,6 +628,21 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
+- name: 🇹🇭泰国丨yoyapai.com
+  type: vless
+  server: 3.170.185.91
+  port: 443
+  uuid: 7ce54bb3-d612-4aa7-be08-089d3c461d53
+  network: ws
+  servername: d1yxsk0zprgivr.cloudfront.net
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: d1yxsk0zprgivr.cloudfront.net
+  skip-cert-verify: true
+  udp: true
 - name: 🇨🇭 瑞士 | CHE
   server: translate.magazinetut.online
   port: 443
@@ -759,6 +725,14 @@ proxies:
   auth: 3JdcAYVWhBbZrVNi
   sni: kor-akile-a3.nebulacloud.win
   skip-cert-verify: true
+- name: 🇨🇴 哥伦比亚 | COL 3
+  server: 157.137.217.159
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+  udp: true
 - name: 🇦🇱 AL_18
   server: 260323.1.0.l2.unclemanco.com
   port: 39184
@@ -769,14 +743,6 @@ proxies:
   plugin-opts:
     mode: http
     host: 9c16582738.download.windowsupdate.com
-  udp: true
-- name: 🇨🇴 哥伦比亚 | COL 3
-  server: 157.137.217.159
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
   udp: true
 - name: 🇳🇴 挪威 | NOR 2
   server: 260323.1.0.l3.unclemanco.com
@@ -888,6 +854,20 @@ proxies:
     headers:
       Host: 129.121.95.159
   udp: true
+- name: 🇹🇭 Thailand泰国丨yoyapai.com
+  type: vless
+  server: 18.239.134.69
+  port: 80
+  uuid: de27291c-15a9-4256-9ba7-ad517569877e
+  network: ws
+  tls: false
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: d2e1v87ko56lyw.cloudfront.net:assets.opensignal.com
+  skip-cert-verify: true
+  udp: true
 - name: 🇬🇧 英国 | GBR
   server: uk1.miyazono-kaori.com
   port: 443
@@ -909,14 +889,6 @@ proxies:
   cipher: 2022-blake3-chacha20-poly1305
   password: fr5M3Mv/8HIcozWHJCfI8SeuOYixEodurkiYtFmanP8=
   udp: true
-- name: 🇫🇷 法国 | FRA 8
-  server: 172.232.42.44
-  port: 5577
-  type: trojan
-  password: fg20mtCFHy
-  sni: gtyxz.southbyte.xyz
-  skip-cert-verify: true
-  udp: true
 - name: 🇳🇱 荷兰 | NLD 5
   server: 195.184.247.223
   port: 443
@@ -931,12 +903,31 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
+- name: 🇫🇷 法国 | FRA 8
+  server: 172.232.42.44
+  port: 5577
+  type: trojan
+  password: fg20mtCFHy
+  sni: gtyxz.southbyte.xyz
+  skip-cert-verify: true
+  udp: true
 - name: 🇪🇸 西班牙 | ESP
   server: 260323.1.0.l3.unclemanco.com
   port: 15554
   type: ss
   cipher: aes-128-gcm
   password: 1mjcsdsdsd2sr
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 9c16582738.download.windowsupdate.com
+  udp: true
+- name: 🇰🇷 韩国 | KOR 7
+  server: 260323.1.0.l3.unclemanco.com
+  port: 9030
+  type: ss
+  cipher: aes-128-gcm
+  password: QHPy2u
   plugin: obfs
   plugin-opts:
     mode: http
@@ -950,52 +941,49 @@ proxy-groups:
   - 🇭🇰 香港 | HKG 7
   - 🇯🇵 日本 | JPN 5
   - 🇭🇰 香港 | HKG 2
+  - 🇭🇰 香港 | HKG 4
   - 🇯🇵 日本 | JPN 10
   - 🇭🇰 香港 | HKG 3
   - 🇯🇵 日本 | JPN 9
+  - 🇯🇵 日本 | JPN 8
   - 🇯🇵 日本 | JPN 7
   - 🇯🇵 日本 | JPN 2
-  - 🇯🇵 日本 | JPN 8
   - 🇯🇵 日本 | JPN 3
   - 🇯🇵 日本 | JPN 6
-  - 🇭🇰 香港 | HKG 10
   - 🇸🇬 新加坡 | SGP 3
   - 🇸🇬 新加坡 | SGP 2
   - 🇭🇰 香港 | HKG 9
   - 🇭🇰 香港 | HKG 11
   - 🇯🇵 日本 | JPN
   - 🇸🇬 新加坡 | SGP 4
-  - 🇺🇸 美国 | USA 9
   - 🇺🇸 美国 | USA 20
-  - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 16
-  - 🇺🇸 美国 | USA 17
+  - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 5
+  - 🇺🇸 美国 | USA 17
   - 🇺🇸 美国 | USA 13
-  - 🇺🇸 美国 | USA 18
   - 美國丨yoyapai.com_8
   - 🇺🇸 美国 | USA 14
+  - 🇺🇸 美国 | USA 18
   - 🇺🇸 美国 | USA 2
-  - 🇺🇸 美国 | USA 12
   - 🇺🇸 美国 | USA 22
   - 🇳🇱 荷兰 | NLD 7
   - 🇩🇪 德国 | DEU 2
   - 🇬🇧 英国 | GBR 4
-  - 🇧🇪 比利时 | BEL
   - 🇳🇱 荷兰 | NLD 8
+  - 🇧🇪 比利时 | BEL
   - 🇳🇬 尼日利亚 | NGA
   - 🇩🇪 德国 | DEU 7
   - 🇰🇷 韩国 | KOR 4
   - 🇷🇺 俄罗斯 | RUS 2
-  - 🇳🇱 荷兰 | NLD 4
   - 🇳🇱 荷兰 | NLD
+  - 🇳🇱 荷兰 | NLD 4
   - 🇰🇷 韩国 | KOR 3
-  - 🇷🇺 俄罗斯 | RUS 3
   - 🇹🇼 🇨🇳 台湾 | TWN
-  - 🇰🇷 韩国 | KOR 8
   - 🇷🇺 俄罗斯 | RUS
+  - 🇫🇷 法国 | FRA 20
   - 🇩🇪 德国 | DEU 3
   - 🇫🇮 荷蘭
   - 🇰🇷 韩国 | KOR 5
@@ -1007,6 +995,7 @@ proxy-groups:
   - 🇵🇱 波兰 | POL
   - 🇩🇪 德国 | DEU 6
   - 🇨🇭 瑞士 | CHE 2
+  - 🇹🇭泰国丨yoyapai.com
   - 🇨🇭 瑞士 | CHE
   - 🇫🇷 法国 | FRA 17
   - 🇻🇳 越南 | VNM 2
@@ -1016,8 +1005,8 @@ proxy-groups:
   - 🇬🇧 英国 | GBR 2
   - 🇳🇱 荷兰 | NLD 6
   - 🇰🇷 韩国 | KOR
-  - 🇦🇱 AL_18
   - 🇨🇴 哥伦比亚 | COL 3
+  - 🇦🇱 AL_18
   - 🇳🇴 挪威 | NOR 2
   - 🇨🇴 哥伦比亚 | COL
   - 🇳🇱 荷兰 | NLD 2
@@ -1028,11 +1017,13 @@ proxy-groups:
   - 🇳🇱 荷兰 | NLD 9
   - 🇻🇳 越南 | VNM
   - 🇬🇧 英国 | GBR 3
+  - 🇹🇭 Thailand泰国丨yoyapai.com
   - 🇬🇧 英国 | GBR
   - 🇬🇧 英国 | GBR 5
-  - 🇫🇷 法国 | FRA 8
   - 🇳🇱 荷兰 | NLD 5
+  - 🇫🇷 法国 | FRA 8
   - 🇪🇸 西班牙 | ESP
+  - 🇰🇷 韩国 | KOR 7
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: HK-POOL
@@ -1041,8 +1032,8 @@ proxy-groups:
   - 🇭🇰 香港 | HKG 6
   - 🇭🇰 香港 | HKG 7
   - 🇭🇰 香港 | HKG 2
+  - 🇭🇰 香港 | HKG 4
   - 🇭🇰 香港 | HKG 3
-  - 🇭🇰 香港 | HKG 10
   - 🇭🇰 香港 | HKG 9
   - 🇭🇰 香港 | HKG 11
   url: http://www.gstatic.com/generate_204
@@ -1053,9 +1044,9 @@ proxy-groups:
   - 🇯🇵 日本 | JPN 5
   - 🇯🇵 日本 | JPN 10
   - 🇯🇵 日本 | JPN 9
+  - 🇯🇵 日本 | JPN 8
   - 🇯🇵 日本 | JPN 7
   - 🇯🇵 日本 | JPN 2
-  - 🇯🇵 日本 | JPN 8
   - 🇯🇵 日本 | JPN 3
   - 🇯🇵 日本 | JPN 6
   - 🇯🇵 日本 | JPN
@@ -1064,20 +1055,18 @@ proxy-groups:
 - name: US-POOL
   type: url-test
   proxies:
-  - 🇺🇸 美国 | USA 9
   - 🇺🇸 美国 | USA 20
-  - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 16
-  - 🇺🇸 美国 | USA 17
+  - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 5
+  - 🇺🇸 美国 | USA 17
   - 🇺🇸 美国 | USA 13
-  - 🇺🇸 美国 | USA 18
   - 美國丨yoyapai.com_8
   - 🇺🇸 美国 | USA 14
+  - 🇺🇸 美国 | USA 18
   - 🇺🇸 美国 | USA 2
-  - 🇺🇸 美国 | USA 12
   - 🇺🇸 美国 | USA 22
   url: http://www.gstatic.com/generate_204
   interval: 120
@@ -1085,22 +1074,22 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇺🇸 美国 | USA 17
-  - 🇺🇸 美国 | USA 18
+  - 🇺🇸 美国 | USA 14
+  - 🇸🇬 新加坡 | SGP 2
   - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 13
-  - 🇸🇬 新加坡 | SGP 2
-  - 🇺🇸 美国 | USA 14
-  - 🇳🇱 荷兰 | NLD 4
   - 🇺🇸 美国 | USA 2
-  - 🇺🇸 美国 | USA 22
-  - 🇳🇱 荷兰 | NLD
   - 🇺🇸 美国 | USA 20
+  - 🇳🇱 荷兰 | NLD 4
+  - 🇳🇱 荷兰 | NLD
   - 🇯🇵 日本 | JPN 3
   - 🇺🇸 美国 | USA 4
-  - 🇯🇵 日本 | JPN 10
   - 🇯🇵 日本 | JPN 2
-  - 🇯🇵 日本 | JPN 9
   - 🇯🇵 日本 | JPN 7
+  - 🇯🇵 日本 | JPN 10
+  - 🇯🇵 日本 | JPN 9
+  - 🇩🇪 德国 | DEU 2
+  - 🇳🇱 荷兰 | NLD 7
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
