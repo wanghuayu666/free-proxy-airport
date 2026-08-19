@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-08-19T23:17:28.316472+00:00'
+generated-at: '2026-08-19T23:45:50.295393+00:00'
 proxies:
 - name: 🇭🇰 香港 | HKG 7
   server: 120.232.250.161
@@ -70,20 +70,20 @@ proxies:
   sni: curious-ocelot.rooster465.autos
   skip-cert-verify: true
   udp: true
-- name: 🇭🇰 香港 | HKG
-  server: renewing-ewe.rooster465.autos
-  port: 443
-  type: trojan
-  password: HC04361579
-  sni: renewing-ewe.rooster465.autos
-  skip-cert-verify: true
-  udp: true
 - name: 🇸🇬 新加坡 | SGP 6
   server: picked-hamster.rooster465.autos
   port: 443
   type: trojan
   password: EQ30679154
   sni: picked-hamster.rooster465.autos
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰 香港 | HKG
+  server: renewing-ewe.rooster465.autos
+  port: 443
+  type: trojan
+  password: HC04361579
+  sni: renewing-ewe.rooster465.autos
   skip-cert-verify: true
   udp: true
 - name: 🇸🇬 新加坡 | SGP 2
@@ -136,20 +136,6 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 16
-  server: 104.17.123.101
-  port: 2083
-  type: vless
-  uuid: 73bcd72f-9545-4cb8-8daf-7d004501880d
-  tls: true
-  servername: wzknb.pages.dev
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /proxyip=167.253.153.215fp=chrome
-    headers:
-      Host: wzknb.pages.dev
-  udp: true
 - name: 🇺🇸 美国 | USA 20
   server: one-for-all.levikogjgfdd.ir
   port: 443
@@ -163,6 +149,20 @@ proxies:
     path: /sg-melbi
     headers:
       Host: josni.hoyes.cloudns.ch
+  udp: true
+- name: 🇺🇸 美国 | USA 16
+  server: 104.17.123.101
+  port: 2083
+  type: vless
+  uuid: 73bcd72f-9545-4cb8-8daf-7d004501880d
+  tls: true
+  servername: wzknb.pages.dev
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /proxyip=167.253.153.215fp=chrome
+    headers:
+      Host: wzknb.pages.dev
   udp: true
 - name: 🇺🇸US美國丨yoyapai.com_5
   type: vless
@@ -179,12 +179,6 @@ proxies:
       Host: support.zoom.us.yxls.eu.cc
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸 美国 | USA 17
-  server: 3.145.35.194
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
 - name: 美國丨yoyapai.com_8
   type: vless
   server: 45.155.52.231
@@ -206,6 +200,12 @@ proxies:
   tls: false
   network: tcp
   udp: true
+- name: 🇺🇸 美国 | USA 17
+  server: 3.145.35.194
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
 - name: 🇺🇸 美国 | USA 15
   server: 38.244.4.1
   port: 443
@@ -339,20 +339,6 @@ proxies:
     headers:
       Host: sync.meshbeat.online
   udp: true
-- name: 🇨🇦 加拿大 | CAN
-  server: 184.107.141.174
-  port: 443
-  type: vless
-  uuid: bb05f9d7-a3d1-4b81-a790-f6dba0301907
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: i00_tpIO0Oe2TV2lxm2BLm6QUzzkncyJtauMa7Rn500
-    short-id: b91a73752053b039
-  servername: ca.servers.gracevpnbuy.com
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
 - name: 🇩🇰 丹麦 | DNK 2
   server: 46.29.235.9
   port: 443
@@ -364,6 +350,20 @@ proxies:
     public-key: dhLgVSqPBDrdbhyTS2j60LWZDGEZh-smkcjUNSic-WI
     short-id: a1b2c3d4
   servername: telegraf.lv
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇨🇦 加拿大 | CAN
+  server: 184.107.141.174
+  port: 443
+  type: vless
+  uuid: bb05f9d7-a3d1-4b81-a790-f6dba0301907
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: i00_tpIO0Oe2TV2lxm2BLm6QUzzkncyJtauMa7Rn500
+    short-id: b91a73752053b039
+  servername: ca.servers.gracevpnbuy.com
   client-fingerprint: firefox
   network: tcp
   udp: true
@@ -396,6 +396,19 @@ proxies:
   client-fingerprint: edge
   network: tcp
   udp: true
+- name: 🇦🇹 奥地利 | AUT
+  server: 212.183.88.136
+  port: 443
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
+  udp: true
 - name: 🇩🇰 丹麦 | DNK
   server: ipw.ygdfw.com
   port: 443
@@ -417,19 +430,6 @@ proxies:
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
   network: tcp
-- name: 🇦🇹 奥地利 | AUT
-  server: 212.183.88.136
-  port: 443
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmlunch.com
-  udp: true
 - name: 🇳🇱_NL荷蘭丨yoyapai.com
   type: ss
   server: 82.38.31.35
@@ -446,6 +446,12 @@ proxies:
   sni: geasd.southbyte.xyz
   skip-cert-verify: true
   udp: true
+- name: 🇩🇪 德国 | DEU 6
+  server: 18.153.64.41
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
 - name: 🇳🇱 荷兰 | NLD 11
   server: 188.114.97.3
   port: 443
@@ -489,6 +495,21 @@ proxies:
     headers:
       Host: www.calmlunch.com
   udp: true
+- name: 🇹🇭泰国丨yoyapai.com
+  type: vless
+  server: 3.170.185.91
+  port: 443
+  uuid: 7ce54bb3-d612-4aa7-be08-089d3c461d53
+  network: ws
+  servername: d1yxsk0zprgivr.cloudfront.net
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: d1yxsk0zprgivr.cloudfront.net
+  skip-cert-verify: true
+  udp: true
 - name: 🇵🇭 菲律宾 | PHL 3
   server: 66.253.10.22
   port: 443
@@ -502,6 +523,12 @@ proxies:
   servername: www.bing.com
   client-fingerprint: firefox
   network: tcp
+- name: 🇩🇪 德国 | DEU 13
+  server: 63.178.246.78
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
 - name: 🇩🇪 德国 | DEU 14
   server: 195.184.247.229
   port: 443
@@ -559,20 +586,6 @@ proxies:
   ws-opts:
     path: /api
   udp: true
-- name: 🇱🇻 拉脱维亚 | LVA 2
-  server: 195.123.210.168
-  port: 443
-  type: vless
-  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: m6RDw1b8R4lCaRUIzhHpy6TtX2Dhk6nyby8dWzeQqA0
-    short-id: dd3ff38418d29d22
-  servername: eu-west.cendora.ru
-  client-fingerprint: qq
-  network: tcp
-  udp: true
 - name: 🇩🇪 德国 | DEU
   server: 144.31.82.201.fwqfw783rg2dad.website
   port: 443
@@ -587,6 +600,28 @@ proxies:
     headers:
       Host: 144.31.82.201.fwqfw783rg2dad.website
   udp: true
+- name: 🇱🇻 拉脱维亚 | LVA 2
+  server: 195.123.210.168
+  port: 443
+  type: vless
+  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: m6RDw1b8R4lCaRUIzhHpy6TtX2Dhk6nyby8dWzeQqA0
+    short-id: dd3ff38418d29d22
+  servername: eu-west.cendora.ru
+  client-fingerprint: qq
+  network: tcp
+  udp: true
+- name: 🇨🇴 哥伦比亚 | COL 2
+  server: 157.137.234.223
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
+  udp: true
 - name: 🇱🇻 拉脱维亚 | LVA
   server: 195.123.210.168
   port: 13443
@@ -599,14 +634,6 @@ proxies:
     short-id: a7f3c91b2e6d84c0
   servername: auto.cendora.ru
   client-fingerprint: random
-  network: tcp
-  udp: true
-- name: 🇨🇴 哥伦比亚 | COL 2
-  server: 157.137.234.223
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
   network: tcp
   udp: true
 - name: 🇵🇭 菲律宾 | PHL 2
@@ -713,18 +740,18 @@ proxy-groups:
   - 🇭🇰 香港 | HKG 10
   - 🇯🇵 日本 | JPN 4
   - 🇸🇬 新加坡 | SGP 8
-  - 🇭🇰 香港 | HKG
   - 🇸🇬 新加坡 | SGP 6
+  - 🇭🇰 香港 | HKG
   - 🇸🇬 新加坡 | SGP 2
   - 🇸🇬 新加坡 | SGP 4
   - 🇭🇰 香港 | HKG 8
   - 🇺🇸 美国 | USA 9
-  - 🇺🇸 美国 | USA 16
   - 🇺🇸 美国 | USA 20
+  - 🇺🇸 美国 | USA 16
   - 🇺🇸US美國丨yoyapai.com_5
-  - 🇺🇸 美国 | USA 17
   - 美國丨yoyapai.com_8
   - 🇺🇸 美国 | USA 13
+  - 🇺🇸 美国 | USA 17
   - 🇺🇸 美国 | USA 15
   - 🇺🇸 美国 | USA 18
   - 🇺🇸 美国 | USA 12
@@ -736,28 +763,31 @@ proxy-groups:
   - 🇳🇱 荷兰 | NLD 8
   - 🇳🇱 荷兰 | NLD 10
   - 🇳🇱 荷兰 | NLD 14
-  - 🇨🇦 加拿大 | CAN
   - 🇩🇰 丹麦 | DNK 2
+  - 🇨🇦 加拿大 | CAN
   - 🇫🇮 荷蘭
   - 🇪🇪 爱沙尼亚 | EST
+  - 🇦🇹 奥地利 | AUT
   - 🇩🇰 丹麦 | DNK
   - 🇨🇴 哥伦比亚 | COL 4
-  - 🇦🇹 奥地利 | AUT
   - 🇳🇱_NL荷蘭丨yoyapai.com
   - 🇦🇺 澳大利亚 | AUS
+  - 🇩🇪 德国 | DEU 6
   - 🇳🇱 荷兰 | NLD 11
   - 🇳🇱 荷兰 | NLD 13
   - 🇫🇷 法国 | FRA 10
+  - 🇹🇭泰国丨yoyapai.com
   - 🇵🇭 菲律宾 | PHL 3
+  - 🇩🇪 德国 | DEU 13
   - 🇩🇪 德国 | DEU 14
   - 🇩🇪 德国 | DEU 4
   - 🇳🇱 荷兰 | NLD 6
   - 🇨🇴 哥伦比亚 | COL 3
   - 🇳🇱 荷兰 | NLD 12
-  - 🇱🇻 拉脱维亚 | LVA 2
   - 🇩🇪 德国 | DEU
-  - 🇱🇻 拉脱维亚 | LVA
+  - 🇱🇻 拉脱维亚 | LVA 2
   - 🇨🇴 哥伦比亚 | COL 2
+  - 🇱🇻 拉脱维亚 | LVA
   - 🇵🇭 菲律宾 | PHL 2
   - 🇳🇱 荷兰 | NLD 3
   - 🇨🇳 CN_12
@@ -789,12 +819,12 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇺🇸 美国 | USA 9
-  - 🇺🇸 美国 | USA 16
   - 🇺🇸 美国 | USA 20
+  - 🇺🇸 美国 | USA 16
   - 🇺🇸US美國丨yoyapai.com_5
-  - 🇺🇸 美国 | USA 17
   - 美國丨yoyapai.com_8
   - 🇺🇸 美国 | USA 13
+  - 🇺🇸 美国 | USA 17
   - 🇺🇸 美国 | USA 15
   - 🇺🇸 美国 | USA 18
   - 🇺🇸 美国 | USA 12
@@ -804,18 +834,18 @@ proxy-groups:
 - name: AI-POOL
   type: url-test
   proxies:
-  - 🇺🇸 美国 | USA 9
-  - 🇺🇸 美国 | USA 16
-  - 🇳🇱 荷兰 | NLD 11
   - 🇸🇬 新加坡 | SGP 4
-  - 🇺🇸 美国 | USA 17
-  - 🇨🇦 加拿大 | CAN
-  - 🇺🇸 美国 | USA 20
-  - 🇨🇴 哥伦比亚 | COL 4
+  - 🇳🇱 荷兰 | NLD 11
   - 🇺🇸US美國丨yoyapai.com_5
-  - 🇳🇱 荷兰 | NLD 10
-  - 🇳🇱 荷兰 | NLD 7
-  - 🇳🇱_NL荷蘭丨yoyapai.com
+  - 🇺🇸 美国 | USA 16
+  - 🇺🇸 美国 | USA 15
+  - 🇺🇸 美国 | USA 2
+  - 🇺🇸 美国 | USA 17
+  - 🇺🇸 美国 | USA 20
+  - 🇺🇸 美国 | USA 9
+  - 🇨🇦 加拿大 | CAN
+  - 🇨🇴 哥伦比亚 | COL 3
+  - 🇨🇴 哥伦比亚 | COL 4
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
