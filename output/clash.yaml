@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-08-20T14:29:27.252994+00:00'
+generated-at: '2026-08-20T15:06:40.508126+00:00'
 proxies:
 - name: 🇭🇰 香港 | HKG 2
   server: 43.132.192.16
@@ -21,14 +21,6 @@ proxies:
   - ''
   skip-cert-verify: true
   udp: true
-- name: 🇸🇬 新加坡 | SGP
-  server: 47.129.155.42
-  port: 443
-  type: hysteria2
-  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
-  auth: qQe1z5kU8kN6SlKnDt9Ru3Qp
-  sni: vpn-sg-001.fastervpn.world
-  skip-cert-verify: true
 - name: 🇭🇰 香港 | HKG
   server: hk2.xiaoliyu.cyou
   port: 4433
@@ -246,6 +238,19 @@ proxies:
     headers:
       Host: c12.com
   udp: true
+- name: 🇺🇸 美国 | USA 15
+  server: 51.81.223.225
+  port: 11094
+  type: vless
+  uuid: f1fa0ad9-b122-4b7c-da82-4bea9edc48dd
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 9dnXiXxP4xgvtTVRj9SBFdyO6mjGvVhWD8qVZZLCCCk
+    short-id: a356addf
+  servername: www.yahoo.com
+  client-fingerprint: chrome
+  network: tcp
 - name: 🇺🇸 美国 | USA 32
   server: node.socks5.kdns.fr
   port: 443
@@ -323,6 +328,14 @@ proxies:
   cipher: 2022-blake3-chacha20-poly1305
   password: 9hCTQgXc8nHfYc1TUZmrQax7am1SKNsUSRlCHRMhITM=
   udp: true
+- name: 🇩🇪 德国 | DEU 2
+  server: fast.wwwinternetvideo.click
+  port: 443
+  type: hysteria2
+  password: C91FbOXGY9XRymrcEebtax9R1Nj62UizoT8S6kCb7xwey8IE
+  auth: C91FbOXGY9XRymrcEebtax9R1Nj62UizoT8S6kCb7xwey8IE
+  sni: fast.wwwinternetvideo.click
+  skip-cert-verify: true
 - name: 🇬🇧 英国 | GBR 6
   server: 129.151.89.37
   port: 61312
@@ -560,19 +573,19 @@ proxies:
   cipher: 2022-blake3-chacha20-poly1305
   password: HWBXhJoxrIyNrENJIipt9FVnzqRABmuXjSW0HtgNGI0=
   udp: true
-- name: 🇬🇧 英国 | GBR 2
-  server: 129.151.71.151
-  port: 61312
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: x4n4+aCgMuK8+Tkl+hezK0/cMVRblreR4FODa2twE+w=
-  udp: true
 - name: 🇩🇪 德国 | DEU 4
   server: 141.144.250.61
   port: 59924
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: kdTMVAm8v43BRuJZr+GI+udAziQPGR2QdYITH9w2WNg=
+  udp: true
+- name: 🇬🇧 英国 | GBR 2
+  server: 129.151.71.151
+  port: 61312
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: x4n4+aCgMuK8+Tkl+hezK0/cMVRblreR4FODa2twE+w=
   udp: true
 - name: 🇧🇷 巴西 | BRA 4
   server: 163.176.61.216
@@ -587,20 +600,6 @@ proxies:
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
   network: tcp
-  udp: true
-- name: 🇫🇷 法国 | FRA 4
-  server: fast.nanniang.top
-  port: 8443
-  type: vless
-  uuid: 916e3030-6eac-418b-9402-7508ca7d6280
-  tls: true
-  servername: aq.nanniang.top
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: aq.nanniang.top
   udp: true
 - name: 🇨🇴 哥伦比亚 | COL 3
   server: 157.137.223.233
@@ -644,6 +643,16 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
+- name: 🇨🇦 加拿大 | CAN 4
+  server: 216.128.176.166
+  port: 22819
+  type: vless
+  uuid: f60ed982-1ec8-426a-d74e-a675685d6dc8
+  tls: false
+  network: ws
+  ws-opts:
+    path: /f60ed982-1ec8-426a-d74e-a675685d6dc8
+  udp: true
 - name: 🇨🇴 哥伦比亚 | COL 2
   server: 149.130.189.155
   port: 62145
@@ -660,20 +669,6 @@ proxies:
   auth: 2vwMMy8t5Sjl5lfK9dNF1OrU9d0K25V2RNWLbTKwJ6o
   sni: pixelcast.wwwinternetvideo.click
   skip-cert-verify: true
-- name: 🇱🇻 拉脱维亚 | LVA 2
-  server: 195.123.210.168
-  port: 13443
-  type: vless
-  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: gc9oXe37KCCm3J1dJ03wdGsnxPBdeEkRPOvl_t-vfVM
-    short-id: a7f3c91b2e6d84c0
-  servername: auto.cendora.ru
-  client-fingerprint: qq
-  network: tcp
-  udp: true
 - name: 🇫🇷 法国 | FRA 2
   server: 95.170.13.47
   port: 65443
@@ -688,19 +683,6 @@ proxies:
   tls: false
   network: tcp
   udp: true
-- name: 🇱🇻 拉脱维亚 | LVA
-  server: 195.123.210.168
-  port: 443
-  type: vless
-  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: m6RDw1b8R4lCaRUIzhHpy6TtX2Dhk6nyby8dWzeQqA0
-    short-id: dd3ff38418d29d22
-  servername: eu-west.cendora.ru
-  client-fingerprint: qq
-  network: tcp
 - name: 🇧🇷 巴西 | BRA 3
   server: 163.176.194.118
   port: 59319
@@ -722,12 +704,19 @@ proxies:
   password: EQ30679154
   skip-cert-verify: true
   udp: true
-- name: 🇬🇧 英国 | GBR
-  server: 129.151.65.11
-  port: 61312
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 9UMwtuEIWbCj7f9y8bx+o3CumyaG15feQ3VbyjaD3nQ=
+- name: 🇹🇭 Thailand泰国丨yoyapai.com
+  type: vless
+  server: 18.239.134.69
+  port: 80
+  uuid: de27291c-15a9-4256-9ba7-ad517569877e
+  network: ws
+  tls: false
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: d2e1v87ko56lyw.cloudfront.net:assets.opensignal.com
+  skip-cert-verify: true
   udp: true
 - name: 🇹🇷 土耳其 | TUR 2
   server: ru9.aimodelhub.top
@@ -743,26 +732,19 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇹🇭 Thailand泰国丨yoyapai.com
-  type: vless
-  server: 18.239.134.69
-  port: 80
-  uuid: de27291c-15a9-4256-9ba7-ad517569877e
-  network: ws
-  tls: false
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: d2e1v87ko56lyw.cloudfront.net:assets.opensignal.com
-  skip-cert-verify: true
-  udp: true
 - name: 🇬🇧 英国 | GBR 5
   server: 129.151.80.73
   port: 61312
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: ryZz0qsI8llQKuhaJ02nbzalvk3ODhYCheJVffEB/XI=
+  udp: true
+- name: 🇬🇧 英国 | GBR
+  server: 129.151.65.11
+  port: 61312
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 9UMwtuEIWbCj7f9y8bx+o3CumyaG15feQ3VbyjaD3nQ=
   udp: true
 - name: 🇩🇪 德国 | DEU 12
   server: 89.167.2.67
@@ -806,7 +788,6 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇭🇰 香港 | HKG 2
-  - 🇸🇬 新加坡 | SGP
   - 🇭🇰 香港 | HKG
   - 🇸🇬 新加坡 | SGP 2
   - 🇺🇸 美国 | USA 11
@@ -825,6 +806,7 @@ proxy-groups:
   - 美國丨yoyapai.com_8
   - 🇺🇸 美国 | USA 19
   - 🇺🇸 美国 | USA 17
+  - 🇺🇸 美国 | USA 15
   - 🇺🇸 美国 | USA 32
   - 🇺🇸 美国 | USA 14
   - 🇺🇸 美国 | USA 12
@@ -832,6 +814,7 @@ proxy-groups:
   - 🇳🇱 荷兰 | NLD 7
   - 🇨🇦 加拿大 | CAN 2
   - 🇬🇧 英国 | GBR 4
+  - 🇩🇪 德国 | DEU 2
   - 🇬🇧 英国 | GBR 6
   - 🇩🇪 德国 | DEU 7
   - 🇳🇱 荷兰 | NLD
@@ -855,29 +838,27 @@ proxy-groups:
   - 🇫🇷 法国 | FRA 3
   - 🇬🇧 英国 | GBR 7
   - 🇧🇷 巴西 | BRA
-  - 🇬🇧 英国 | GBR 2
   - 🇩🇪 德国 | DEU 4
+  - 🇬🇧 英国 | GBR 2
   - 🇧🇷 巴西 | BRA 4
   - 🇳🇱 荷兰 | NLD 6
-  - 🇫🇷 法国 | FRA 4
   - 🇨🇴 哥伦比亚 | COL 3
   - 🇫🇷 法国 | FRA
   - 🇨🇴 哥伦比亚 | COL
   - 🇳🇱 荷兰 | NLD 2
   - 🇩🇪 德国 | DEU 9
+  - 🇨🇦 加拿大 | CAN 4
   - 🇨🇴 哥伦比亚 | COL 2
   - 🇩🇪 德国 | DEU
-  - 🇱🇻 拉脱维亚 | LVA 2
   - 🇫🇷 法国 | FRA 2
   - 🇳🇱 荷兰 | NLD 3
-  - 🇱🇻 拉脱维亚 | LVA
   - 🇧🇷 巴西 | BRA 3
   - 🇬🇧 英国 | GBR 3
   - 🇳🇱 荷兰 | NLD 9
-  - 🇬🇧 英国 | GBR
-  - 🇹🇷 土耳其 | TUR 2
   - 🇹🇭 Thailand泰国丨yoyapai.com
+  - 🇹🇷 土耳其 | TUR 2
   - 🇬🇧 英国 | GBR 5
+  - 🇬🇧 英国 | GBR
   - 🇩🇪 德国 | DEU 12
   - 🇳🇱 荷兰 | NLD 5
   - 🇩🇪 德国 | DEU 10
@@ -894,10 +875,10 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇭🇰 香港 | HKG 2
-  - 🇸🇬 新加坡 | SGP
   - 🇭🇰 香港 | HKG
   - 🇸🇬 新加坡 | SGP 2
   - 🇺🇸 美国 | USA 11
+  - 🇺🇸 美国 | USA 9
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: US-POOL
@@ -919,6 +900,7 @@ proxy-groups:
   - 美國丨yoyapai.com_8
   - 🇺🇸 美国 | USA 19
   - 🇺🇸 美国 | USA 17
+  - 🇺🇸 美国 | USA 15
   - 🇺🇸 美国 | USA 32
   - 🇺🇸 美国 | USA 14
   - 🇺🇸 美国 | USA 12
@@ -930,19 +912,19 @@ proxy-groups:
   proxies:
   - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA 6
+  - 🇨🇦 加拿大 | CAN 4
   - 🇺🇸 美国 | USA
-  - 🇨🇦 加拿大 | CAN 2
   - 🇨🇦 加拿大 | CAN 3
-  - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 7
-  - 🇺🇸 美国 | USA 2
+  - 🇨🇦 加拿大 | CAN 2
   - 🇺🇸 美国 | USA 13
   - 🇺🇸 美国 | USA 4
+  - 🇺🇸 美国 | USA 2
   - 🇩🇪 德国 | DEU 8
+  - 🇺🇸US美國丨yoyapai.com_5
   - 🇨🇴 哥伦比亚 | COL 2
-  - 🇨🇴 哥伦比亚 | COL 3
+  - 🇺🇸 美国 | USA 8
   - 🇨🇴 哥伦比亚 | COL
-  - 🇺🇸 美国 | USA 12
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
