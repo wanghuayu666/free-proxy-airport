@@ -7,15 +7,8 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-08-21T12:32:56.495257+00:00'
+generated-at: '2026-08-21T13:40:14.082514+00:00'
 proxies:
-- name: 🇯🇵 日本 | JPN 3
-  server: 54.95.207.148
-  port: 8316
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: ljqdalu13..
-  udp: true
 - name: 🇯🇵 日本 | JPN
   server: vip-jp-4.hkd4fwmg.vip
   port: 32135
@@ -49,20 +42,6 @@ proxies:
     headers:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
   udp: true
-- name: 🇺🇸 美国 | USA 20
-  server: 104.16.150.130
-  port: 2087
-  type: vless
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
-  tls: true
-  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-  udp: true
 - name: 🇺🇸 美国 | USA 8
   server: 188.114.97.6
   port: 443
@@ -77,6 +56,20 @@ proxies:
     path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/D-e2@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
     headers:
       Host: 39995895-mitivpn--mitivpn------mitivpn.mitivpn-s.lifestyle
+  udp: true
+- name: 🇺🇸 美国 | USA 20
+  server: 104.16.150.130
+  port: 2087
+  type: vless
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  tls: true
+  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
   udp: true
 - name: 🇺🇸 美国 | USA 6
   server: 188.114.97.3
@@ -128,6 +121,18 @@ proxies:
   password: atKbXl2I4rKzHGiRybV7fOp+OCYPz+bO
   skip-cert-verify: true
   udp: true
+- name: 🇺🇸 美国 | USA 13
+  server: 45.205.0.6
+  port: 443
+  type: trojan
+  password: mitivpn
+  sni: 333-mitivpn--mitivpn------mitivpn.mitivpn-s.lifestyle
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/u-s@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: 333-mitivpn--mitivpn------mitivpn.mitivpn-s.lifestyle
 - name: 🇺🇸US美國丨yoyapai.com_5
   type: vless
   server: support.zoom.us
@@ -143,33 +148,6 @@ proxies:
       Host: support.zoom.us.yxls.eu.cc
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸 美国 | USA 13
-  server: 45.205.0.6
-  port: 443
-  type: trojan
-  password: mitivpn
-  sni: 333-mitivpn--mitivpn------mitivpn.mitivpn-s.lifestyle
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/u-s@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: 333-mitivpn--mitivpn------mitivpn.mitivpn-s.lifestyle
-- name: 🇺🇸 美国 | USA 10
-  server: node.socks5.kdns.fr
-  port: 443
-  type: vmess
-  uuid: 53fdb09c-16f3-48d1-a615-f26eee654ee1
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: survive-exceed-holding-theft.trycloudflare.com
-  network: ws
-  ws-opts:
-    path: /53fdb09c-16f3-48d1-a615-f26eee654ee1-vm
-    headers:
-      Host: survive-exceed-holding-theft.trycloudflare.com
 - name: 美國丨yoyapai.com_8
   type: vless
   server: 45.155.52.231
@@ -331,22 +309,6 @@ proxies:
   client-fingerprint: qq
   network: tcp
   udp: true
-- name: 🇪🇸 西班牙 | ESP 3
-  server: xby.mangshe.xyz
-  port: 2056
-  type: hysteria2
-  password: 22d891f5-ad85-4824-b0b8-e30cf3d37eb5
-  auth: 22d891f5-ad85-4824-b0b8-e30cf3d37eb5
-  sni: mg2.mangshe.xyz
-  skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 | RUS
-  server: els.mangshe.xyz
-  port: 2056
-  type: hysteria2
-  password: 22d891f5-ad85-4824-b0b8-e30cf3d37eb5
-  auth: 22d891f5-ad85-4824-b0b8-e30cf3d37eb5
-  sni: els.mangshe.xyz
-  skip-cert-verify: true
 - name: 🇨🇦 加拿大 | CAN
   server: 51.222.155.113
   port: 5601
@@ -354,19 +316,20 @@ proxies:
   cipher: aes-256-gcm
   password: Y6R9pAtvxxzmGC
   udp: true
-- name: 🇩🇪 德国 | DEU 3
-  server: 194.87.24.4
+- name: 🇫🇮 荷蘭
+  type: vmess
+  server: 185.246.152.159
   port: 443
-  type: vless
-  uuid: 22419260-5475-49d8-a29c-01905c54d1b8
+  uuid: 5f72f180-b21b-4b7a-8484-240759012604
+  alterId: 0
+  cipher: auto
   tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: bg_o5_i-5MSy-t3CB3iyqIeI8Uqyy_wTP2kheJCXngg
-    short-id: f7d0420b8ab26060
-  servername: de1.de-cdn.ru
-  client-fingerprint: firefox
-  network: tcp
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /5f72f180-b21b-4b7a-8484-240759096785
+    headers:
+      Host: apjhdggyx.com
   udp: true
 - name: 🇦🇹 奥地利 | AUT
   server: 212.183.88.136
@@ -397,20 +360,6 @@ proxies:
   password: oZIoA69Q8yhcQV8ka3Pa3A
   skip-cert-verify: true
   udp: true
-- name: 🇦🇺 澳大利亚 | AUS
-  server: 117.55.194.77
-  port: 709
-  type: vless
-  uuid: 22419260-5475-49d8-a29c-01905c54d1b8
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: YQGxuBmerdc9w64ESEpkvU7BzpqPTmQ_YhVSYypnEnU
-    short-id: 42b7393d3e94e4c7
-  servername: www.kayak.com
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
 - name: 🇵🇱 波兰 | POL
   server: streambox.wwwinternetvideo.click
   port: 443
@@ -431,13 +380,6 @@ proxies:
     headers:
       Host: 1.sidin.com.de
   udp: true
-- name: 🇩🇪 德国 | DEU 11
-  server: netixu.mashhad1market.ir
-  port: 1080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: TU4NUJuMe4XlZ3NCQ_1KiQ
-  udp: true
 - name: 🇨🇭 瑞士 | CHE
   server: 178.83.226.145
   port: 42538
@@ -454,41 +396,12 @@ proxies:
       Host:
       - mangaarabics.com
   udp: true
-- name: 🇩🇪 德国 | DEU 13
-  server: ger.me1.pingsf.ir
-  port: 443
-  type: vless
-  uuid: 59086073-d6da-44ed-b604-241ecdf03e97
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 14
-  server: 194.87.24.10
-  port: 443
-  type: vless
-  uuid: 22419260-5475-49d8-a29c-01905c54d1b8
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: bg_o5_i-5MSy-t3CB3iyqIeI8Uqyy_wTP2kheJCXngg
-    short-id: f7d0420b8ab26060
-  servername: de1.de-cdn.ru
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 4
-  server: 194.87.24.13
-  port: 443
-  type: vless
-  uuid: 22419260-5475-49d8-a29c-01905c54d1b8
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: bg_o5_i-5MSy-t3CB3iyqIeI8Uqyy_wTP2kheJCXngg
-    short-id: f7d0420b8ab26060
-  servername: de1.de-cdn.ru
-  client-fingerprint: firefox
-  network: tcp
+- name: 🇨🇳 CN_20
+  server: 121.46.230.136
+  port: 65443
+  type: ss
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
   udp: true
 - name: 🇲🇴 澳门 | MAC
   server: jpaws.ccwink.photos
@@ -549,20 +462,6 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: 🇹🇭 Thailand泰国丨yoyapai.com
-  type: vless
-  server: 18.239.134.69
-  port: 80
-  uuid: de27291c-15a9-4256-9ba7-ad517569877e
-  network: ws
-  tls: false
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: d2e1v87ko56lyw.cloudfront.net:assets.opensignal.com
-  skip-cert-verify: true
-  udp: true
 - name: 🇬🇧 英国 | GBR
   server: 188.114.97.8
   port: 443
@@ -582,37 +481,21 @@ proxies:
     mode: auto
     x-padding-bytes: 100-1000
   udp: true
-- name: 🇩🇪 德国 | DEU 12
-  server: 194.87.24.2
-  port: 443
-  type: vless
-  uuid: 22419260-5475-49d8-a29c-01905c54d1b8
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: bg_o5_i-5MSy-t3CB3iyqIeI8Uqyy_wTP2kheJCXngg
-    short-id: f7d0420b8ab26060
-  servername: de1.de-cdn.ru
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
 proxy-groups:
 - name: AUTO-FAST
   type: url-test
   proxies:
-  - 🇯🇵 日本 | JPN 3
   - 🇯🇵 日本 | JPN
   - 🇭🇰 香港 | HKG 13
   - 🇺🇸 美国 | USA 11
-  - 🇺🇸 美国 | USA 20
   - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 20
   - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 24
   - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA 7
-  - 🇺🇸US美國丨yoyapai.com_5
   - 🇺🇸 美国 | USA 13
-  - 🇺🇸 美国 | USA 10
+  - 🇺🇸US美國丨yoyapai.com_5
   - 美國丨yoyapai.com_8
   - 🇺🇸 美国 | USA 17
   - 🇺🇸 美国 | USA 15
@@ -626,29 +509,21 @@ proxy-groups:
   - 🇩🇪 德国 | DEU 16
   - 🇳🇱 荷兰 | NLD
   - 🇳🇱 荷兰 | NLD 4
-  - 🇪🇸 西班牙 | ESP 3
-  - 🇷🇺 俄罗斯 | RUS
   - 🇨🇦 加拿大 | CAN
-  - 🇩🇪 德国 | DEU 3
+  - 🇫🇮 荷蘭
   - 🇦🇹 奥地利 | AUT
   - 🇩🇪 德国 | DEU 5
   - 🇳🇱_NL荷蘭丨yoyapai.com
-  - 🇦🇺 澳大利亚 | AUS
   - 🇵🇱 波兰 | POL
   - 🇩🇪 德国 | DEU 6
-  - 🇩🇪 德国 | DEU 11
   - 🇨🇭 瑞士 | CHE
-  - 🇩🇪 德国 | DEU 13
-  - 🇩🇪 德国 | DEU 14
-  - 🇩🇪 德国 | DEU 4
+  - 🇨🇳 CN_20
   - 🇲🇴 澳门 | MAC
   - 🇳🇱 荷兰 | NLD 2
   - 🇩🇪 德国 | DEU 9
   - 🇱🇻 拉脱维亚 | LVA
   - 🇳🇱 荷兰 | NLD 3
-  - 🇹🇭 Thailand泰国丨yoyapai.com
   - 🇬🇧 英国 | GBR
-  - 🇩🇪 德国 | DEU 12
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: HK-POOL
@@ -660,7 +535,6 @@ proxy-groups:
 - name: JP-POOL
   type: url-test
   proxies:
-  - 🇯🇵 日本 | JPN 3
   - 🇯🇵 日本 | JPN
   url: http://www.gstatic.com/generate_204
   interval: 120
@@ -668,15 +542,14 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇺🇸 美国 | USA 11
-  - 🇺🇸 美国 | USA 20
   - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 20
   - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 24
   - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA 7
-  - 🇺🇸US美國丨yoyapai.com_5
   - 🇺🇸 美国 | USA 13
-  - 🇺🇸 美国 | USA 10
+  - 🇺🇸US美國丨yoyapai.com_5
   - 美國丨yoyapai.com_8
   - 🇺🇸 美国 | USA 17
   - 🇺🇸 美国 | USA 15
@@ -689,15 +562,13 @@ proxy-groups:
 - name: AI-POOL
   type: url-test
   proxies:
-  - 🇺🇸US美國丨yoyapai.com_5
   - 🇺🇸 美国 | USA 13
-  - 🇺🇸 美国 | USA 11
   - 🇺🇸 美国 | USA 6
-  - 🇺🇸 美国 | USA 20
   - 🇺🇸 美国 | USA 5
-  - 🇺🇸 美国 | USA 12
-  - 🇺🇸 美国 | USA 22
   - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 12
+  - 🇺🇸US美國丨yoyapai.com_5
+  - 🇺🇸 美国 | USA 11
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
