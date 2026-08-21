@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-08-21T21:47:45.162952+00:00'
+generated-at: '2026-08-21T22:17:25.263719+00:00'
 proxies:
 - name: 🇭🇰 香港 | HKG 2
   server: vip-jp-4.hkd4fwmg.vip
@@ -23,20 +23,6 @@ proxies:
   type: ss
   cipher: chacha20-ietf-poly1305
   password: ljqdalu13..
-  udp: true
-- name: 🇸🇬 新加坡 | SGP
-  server: 168.107.84.216
-  port: 56927
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: AvgbFIV7Cex5/qT5UZZfczfm4HvieP7cS50XxXtw+EA=
-  udp: true
-- name: 🇯🇵 日本 | JPN 4
-  server: 121.46.230.136
-  port: 65443
-  type: ss
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
   udp: true
 - name: 🇺🇸 美国 | USA 30
   server: 104.16.79.73
@@ -83,6 +69,19 @@ proxies:
   sni: www.microsoft.com
   skip-cert-verify: true
   udp: true
+- name: 🇺🇸 美国 | USA
+  server: 23.94.227.94
+  port: 15884
+  type: vless
+  uuid: c543f497-6a6d-4842-8317-a5f62ea56dc2
+  tls: true
+  reality-opts:
+    public-key: rZAYGSqaklKNltwTGPpAok74VYCxV9uKvrOyydSn9UE
+    short-id: a391369e7596
+  servername: www.intel.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
 - name: 🇺🇸 美国 | USA 19
   server: 104.19.109.202
   port: 443
@@ -97,6 +96,19 @@ proxies:
     headers:
       Host: cf.udpid.org
   udp: true
+- name: 美國丨yoyapai.com_8
+  type: vless
+  server: 45.155.52.231
+  port: 443
+  uuid: 219f9fec-8983-4f6f-af8c-31bd0c6dbf19
+  servername: ru2.skydrgn-online.online
+  tls: true
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 6p0aVCkOgd-xaxqSMANYABL6O4Tdbftnxjiy5qcmISQ
+    short-id: 0b
+  skip-cert-verify: true
+  udp: true
 - name: 🇺🇸US美國丨yoyapai.com_5
   type: vless
   server: support.zoom.us
@@ -110,19 +122,6 @@ proxies:
     path: /sg-amz
     headers:
       Host: support.zoom.us.yxls.eu.cc
-  skip-cert-verify: true
-  udp: true
-- name: 美國丨yoyapai.com_8
-  type: vless
-  server: 45.155.52.231
-  port: 443
-  uuid: 219f9fec-8983-4f6f-af8c-31bd0c6dbf19
-  servername: ru2.skydrgn-online.online
-  tls: true
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 6p0aVCkOgd-xaxqSMANYABL6O4Tdbftnxjiy5qcmISQ
-    short-id: 0b
   skip-cert-verify: true
   udp: true
 - name: 🇺🇸 美国 | USA 15
@@ -218,6 +217,13 @@ proxies:
     path: /5f72f180-b21b-4b7a-8484-240759096785
     headers:
       Host: apjhdggyx.com
+  udp: true
+- name: 🇰🇷 韩国 | KOR 20
+  server: 49.254.204.133
+  port: 1774
+  type: ss
+  cipher: aes-256-cfb
+  password: 1234!@#$
   udp: true
 - name: 🇳🇱_NL荷蘭丨yoyapai.com
   type: ss
@@ -321,19 +327,6 @@ proxies:
   auth: 8fb328f0-d8e0-4b11-a6db-3dadfc4f02a3
   sni: deu0003ntrhy01.tcp-reset-club.net
   skip-cert-verify: true
-- name: 🇱🇻 拉脱维亚 | LVA
-  server: 195.123.210.168
-  port: 443
-  type: vless
-  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: m6RDw1b8R4lCaRUIzhHpy6TtX2Dhk6nyby8dWzeQqA0
-    short-id: dd3ff38418d29d22
-  servername: eu-west.cendora.ru
-  client-fingerprint: qq
-  network: tcp
 - name: 🇹🇭 Thailand泰国丨yoyapai.com
   type: vless
   server: 18.239.134.69
@@ -377,34 +370,20 @@ proxies:
   sni: www.bing.com
   skip-cert-verify: true
   udp: true
-- name: 🇩🇪 德国 | DEU 10
-  server: 163.5.153.153
-  port: 443
-  type: vless
-  uuid: 0a76a766-d141-44b8-944e-dff757d7116f
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: aB_2Tcf0A5LoiIEZHztR_l-ZOFeJKxYRH67s_OVQ9C0
-    short-id: a91045bc
-  servername: www.samsung.com
-  client-fingerprint: chrome
-  network: tcp
 proxy-groups:
 - name: AUTO-FAST
   type: url-test
   proxies:
   - 🇭🇰 香港 | HKG 2
   - 🇭🇰 香港 | HKG 5
-  - 🇸🇬 新加坡 | SGP
-  - 🇯🇵 日本 | JPN 4
   - 🇺🇸 美国 | USA 30
   - 🇺🇸 美国 | USA 20
   - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 5
+  - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 19
-  - 🇺🇸US美國丨yoyapai.com_5
   - 美國丨yoyapai.com_8
+  - 🇺🇸US美國丨yoyapai.com_5
   - 🇺🇸 美国 | USA 15
   - 🇺🇸 美国 | USA 2
   - 🇫🇷 法国 | FRA 6
@@ -414,6 +393,7 @@ proxy-groups:
   - 🇳🇱 荷兰 | NLD
   - 🇷🇺 俄罗斯 | RUS
   - 🇫🇮 荷蘭
+  - 🇰🇷 韩国 | KOR 20
   - 🇳🇱_NL荷蘭丨yoyapai.com
   - 🇩🇪 德国 | DEU 6
   - 🇫🇷 法国 | FRA 9
@@ -425,12 +405,10 @@ proxy-groups:
   - 🇨🇴 哥伦比亚 | COL
   - 🇮🇩 印尼 | IDN
   - 🇩🇪 德国 | DEU
-  - 🇱🇻 拉脱维亚 | LVA
   - 🇹🇭 Thailand泰国丨yoyapai.com
   - 🇬🇧 英国 | GBR
   - 🇩🇪 德国 | DEU 12
   - 🇪🇸 西班牙 | ESP
-  - 🇩🇪 德国 | DEU 10
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: HK-POOL
@@ -443,7 +421,11 @@ proxy-groups:
 - name: JP-POOL
   type: url-test
   proxies:
-  - 🇯🇵 日本 | JPN 4
+  - 🇭🇰 香港 | HKG 2
+  - 🇭🇰 香港 | HKG 5
+  - 🇺🇸 美国 | USA 30
+  - 🇺🇸 美国 | USA 20
+  - 🇺🇸 美国 | USA 8
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: US-POOL
@@ -453,9 +435,10 @@ proxy-groups:
   - 🇺🇸 美国 | USA 20
   - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 5
+  - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 19
-  - 🇺🇸US美國丨yoyapai.com_5
   - 美國丨yoyapai.com_8
+  - 🇺🇸US美國丨yoyapai.com_5
   - 🇺🇸 美国 | USA 15
   - 🇺🇸 美国 | USA 2
   url: http://www.gstatic.com/generate_204
@@ -466,10 +449,10 @@ proxy-groups:
   - 🇺🇸 美国 | USA 15
   - 🇺🇸 美国 | USA 30
   - 🇨🇴 哥伦比亚 | COL
-  - 🇺🇸US美國丨yoyapai.com_5
   - 🇺🇸 美国 | USA 8
+  - 🇺🇸US美國丨yoyapai.com_5
+  - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA 2
-  - 🇫🇷 法国 | FRA 6
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
