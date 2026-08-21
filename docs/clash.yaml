@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-08-21T20:48:24.075281+00:00'
+generated-at: '2026-08-21T21:17:34.272090+00:00'
 proxies:
 - name: 🇭🇰 香港 | HKG 2
   server: vip-jp-4.hkd4fwmg.vip
@@ -82,6 +82,19 @@ proxies:
   password: 02cd3bac-2a78-4dbb-82b9-6b64084ddd8e
   sni: www.microsoft.com
   skip-cert-verify: true
+  udp: true
+- name: 🇺🇸 美国 | USA
+  server: 23.94.227.94
+  port: 15884
+  type: vless
+  uuid: c543f497-6a6d-4842-8317-a5f62ea56dc2
+  tls: true
+  reality-opts:
+    public-key: rZAYGSqaklKNltwTGPpAok74VYCxV9uKvrOyydSn9UE
+    short-id: a391369e7596
+  servername: www.intel.com
+  client-fingerprint: chrome
+  network: tcp
   udp: true
 - name: 🇺🇸US美國丨yoyapai.com_5
   type: vless
@@ -305,6 +318,13 @@ proxies:
   auth: 9K2KPaEcizYz6epz
   sni: my-ls-c-6.nebulacloud.win
   skip-cert-verify: true
+- name: 🇨🇴 哥伦比亚 | COL
+  server: 149.130.190.81
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
 - name: 🇮🇩 印尼 | IDN
   server: 16.79.28.237
   port: 26001
@@ -313,13 +333,6 @@ proxies:
   auth: l25nJa8z0D5pT6jl
   sni: id-ls-c-4.nebulacloud.win
   skip-cert-verify: true
-- name: 🇨🇴 哥伦比亚 | COL
-  server: 149.130.190.81
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
 - name: 🇩🇪 德国 | DEU
   server: deu0003ntrhy01.tcp-reset-club.net
   port: 443
@@ -409,6 +422,7 @@ proxy-groups:
   - 🇺🇸 美国 | USA 20
   - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 5
+  - 🇺🇸 美国 | USA
   - 🇺🇸US美國丨yoyapai.com_5
   - 🇺🇸 美国 | USA 19
   - 美國丨yoyapai.com_8
@@ -430,8 +444,8 @@ proxy-groups:
   - 🇩🇪 德国 | DEU 13
   - 🇩🇪 德国 | DEU 4
   - 🇲🇾 马来西亚 | MYS
-  - 🇮🇩 印尼 | IDN
   - 🇨🇴 哥伦比亚 | COL
+  - 🇮🇩 印尼 | IDN
   - 🇩🇪 德国 | DEU
   - 🇱🇻 拉脱维亚 | LVA
   - 🇹🇭 Thailand泰国丨yoyapai.com
@@ -461,6 +475,7 @@ proxy-groups:
   - 🇺🇸 美国 | USA 20
   - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 5
+  - 🇺🇸 美国 | USA
   - 🇺🇸US美國丨yoyapai.com_5
   - 🇺🇸 美国 | USA 19
   - 美國丨yoyapai.com_8
@@ -471,12 +486,12 @@ proxy-groups:
 - name: AI-POOL
   type: url-test
   proxies:
-  - 🇺🇸 美国 | USA 30
   - 🇺🇸 美国 | USA 15
+  - 🇺🇸 美国 | USA 30
+  - 🇨🇴 哥伦比亚 | COL
   - 🇺🇸US美國丨yoyapai.com_5
-  - 🇺🇸 美国 | USA 8
-  - 🇩🇪 德国 | DEU 13
-  - 🇩🇪 德国 | DEU 2
+  - 🇺🇸 美国 | USA 20
+  - 🇺🇸 美国 | USA 5
   - 🇳🇱_NL荷蘭丨yoyapai.com
   url: http://www.gstatic.com/generate_204
   interval: 120
