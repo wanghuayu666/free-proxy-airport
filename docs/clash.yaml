@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-08-24T20:57:38.028464+00:00'
+generated-at: '2026-08-24T21:26:33.562105+00:00'
 proxies:
 - name: 🇭🇰 香港 | HKG 7
   server: 154.3.35.200
@@ -54,6 +54,12 @@ proxies:
   cipher: 2022-blake3-chacha20-poly1305
   password: 8C+C41HLztRjvq+sf6K94V2i+6SYGHN/ldg2UttNNY4=
   udp: true
+- name: 🇸🇬 新加坡 | SGP 4
+  server: 138.2.87.37
+  port: 56927
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: z5RtKfqcjsueEgSEK5FzRSUrIvUzlLfJgEWo5BkZqI4=
 - name: 🇺🇸US美國丨yoyapai.com_6
   type: vless
   server: support.zoom.us
@@ -129,12 +135,6 @@ proxies:
   cipher: 2022-blake3-chacha20-poly1305
   password: rccNBXGUPgDWHLt9USQQukjqF2JvS5yU+TUxLxL473Y=
   udp: true
-- name: 🇨🇦 加拿大 | CAN 2
-  server: 99.79.128.42
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
 - name: 🇬🇧 英国 | GBR 4
   server: 129.151.74.128
   port: 61312
@@ -142,6 +142,12 @@ proxies:
   cipher: 2022-blake3-chacha20-poly1305
   password: dIQ//bx/BDhH5+YWp3RN0CvBfWy9WJPELBxOF3ta93k=
   udp: true
+- name: 🇨🇦 加拿大 | CAN 2
+  server: 99.79.128.42
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
 - name: 🇬🇧 英国 | GBR 6
   server: 134.65.60.219
   port: 61312
@@ -161,6 +167,22 @@ proxies:
   servername: www.rumedia-cdn.com
   client-fingerprint: qq
   network: tcp
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS 2
+  server: 89.248.192.63
+  port: 9894
+  type: vless
+  uuid: 14777bd9-56a5-46f6-a94f-826b4800dc05
+  tls: true
+  reality-opts:
+    public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
+    short-id: aabbccdd
+  servername: dl.google.com
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: grpc-tunnel
   udp: true
 - name: 🇳🇱 荷兰 | NLD
   server: 134.98.129.83
@@ -392,6 +414,13 @@ proxies:
   client-fingerprint: qq
   network: tcp
   udp: true
+- name: 🇬🇧 英国 | GBR
+  server: 13.135.73.3
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
 - name: 🇹🇭 Thailand泰国丨yoyapai.com
   type: vless
   server: 18.239.134.69
@@ -415,16 +444,18 @@ proxy-groups:
   - 🇯🇵 日本 | JPN 7
   - 🇸🇬SG新加坡丨yoyapai.com_1
   - 🇸🇬 新加坡 | SGP 2
+  - 🇸🇬 新加坡 | SGP 4
   - 🇺🇸US美國丨yoyapai.com_6
   - 🇺🇸 美國節點丨yoyapai.com
   - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 14
   - 🇺🇸 美国 | USA 2
   - 🇳🇱 荷兰 | NLD 7
-  - 🇨🇦 加拿大 | CAN 2
   - 🇬🇧 英国 | GBR 4
+  - 🇨🇦 加拿大 | CAN 2
   - 🇬🇧 英国 | GBR 6
   - 🇳🇱 荷兰 | NLD 8
+  - 🇷🇺 俄罗斯 | RUS 2
   - 🇳🇱 荷兰 | NLD
   - 🇳🇱 荷兰 | NLD 4
   - 🇨🇦 加拿大 | CAN
@@ -447,6 +478,7 @@ proxy-groups:
   - 🇩🇪 德国 | DEU 9
   - 🇩🇪 德国 | DEU
   - 🇳🇱 荷兰 | NLD 3
+  - 🇬🇧 英国 | GBR
   - 🇹🇭 Thailand泰国丨yoyapai.com
   url: http://www.gstatic.com/generate_204
   interval: 120
@@ -477,12 +509,13 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇺🇸US美国丨yoyapai.com
-  - 🇨🇦 加拿大 | CAN 2
-  - 🇨🇦 加拿大 | CAN
   - 🇨🇴 哥伦比亚 | COL
+  - 🇺🇸US美國丨yoyapai.com_6
+  - 🇨🇦 加拿大 | CAN 2
   - 🇮🇪 爱尔兰 | IRL
-  - 🇳🇱 荷兰 | NLD 11
+  - 🇬🇧 英国 | GBR 7
   - 🇳🇱 荷兰 | NLD 7
+  - 🇬🇧 英国 | GBR
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
