@@ -7,16 +7,36 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-08-30T21:20:09.784184+00:00'
+generated-at: '2026-08-30T23:40:40.286030+00:00'
 proxies:
-- name: 🇸🇬 新加坡 | SGP
-  server: 47.241.108.227
-  port: 50160
-  type: hysteria2
-  password: 436114b5f36b2e704bdfa0927d57b6cd
-  auth: 436114b5f36b2e704bdfa0927d57b6cd
-  sni: www.bing.com
-  skip-cert-verify: true
+- name: 🇸🇬 新加坡 | SGP 5
+  server: 47.129.200.244
+  port: 41159
+  type: vless
+  uuid: cc138c2d-5e03-4efd-a935-fc500e938033
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: dp_CXcMGxttv9CdCq3LI7UkaHbpV9yoPKpgAGH177WY
+    short-id: 41c5dc0928f602ab
+  servername: www.tesla.com
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 11
+  server: 207.241.173.146
+  port: 8443
+  type: vless
+  uuid: 948b843b-3cc1-494c-9d49-a95a9539fa7c
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: -x9vdxai-qKAzuhxV7H2RIbEmIh_ZgdiFxiUA5q0B1I
+    short-id: 4864db326f0b4b90
+  servername: www.refersion.com
+  client-fingerprint: qq
+  network: tcp
+  udp: true
 - name: 🇺🇸 美国 | USA 8
   server: 104.21.70.21
   port: 443
@@ -60,13 +80,12 @@ proxies:
     headers:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
   udp: true
-- name: 🇺🇸 美国 | USA 5
-  server: 129.146.75.20
+- name: 🇺🇸 美国 | USA 4
+  server: 129.146.116.35
   port: 50356
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: v9Z2PmRQrMTsmRoCUAc1hLT5ISSrl6Ir0J8z2swu2ds=
-  udp: true
+  password: nEL9gHcge5INdJhIJL0r9RdkxBOn6nvmaf6wYwH+Jxg=
 - name: 🇺🇸 美国 | USA 7
   server: 104.21.70.21
   port: 8080
@@ -86,25 +105,12 @@ proxies:
   cipher: aes-256-cfb
   password: 7eadc6dbe2ae
   udp: true
-- name: 🇺🇸 美国 | USA 4
-  server: 129.146.116.35
+- name: 🇺🇸 美国 | USA 5
+  server: 129.146.75.20
   port: 50356
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: nEL9gHcge5INdJhIJL0r9RdkxBOn6nvmaf6wYwH+Jxg=
-- name: 🇺🇸 美国 | USA 10
-  server: 193.202.11.201
-  port: 443
-  type: vless
-  uuid: 3c3e3170-fe36-4925-a089-d55f29114f07
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: lHCkAu_DOVFtE-iL2JGrPt44QeTCFijXuRfuGaSni3Q
-    short-id: 9e4eced6e98ed4d4
-  servername: usa.orpheous.ru
-  client-fingerprint: firefox
-  network: tcp
+  password: v9Z2PmRQrMTsmRoCUAc1hLT5ISSrl6Ir0J8z2swu2ds=
   udp: true
 - name: 🇺🇸 美國節點丨yoyapai.com
   type: vless
@@ -162,20 +168,6 @@ proxies:
     host: panel.freesavesafe.com
     mode: auto
   udp: true
-- name: 🇳🇱 荷兰 | NLD 8
-  server: 89.144.35.163
-  port: 443
-  type: vless
-  uuid: 84491c04-b011-4fdc-b97d-770975586f3a
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: cszyeuoXE1nOdNWsVoh5ECs3yaZdMx_GHuPl7PaKwxc
-    short-id: 1004ce38
-  servername: ads.x5.ru
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
 - name: 🇷🇺 俄罗斯 | RUS 4
   server: 45.9.15.206
   port: 443
@@ -221,6 +213,20 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
+- name: 🇬🇧 英国 | GBR 16
+  server: 95.154.221.153
+  port: 443
+  type: vless
+  uuid: b41084bb-e613-42f9-8062-51cc9c55f1e8
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: tPyAWkalFM4yi9lYY0zLDRxQyfSwPDwiexAy9QOjrWI
+    short-id: 42171a632f3b99ed
+  servername: strapi.io
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
 - name: 🇸🇪 瑞典 | SWE 3
   server: 50.7.95.195
   port: 443
@@ -246,20 +252,6 @@ proxies:
     public-key: -6SjfnZXAYm69euKQ3XNhq0nC7No7YE4qfdc2qx0Xwo
     short-id: a1b2c3d4
   servername: special.aeternavpn.space
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇬🇧 英国 | GBR 16
-  server: 95.154.221.153
-  port: 443
-  type: vless
-  uuid: b41084bb-e613-42f9-8062-51cc9c55f1e8
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: tPyAWkalFM4yi9lYY0zLDRxQyfSwPDwiexAy9QOjrWI
-    short-id: 42171a632f3b99ed
-  servername: strapi.io
   client-fingerprint: firefox
   network: tcp
   udp: true
@@ -300,6 +292,34 @@ proxies:
   xhttp-opts:
     path: /
     host: api-v2.savesafe.run
+- name: 🇳🇱 荷兰 | NLD 4
+  server: 151.242.2.81
+  port: 443
+  type: vless
+  uuid: 0a2dde28-70da-4863-a06f-35d007d94d35
+  tls: true
+  servername: cf9.rumedia-cdn.com
+  client-fingerprint: qq
+  network: ws
+  ws-opts:
+    path: /cdn/v3/live
+    headers:
+      Host: cf9.rumedia-cdn.com
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS 3
+  server: 31.76.34.121
+  port: 443
+  type: vless
+  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: uo-U-FDlo7Cqldg7JKUe8jHvYnwP08NanGX0tUFrqEc
+    short-id: bef240e96a8474a3
+  servername: russia.cendora.ru
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
 - name: 🇬🇧 英国 | GBR 9
   server: 82.152.220.121
   port: 443
@@ -315,20 +335,6 @@ proxies:
   xhttp-opts:
     path: /
     host: api-v2.savesafe.run
-- name: 🇷🇺 俄罗斯 | RUS 3
-  server: 31.76.34.121
-  port: 443
-  type: vless
-  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: uo-U-FDlo7Cqldg7JKUe8jHvYnwP08NanGX0tUFrqEc
-    short-id: bef240e96a8474a3
-  servername: russia.cendora.ru
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
 - name: 🇬🇧 英国 | GBR 11
   server: 82.152.220.31
   port: 443
@@ -403,12 +409,6 @@ proxies:
     host: api-v2.savesafe.run
     mode: auto
   udp: true
-- name: 🇨🇦 加拿大 | CAN
-  server: 3.96.124.46
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
 - name: 🇦🇹 奥地利 | AUT
   server: 31.76.69.40
   port: 443
@@ -470,6 +470,20 @@ proxies:
   password: oZIoA69Q8yhcQV8ka3Pa3A
   skip-cert-verify: false
   udp: true
+- name: 🇩🇪 德国 | DEU 6
+  server: 31.76.71.140
+  port: 443
+  type: vless
+  uuid: af00e0c4-decf-48f2-9013-56abe9c9efcd
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: BsFRd4pZgH2hK2AmVf6Mv7z2QGmV2LPYbqkT1UqZX30
+    short-id: 4da5d1853f04af6d
+  servername: rrr.windconnect.pro
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
 - name: 🇵🇱 波兰 | POL
   server: pl-xh01.tcp-reset-club.net
   port: 443
@@ -486,20 +500,6 @@ proxies:
     path: /assets/v2/pkg
     host: s3.netavex.com
     mode: packet-up
-  udp: true
-- name: 🇩🇪 德国 | DEU 6
-  server: 31.76.71.140
-  port: 443
-  type: vless
-  uuid: af00e0c4-decf-48f2-9013-56abe9c9efcd
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: BsFRd4pZgH2hK2AmVf6Mv7z2QGmV2LPYbqkT1UqZX30
-    short-id: 4da5d1853f04af6d
-  servername: rrr.windconnect.pro
-  client-fingerprint: firefox
-  network: tcp
   udp: true
 - name: 🇩🇪DE德国丨yoyapai.com_13
   type: vless
@@ -572,19 +572,19 @@ proxies:
   xhttp-opts:
     path: /
     host: api-v2.savesafe.run
+- name: 🇹🇭 泰国 | THA 2
+  server: 103.169.67.34
+  port: 65443
+  type: ss
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
+  udp: true
 - name: 🇧🇷 巴西 | BRA
   server: 144.22.225.161
   port: 59319
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: GRe/0J+gpJILazFMu8n4Lo6J1AjoIG2+mdCoR7RmX74=
-  udp: true
-- name: 🇩🇪 德国 | DEU 4
-  server: 138.2.152.206
-  port: 59924
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: +o28qDrpNZm1kAAYfxby8k2hsmW5zHBi7rLlmzOxRGo=
   udp: true
 - name: 🇸🇪 瑞典 | SWE
   server: 150.241.72.143
@@ -599,6 +599,13 @@ proxies:
   servername: au.windconnect.pro
   client-fingerprint: firefox
   network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 4
+  server: 138.2.152.206
+  port: 59924
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: +o28qDrpNZm1kAAYfxby8k2hsmW5zHBi7rLlmzOxRGo=
   udp: true
 - name: 🇬🇧 英国 | GBR 2
   server: 35.176.118.152
@@ -681,6 +688,20 @@ proxies:
   xhttp-opts:
     path: /
     host: api-v2.savesafe.run
+- name: 🇬🇧 英国 | GBR 15
+  server: 95.154.221.153
+  port: 443
+  type: vless
+  uuid: 21a98c41-ed3e-4fe5-a15c-4f506ec2b284
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: tPyAWkalFM4yi9lYY0zLDRxQyfSwPDwiexAy9QOjrWI
+    short-id: 42171a632f3b99ed
+  servername: strapi.io
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
 - name: 🇬🇧 英国 | GBR 14
   server: 82.152.220.91
   port: 443
@@ -698,19 +719,12 @@ proxies:
     host: api-v2.savesafe.run
     mode: auto
   udp: true
-- name: 🇬🇧 英国 | GBR 15
-  server: 95.154.221.153
-  port: 443
-  type: vless
-  uuid: 21a98c41-ed3e-4fe5-a15c-4f506ec2b284
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: tPyAWkalFM4yi9lYY0zLDRxQyfSwPDwiexAy9QOjrWI
-    short-id: 42171a632f3b99ed
-  servername: strapi.io
-  client-fingerprint: firefox
-  network: tcp
+- name: 🇬🇧 英国 | GBR
+  server: 144.24.224.213
+  port: 61312
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: Sl/pqZDWJam4jBZiNnccEJEOV9fBfAU+quV3BVafnkA=
   udp: true
 - name: 🇹🇷 土耳其 | TUR 2
   server: premium-tr.geodema.network
@@ -724,13 +738,6 @@ proxies:
   servername: www.apple.com
   client-fingerprint: firefox
   network: tcp
-  udp: true
-- name: 🇬🇧 英国 | GBR
-  server: 144.24.224.213
-  port: 61312
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: Sl/pqZDWJam4jBZiNnccEJEOV9fBfAU+quV3BVafnkA=
   udp: true
 - name: 🇬🇧 英国 | GBR 5
   server: 50.7.92.250
@@ -792,53 +799,53 @@ proxy-groups:
 - name: AUTO-FAST
   type: url-test
   proxies:
-  - 🇸🇬 新加坡 | SGP
+  - 🇸🇬 新加坡 | SGP 5
+  - 🇺🇸 美国 | USA 11
   - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 25
   - 🇺🇸 美国 | USA 6
-  - 🇺🇸 美国 | USA 5
+  - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 7
   - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 4
-  - 🇺🇸 美国 | USA 10
+  - 🇺🇸 美国 | USA 5
   - 🇺🇸 美國節點丨yoyapai.com
   - 🇺🇸US美国丨yoyapai.com
   - 🇹🇭TH泰国丨yoyapai.com
   - 🇬🇧 英国 | GBR 4
-  - 🇳🇱 荷兰 | NLD 8
   - 🇷🇺 俄罗斯 | RUS 4
   - 🇬🇧 英国 | GBR 6
   - 🇩🇪 德国 | DEU 7
+  - 🇬🇧 英国 | GBR 16
   - 🇸🇪 瑞典 | SWE 3
   - 🇲🇩 摩尔多瓦 | MDA
-  - 🇬🇧 英国 | GBR 16
   - 🇳🇱 荷兰 | NLD 10
   - 🇳🇱 荷兰 | NLD
   - 🇬🇧 英国 | GBR 10
-  - 🇬🇧 英国 | GBR 9
+  - 🇳🇱 荷兰 | NLD 4
   - 🇷🇺 俄罗斯 | RUS 3
+  - 🇬🇧 英国 | GBR 9
   - 🇬🇧 英国 | GBR 11
   - 🇹🇼 🇨🇳 台湾 | TWN
   - 🇷🇺 俄罗斯 | RUS
   - 🇩🇪 德国 | DEU 3
   - 🇫🇷 法国 | FRA 20
   - 🇬🇧 英国 | GBR 13
-  - 🇨🇦 加拿大 | CAN
   - 🇦🇹 奥地利 | AUT
   - 🇩🇪 德国 | DEU 5
   - 🇨🇴 哥伦比亚 | COL 4
   - 🇸🇪 瑞典 | SWE 4
   - 🇳🇱_NL荷蘭丨yoyapai.com
-  - 🇵🇱 波兰 | POL
   - 🇩🇪 德国 | DEU 6
+  - 🇵🇱 波兰 | POL
   - 🇩🇪DE德国丨yoyapai.com_13
   - 🇩🇪 德国 | DEU 8
   - 🇩🇪 德国 | DEU 11
   - 🇬🇧 英国 | GBR 17
   - 🇬🇧 英国 | GBR 7
+  - 🇹🇭 泰国 | THA 2
   - 🇧🇷 巴西 | BRA
-  - 🇩🇪 德国 | DEU 4
   - 🇸🇪 瑞典 | SWE
+  - 🇩🇪 德国 | DEU 4
   - 🇬🇧 英国 | GBR 2
   - 🇲🇾 马来西亚 | MYS
   - 🇫🇷 法国 | FRA
@@ -848,10 +855,10 @@ proxy-groups:
   - 🇨🇴 哥伦比亚 | COL 2
   - 🇳🇱 荷兰 | NLD 3
   - 🇬🇧 英国 | GBR 12
-  - 🇬🇧 英国 | GBR 14
   - 🇬🇧 英国 | GBR 15
-  - 🇹🇷 土耳其 | TUR 2
+  - 🇬🇧 英国 | GBR 14
   - 🇬🇧 英国 | GBR
+  - 🇹🇷 土耳其 | TUR 2
   - 🇬🇧 英国 | GBR 5
   - 🇩🇪 德国 | DEU 12
   - 🇬🇧 英国 | GBR 8
@@ -861,34 +868,34 @@ proxy-groups:
 - name: HK-POOL
   type: url-test
   proxies:
-  - 🇸🇬 新加坡 | SGP
+  - 🇸🇬 新加坡 | SGP 5
+  - 🇺🇸 美国 | USA 11
   - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 25
   - 🇺🇸 美国 | USA 6
-  - 🇺🇸 美国 | USA 5
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: JP-POOL
   type: url-test
   proxies:
-  - 🇸🇬 新加坡 | SGP
+  - 🇸🇬 新加坡 | SGP 5
+  - 🇺🇸 美国 | USA 11
   - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 25
   - 🇺🇸 美国 | USA 6
-  - 🇺🇸 美国 | USA 5
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: US-POOL
   type: url-test
   proxies:
+  - 🇺🇸 美国 | USA 11
   - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 25
   - 🇺🇸 美国 | USA 6
-  - 🇺🇸 美国 | USA 5
+  - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 7
   - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 4
-  - 🇺🇸 美国 | USA 10
+  - 🇺🇸 美国 | USA 5
   - 🇺🇸 美國節點丨yoyapai.com
   - 🇺🇸US美国丨yoyapai.com
   url: http://www.gstatic.com/generate_204
@@ -897,17 +904,17 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇺🇸US美国丨yoyapai.com
+  - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA 6
-  - 🇺🇸 美国 | USA 10
-  - 🇨🇴 哥伦比亚 | COL 2
-  - 🇨🇴 哥伦比亚 | COL
   - 🇨🇴 哥伦比亚 | COL 4
+  - 🇨🇴 哥伦比亚 | COL
   - 🇩🇪DE德国丨yoyapai.com_13
-  - 🇳🇱 荷兰 | NLD 3
+  - 🇨🇴 哥伦比亚 | COL 2
+  - 🇺🇸 美国 | USA 11
   - 🇬🇧 英国 | GBR 2
-  - 🇩🇪 德国 | DEU 4
-  - 🇫🇷 法国 | FRA
+  - 🇳🇱 荷兰 | NLD 3
+  - 🇬🇧 英国 | GBR
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
