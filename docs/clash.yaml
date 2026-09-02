@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-09-02T16:45:37.497119+00:00'
+generated-at: '2026-09-02T19:35:56.415834+00:00'
 proxies:
 - name: 🇯🇵 日本 | JPN 3
   server: 138.2.8.249
@@ -59,6 +59,19 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
+- name: 🇺🇸 美国 | USA 3
+  server: 162.159.0.169
+  port: 2095
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  udp: true
 - name: 🇺🇸 美国 | USA 8
   server: us6.lunariai.ru
   port: 443
@@ -71,9 +84,9 @@ proxies:
     headers:
       Host: us6.lunariai.ru
   udp: true
-- name: 🇺🇸 美国 | USA 3
-  server: 162.159.0.169
-  port: 2095
+- name: 🇺🇸 美国 | USA
+  server: 172.64.42.85
+  port: 8080
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   tls: false
@@ -107,44 +120,6 @@ proxies:
   sni: xship.top
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸 美国 | USA
-  server: 172.64.42.85
-  port: 8080
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  udp: true
-- name: 🇺🇸US美国丨yoyapai.com
-  type: trojan
-  server: 216.24.57.7
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: false
-  ws-opts:
-    path: /assignment
-  udp: true
-- name: 🇺🇸 美国 | USA 10
-  server: panel.965.one
-  port: 443
-  type: vless
-  uuid: f3f17e89-7dca-4bea-b20e-83ebb5340940
-  tls: true
-  reality-opts:
-    public-key: DFKlP98i5PFcfS-DXJhAZX28mo_X6ZZ2wPOl5rXE7Tk
-    short-id: 2d
-  servername: www.nordspam.com
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
 - name: 🇺🇸 美國節點丨yoyapai.com
   type: vless
   server: 45.155.52.231
@@ -157,6 +132,18 @@ proxies:
     public-key: 6p0aVCkOgd-xaxqSMANYABL6O4Tdbftnxjiy5qcmISQ
     short-id: 0b
   skip-cert-verify: false
+  udp: true
+- name: 🇺🇸US美国丨yoyapai.com
+  type: trojan
+  server: 216.24.57.7
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: false
+  ws-opts:
+    path: /assignment
   udp: true
 - name: 🇹🇭TH泰国丨yoyapai.com
   type: vless
@@ -274,21 +261,6 @@ proxies:
   password: oZIoA69Q8yhcQV8ka3Pa3A
   skip-cert-verify: false
   udp: true
-- name: 🇩🇪 德国 | DEU 6
-  server: tp.paydar.site
-  port: 28112
-  type: vless
-  uuid: bf888993-0769-4e3f-86be-0f738ccf6422
-  tls: false
-  network: http
-  http-opts:
-    method: GET
-    path:
-    - /
-    headers:
-      Host:
-      - amp-api-edge.apps.apple.com
-  udp: true
 - name: 🇩🇪DE德国丨yoyapai.com_13
   type: vless
   server: 169.40.42.229
@@ -318,12 +290,6 @@ proxies:
   auth: github.com/Alvin9999-newpac/fanqiang
   sni: bing.com
   skip-cert-verify: true
-- name: 🇬🇧 英国 | GBR
-  server: 129.151.73.201
-  port: 61312
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: SGrXfIPYwF/DaB4srywR2V3XVtXvDln37JWsWq5O44Y=
 proxy-groups:
 - name: AUTO-FAST
   type: url-test
@@ -332,14 +298,13 @@ proxy-groups:
   - 🇸🇬 新加坡 | SGP 6
   - 🇭🇰 香港 | HKG
   - 🇺🇸 美国 | USA 11
-  - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 3
+  - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA 4
-  - 🇺🇸 美国 | USA
-  - 🇺🇸US美国丨yoyapai.com
-  - 🇺🇸 美国 | USA 10
   - 🇺🇸 美國節點丨yoyapai.com
+  - 🇺🇸US美国丨yoyapai.com
   - 🇹🇭TH泰国丨yoyapai.com
   - 🇩🇪 德国 | DEU 2
   - 🇨🇦 加拿大 | CAN 2
@@ -349,11 +314,9 @@ proxy-groups:
   - 🇨🇦 加拿大 | CAN
   - 🇩🇪 德国 | DEU 3
   - 🇳🇱_NL荷蘭丨yoyapai.com
-  - 🇩🇪 德国 | DEU 6
   - 🇩🇪DE德国丨yoyapai.com_13
   - 🇫🇷 法国 | FRA
   - 🇫🇷 法国 | FRA 2
-  - 🇬🇧 英国 | GBR
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: HK-POOL
@@ -372,14 +335,13 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇺🇸 美国 | USA 11
-  - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 3
+  - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA 4
-  - 🇺🇸 美国 | USA
-  - 🇺🇸US美国丨yoyapai.com
-  - 🇺🇸 美国 | USA 10
   - 🇺🇸 美國節點丨yoyapai.com
+  - 🇺🇸US美国丨yoyapai.com
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: AI-POOL
@@ -387,9 +349,8 @@ proxy-groups:
   proxies:
   - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA
-  - 🇺🇸 美国 | USA 3
-  - 🇸🇬 新加坡 | SGP 6
   - 🇺🇸 美国 | USA 11
+  - 🇺🇸 美国 | USA 3
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
