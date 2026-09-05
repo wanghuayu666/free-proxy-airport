@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-09-05T11:21:27.516880+00:00'
+generated-at: '2026-09-05T13:57:54.095669+00:00'
 proxies:
 - name: 🇯🇵 日本 | JPN 3
   server: 52.194.211.43
@@ -23,12 +23,6 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇯🇵 日本 | JPN 4
-  server: 121.46.230.137
-  port: 65443
-  type: ss
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
 - name: 🇭🇰 香港 | HKG
   server: 156.226.183.181
   port: 54321
@@ -52,19 +46,6 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
-- name: 🇺🇸 美国 | USA 4
-  server: 104.18.46.234
-  port: 2082
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  udp: true
 - name: 🇺🇸 美国 | USA 7
   server: 104.16.150.130
   port: 2087
@@ -78,6 +59,19 @@ proxies:
     path: /
     headers:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  udp: true
+- name: 🇺🇸 美国 | USA 4
+  server: 104.18.46.234
+  port: 2082
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
 - name: 🇺🇸 美国 | USA 3
   server: 169.40.42.224
@@ -158,41 +152,25 @@ proxies:
   tls: false
   network: tcp
   udp: true
+- name: 🇫🇷 法国 | FRA 5
+  server: 185.18.250.252
+  port: 443
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
+  udp: true
 - name: 🇨🇦 加拿大 | CAN 2
   server: 51.222.141.125
   port: 445
   type: ss
   cipher: aes-256-gcm
   password: zDNVedRFPQexG9v
-  udp: true
-- name: 🇹🇭TH泰国丨yoyapai.com
-  type: vless
-  server: 18.239.134.69
-  port: 80
-  uuid: de27291c-15a9-4256-9ba7-ad517569877e
-  network: ws
-  tls: false
-  client-fingerprint: safari
-  ws-opts:
-    path: /
-    headers:
-      Host: d2e1v87ko56lyw.cloudfront.net:assets.opensignal.com
-  skip-cert-verify: false
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 8
-  server: 134.98.137.176
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-- name: 🇳🇱 荷兰 | NLD
-  server: 92.5.231.30
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
   udp: true
 - name: 🇨🇦 加拿大 | CAN
   server: 130.94.115.231
@@ -203,6 +181,20 @@ proxies:
   network: ws
   ws-opts:
     path: /721740e567c7
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS
+  server: ru05.abvpn.ru
+  port: 443
+  type: vless
+  uuid: a289a3d3-5833-4b28-8809-ae72898a98d0
+  tls: true
+  servername: ru05.abvpn.ru
+  client-fingerprint: edge
+  network: ws
+  ws-opts:
+    path: /websocket
+    headers:
+      Host: ru05.abvpn.ru
   udp: true
 - name: 🇩🇪 德国 | DEU 3
   server: 130.61.131.106
@@ -217,6 +209,13 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
   skip-cert-verify: false
+  udp: true
+- name: 🇮🇪 爱尔兰 | IRL
+  server: 52.214.208.36
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
   udp: true
 - name: 🇩🇪 德国 | DEU 6
   server: 130.61.228.228
@@ -256,13 +255,6 @@ proxies:
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: /UtWDfxcFcX9CFdFmZRhxPyk24i/1G8UOH1kuu4vaoQ=
-- name: 🇮🇹 意大利 | ITA
-  server: 66.245.207.70
-  port: 8388
-  type: ss
-  cipher: aes-256-gcm
-  password: qMvJmCbMduKUoeHq
-  udp: true
 - name: 🇬🇧 英国 | GBR 2
   server: 3.9.135.156
   port: 51847
@@ -297,32 +289,6 @@ proxies:
   servername: www.ibm.com
   client-fingerprint: chrome
   network: tcp
-- name: 🇳🇱 荷兰 | NLD 2
-  server: 141.148.238.119
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU
-  server: 185.204.169.127
-  port: 1819
-  type: vless
-  uuid: 5fd0c433-efe8-466a-9fd7-233a448e8b58
-  tls: true
-  alpn:
-  - h2
-  - http/1.1
-  servername: 185.204.169.127
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 185.204.169.127
-    v2ray-http-upgrade: true
-  udp: true
 - name: 🇳🇱 荷兰 | NLD 3
   server: 152.70.53.161
   port: 62145
@@ -353,11 +319,10 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇯🇵 日本 | JPN 3
-  - 🇯🇵 日本 | JPN 4
   - 🇭🇰 香港 | HKG
   - 🇺🇸 美国 | USA 16
-  - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 7
+  - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 13
@@ -365,23 +330,20 @@ proxy-groups:
   - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 2
   - 🇳🇱 荷兰 | NLD 7
+  - 🇫🇷 法国 | FRA 5
   - 🇨🇦 加拿大 | CAN 2
-  - 🇹🇭TH泰国丨yoyapai.com
-  - 🇳🇱 荷兰 | NLD 8
-  - 🇳🇱 荷兰 | NLD
   - 🇨🇦 加拿大 | CAN
+  - 🇷🇺 俄罗斯 | RUS
   - 🇩🇪 德国 | DEU 3
   - 🇳🇱_NL荷蘭丨yoyapai.com
+  - 🇮🇪 爱尔兰 | IRL
   - 🇩🇪 德国 | DEU 6
   - 🇵🇱 波兰 | POL
   - 🇩🇪DE德国丨yoyapai.com_13
   - 🇩🇪 德国 | DEU 8
-  - 🇮🇹 意大利 | ITA
   - 🇬🇧 英国 | GBR 2
   - 🇲🇾 马来西亚 | MYS
   - 🇰🇷 韩国 | KOR
-  - 🇳🇱 荷兰 | NLD 2
-  - 🇩🇪 德国 | DEU
   - 🇳🇱 荷兰 | NLD 3
   - 🇫🇷 法国 | FRA 12
   - 🇬🇧 英国 | GBR
@@ -397,15 +359,14 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇯🇵 日本 | JPN 3
-  - 🇯🇵 日本 | JPN 4
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: US-POOL
   type: url-test
   proxies:
   - 🇺🇸 美国 | USA 16
-  - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 7
+  - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 13
@@ -418,11 +379,10 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇺🇸US美国丨yoyapai.com
-  - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 16
+  - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 2
-  - 🇨🇦 加拿大 | CAN 2
-  - 🇺🇸 美国 | USA 13
+  - 🇺🇸 美国 | USA 7
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
