@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-09-05T13:57:54.095669+00:00'
+generated-at: '2026-09-05T16:32:42.820164+00:00'
 proxies:
 - name: 🇯🇵 日本 | JPN 3
   server: 52.194.211.43
@@ -60,19 +60,6 @@ proxies:
     headers:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
   udp: true
-- name: 🇺🇸 美国 | USA 4
-  server: 104.18.46.234
-  port: 2082
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  udp: true
 - name: 🇺🇸 美国 | USA 3
   server: 169.40.42.224
   port: 443
@@ -86,6 +73,19 @@ proxies:
   servername: yahoo.com
   client-fingerprint: ios
   network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 4
+  server: 104.18.46.234
+  port: 2082
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
 - name: 🇺🇸 美国 | USA
   server: 121.46.230.233
@@ -172,16 +172,6 @@ proxies:
   cipher: aes-256-gcm
   password: zDNVedRFPQexG9v
   udp: true
-- name: 🇨🇦 加拿大 | CAN
-  server: 130.94.115.231
-  port: 2087
-  type: vless
-  uuid: 8a51f3d9-30cc-44e6-8d31-700211a29066
-  tls: false
-  network: ws
-  ws-opts:
-    path: /721740e567c7
-  udp: true
 - name: 🇷🇺 俄罗斯 | RUS
   server: ru05.abvpn.ru
   port: 443
@@ -195,6 +185,16 @@ proxies:
     path: /websocket
     headers:
       Host: ru05.abvpn.ru
+  udp: true
+- name: 🇨🇦 加拿大 | CAN
+  server: 130.94.115.231
+  port: 2087
+  type: vless
+  uuid: 8a51f3d9-30cc-44e6-8d31-700211a29066
+  tls: false
+  network: ws
+  ws-opts:
+    path: /721740e567c7
   udp: true
 - name: 🇩🇪 德国 | DEU 3
   server: 130.61.131.106
@@ -217,12 +217,6 @@ proxies:
   cipher: aes-256-cfb
   password: amazonskr05
   udp: true
-- name: 🇩🇪 德国 | DEU 6
-  server: 130.61.228.228
-  port: 59924
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: wRqHKj1lyPV0qigDlTj2LC9VebXikHNxsOUQ+l5HMoo=
 - name: 🇵🇱 波兰 | POL
   server: bridge2.kolhoz.fuck-rkn.xyz
   port: 443
@@ -235,6 +229,12 @@ proxies:
   servername: jobinvest.ru
   client-fingerprint: firefox
   network: tcp
+- name: 🇩🇪 德国 | DEU 6
+  server: 130.61.228.228
+  port: 59924
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: wRqHKj1lyPV0qigDlTj2LC9VebXikHNxsOUQ+l5HMoo=
 - name: 🇩🇪DE德国丨yoyapai.com_13
   type: vless
   server: 169.40.42.229
@@ -322,8 +322,8 @@ proxy-groups:
   - 🇭🇰 香港 | HKG
   - 🇺🇸 美国 | USA 16
   - 🇺🇸 美国 | USA 7
-  - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 3
+  - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 13
   - 🇺🇸 美國節點丨yoyapai.com
@@ -332,13 +332,13 @@ proxy-groups:
   - 🇳🇱 荷兰 | NLD 7
   - 🇫🇷 法国 | FRA 5
   - 🇨🇦 加拿大 | CAN 2
-  - 🇨🇦 加拿大 | CAN
   - 🇷🇺 俄罗斯 | RUS
+  - 🇨🇦 加拿大 | CAN
   - 🇩🇪 德国 | DEU 3
   - 🇳🇱_NL荷蘭丨yoyapai.com
   - 🇮🇪 爱尔兰 | IRL
-  - 🇩🇪 德国 | DEU 6
   - 🇵🇱 波兰 | POL
+  - 🇩🇪 德国 | DEU 6
   - 🇩🇪DE德国丨yoyapai.com_13
   - 🇩🇪 德国 | DEU 8
   - 🇬🇧 英国 | GBR 2
@@ -366,8 +366,8 @@ proxy-groups:
   proxies:
   - 🇺🇸 美国 | USA 16
   - 🇺🇸 美国 | USA 7
-  - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 3
+  - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 13
   - 🇺🇸 美國節點丨yoyapai.com
@@ -378,11 +378,11 @@ proxy-groups:
 - name: AI-POOL
   type: url-test
   proxies:
-  - 🇺🇸US美国丨yoyapai.com
+  - 🇯🇵 日本 | JPN 3
+  - 🇭🇰 香港 | HKG
   - 🇺🇸 美国 | USA 16
-  - 🇺🇸 美国 | USA 4
-  - 🇺🇸 美国 | USA 2
   - 🇺🇸 美国 | USA 7
+  - 🇺🇸 美国 | USA 3
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
