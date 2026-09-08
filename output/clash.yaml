@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-09-08T14:41:34.108627+00:00'
+generated-at: '2026-09-08T18:14:34.220273+00:00'
 proxies:
 - name: 🇭🇰HK香港丨yoyapai.com_9
   type: vmess
@@ -24,6 +24,19 @@ proxies:
     headers:
       Host: U2FRxj0G13vDI0Wo.v.3dns.vip
   udp: true
+- name: 🇸🇬 新加坡 | SGP
+  server: 162.159.43.187
+  port: 2086
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  udp: true
 - name: 🇸🇬 新加坡 | SGP 3
   server: 172.64.146.211
   port: 2083
@@ -37,19 +50,6 @@ proxies:
     path: /
     headers:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-  udp: true
-- name: 🇸🇬 新加坡 | SGP
-  server: 162.159.43.187
-  port: 2086
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
 - name: 🇸🇬 新加坡 | SGP 2
   server: 162.159.43.187
@@ -96,17 +96,18 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
-- name: 🇺🇸 美国 | USA 9
-  server: 188.114.97.6
-  port: 8880
+- name: 🇺🇸 美国 | USA 8
+  server: 172.64.52.6
+  port: 8080
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   tls: false
+  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   network: ws
   ws-opts:
-    path: /?ed=2560
+    path: /?ed=2560security=tls
     headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
 - name: 🇺🇸 美国 | USA 20
   server: 104.16.150.130
@@ -122,18 +123,17 @@ proxies:
     headers:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
   udp: true
-- name: 🇺🇸 美国 | USA 8
-  server: 172.64.52.6
-  port: 8080
+- name: 🇺🇸 美国 | USA 9
+  server: 188.114.97.6
+  port: 8880
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   tls: false
-  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls
+    path: /?ed=2560
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
   udp: true
 - name: 🇺🇸 美国 | USA 21
   server: 172.64.52.60
@@ -177,22 +177,6 @@ proxies:
     headers:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
   udp: true
-- name: 🇺🇸 美国 | USA 3
-  server: 199.232.78.160
-  port: 443
-  type: vless
-  uuid: XpnTeam-1
-  tls: true
-  alpn:
-  - http/1.1
-  servername: ssl.fastly.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: Appxdn.global.ssl.fastly.net
-  udp: true
 - name: 🇺🇸 美国 | USA 5
   server: 172.64.52.175
   port: 2087
@@ -207,6 +191,18 @@ proxies:
     headers:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
   udp: true
+- name: 🇺🇸 美国 | USA 19
+  server: 104.18.39.218
+  port: 2086
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  udp: true
 - name: 🇺🇸 美国 | USA 10
   server: 162.159.43.187
   port: 8080
@@ -214,18 +210,6 @@ proxies:
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   tls: false
   servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  udp: true
-- name: 🇺🇸 美国 | USA 19
-  server: 104.18.39.218
-  port: 2086
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
   network: ws
   ws-opts:
     path: /?ed=2560security=tls
@@ -259,18 +243,6 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
-- name: 🇺🇸US美国丨yoyapai.com
-  type: trojan
-  server: 216.24.57.7
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: false
-  ws-opts:
-    path: /assignment
-  udp: true
 - name: 🇺🇸 美国 | USA 14
   server: 172.64.52.173
   port: 2083
@@ -285,12 +257,17 @@ proxies:
     headers:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
   udp: true
-- name: 🇺🇸 美国 | USA 18
-  server: 121.46.230.232
-  port: 65443
-  type: ss
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
+- name: 🇺🇸US美国丨yoyapai.com
+  type: trojan
+  server: 216.24.57.7
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: false
+  ws-opts:
+    path: /assignment
   udp: true
 - name: 🇺🇸 美国 | USA 23
   server: 162.159.38.127
@@ -370,19 +347,19 @@ proxies:
   auth: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   sni: hopp-romania-new.roxa.org
   skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 | RUS
-  server: 46.8.200.91
+- name: 🇸🇪 瑞典 | SWE 2
+  server: defaultenginedimly.rivetpress.me
   port: 443
   type: vless
-  uuid: 0a2dde28-70da-4863-a06f-35d007d94d35
+  uuid: 7a97f64d-5fc7-4011-9028-58d2ba751595
   tls: true
-  servername: cf3.rumedia-cdn.com
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /casc
-    headers:
-      Host: cf3.rumedia-cdn.com
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: niL0fb-4IaVHr5VCg2yN_5wDTNYEq9W8wi7pDWLPcVg
+    short-id: 7505bfa3b6b933e6
+  servername: defaultenginedimly.rivetpress.me
+  client-fingerprint: ios
+  network: tcp
   udp: true
 - name: 🇸🇩 SD_85
   server: z-jp1.1card.cc
@@ -419,14 +396,6 @@ proxies:
   password: oZIoA69Q8yhcQV8ka3Pa3A
   skip-cert-verify: false
   udp: true
-- name: 🇵🇱 波兰 | POL
-  server: z-sg1.6send.com
-  port: 10044
-  type: trojan
-  password: ultra@kWZdAzt_IH593eGLRjdxnBZ0
-  sni: www.cloudflare.com
-  skip-cert-verify: true
-  udp: true
 - name: 🇦🇺AU澳大利亚丨yoyapai.com
   type: vless
   server: 163.8.195.241
@@ -440,14 +409,14 @@ proxies:
       Host: /?--v2rayNplus--v2rayNplus--v2rayNplus--
   skip-cert-verify: false
   udp: true
-- name: 🇷🇴 罗马尼亚 | ROU
-  server: 85.204.107.174
-  port: 8080
-  type: hysteria2
-  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
-  auth: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
-  sni: hopp-romania-new.roxa.org
+- name: 🇵🇱 波兰 | POL
+  server: z-sg1.6send.com
+  port: 10044
+  type: trojan
+  password: ultra@kWZdAzt_IH593eGLRjdxnBZ0
+  sni: www.cloudflare.com
   skip-cert-verify: true
+  udp: true
 - name: 🇧🇹 BT_53
   server: z-jp1.1card.cc
   port: 10011
@@ -456,27 +425,13 @@ proxies:
   sni: www.cloudflare.com
   skip-cert-verify: true
   udp: true
-- name: 🇸🇪 瑞典 | SWE
-  server: www.visa.com.hk
-  port: 443
-  type: vless
-  uuid: 7b1897ec-afb5-425c-afbf-d79634b6b317
-  tls: true
-  servername: se-sto.xhs152.shop
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /announcement?ed=2048
-    headers:
-      Host: se-sto.xhs152.shop
-  udp: true
-- name: 🇰🇷 韩国 | KOR
-  server: 152-69-231-175.liao.kdns.fr
-  port: 50160
+- name: 🇷🇴 罗马尼亚 | ROU
+  server: 85.204.107.174
+  port: 8080
   type: hysteria2
-  password: 1beb216e3f60aea9555dae60d219a5ca
-  auth: 1beb216e3f60aea9555dae60d219a5ca
-  sni: 152-69-231-175.liao.kdns.fr
+  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
+  auth: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
+  sni: hopp-romania-new.roxa.org
   skip-cert-verify: true
 - name: 🇩🇪DE德国丨yoyapai.com_11
   type: vless
@@ -491,14 +446,6 @@ proxies:
     public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
     short-id: c39cc7310a
   skip-cert-verify: false
-  udp: true
-- name: 🇩🇪 德国 | DEU
-  server: 91.107.179.8
-  port: 15003
-  type: vless
-  uuid: 69d8dc73-20ff-4241-bdd8-a9d6d07553b6
-  tls: false
-  network: tcp
   udp: true
 - name: 🇲🇲 MM_79
   server: z-sg1.6send.com
@@ -521,27 +468,25 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇭🇰HK香港丨yoyapai.com_9
-  - 🇸🇬 新加坡 | SGP 3
   - 🇸🇬 新加坡 | SGP
+  - 🇸🇬 新加坡 | SGP 3
   - 🇸🇬 新加坡 | SGP 2
   - 🇯🇵 日本 | JPN
   - 🇸🇬 新加坡 | SGP 4
   - 🇺🇸 美国 | USA 11
-  - 🇺🇸 美国 | USA 9
-  - 🇺🇸 美国 | USA 20
   - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 20
+  - 🇺🇸 美国 | USA 9
   - 🇺🇸 美国 | USA 21
   - 🇺🇸 美国 | USA 16
   - 🇺🇸 美国 | USA 7
-  - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 5
-  - 🇺🇸 美国 | USA 10
   - 🇺🇸 美国 | USA 19
+  - 🇺🇸 美国 | USA 10
   - 🇺🇸 美国 | USA 13
   - 🇺🇸 美国 | USA 17
-  - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 14
-  - 🇺🇸 美国 | USA 18
+  - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 23
   - 🇺🇸 美国 | USA 12
   - 🇺🇸 美国 | USA 22
@@ -550,19 +495,16 @@ proxy-groups:
   - 🇸🇩 SD_86
   - 🇧🇹 BT_54
   - 🇷🇴 罗马尼亚 | ROU 2
-  - 🇷🇺 俄罗斯 | RUS
+  - 🇸🇪 瑞典 | SWE 2
   - 🇸🇩 SD_85
   - 🇵🇱PL波兰丨yoyapai.com
   - 🇶🇦 QA_84
   - 🇳🇱_NL荷蘭丨yoyapai.com
-  - 🇵🇱 波兰 | POL
   - 🇦🇺AU澳大利亚丨yoyapai.com
-  - 🇷🇴 罗马尼亚 | ROU
+  - 🇵🇱 波兰 | POL
   - 🇧🇹 BT_53
-  - 🇸🇪 瑞典 | SWE
-  - 🇰🇷 韩国 | KOR
+  - 🇷🇴 罗马尼亚 | ROU
   - 🇩🇪DE德国丨yoyapai.com_11
-  - 🇩🇪 德国 | DEU
   - 🇲🇲 MM_79
   - 🇾🇪 YE_99
   url: http://www.gstatic.com/generate_204
@@ -583,21 +525,19 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇺🇸 美国 | USA 11
-  - 🇺🇸 美国 | USA 9
-  - 🇺🇸 美国 | USA 20
   - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 20
+  - 🇺🇸 美国 | USA 9
   - 🇺🇸 美国 | USA 21
   - 🇺🇸 美国 | USA 16
   - 🇺🇸 美国 | USA 7
-  - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 5
-  - 🇺🇸 美国 | USA 10
   - 🇺🇸 美国 | USA 19
+  - 🇺🇸 美国 | USA 10
   - 🇺🇸 美国 | USA 13
   - 🇺🇸 美国 | USA 17
-  - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 14
-  - 🇺🇸 美国 | USA 18
+  - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 23
   - 🇺🇸 美国 | USA 12
   - 🇺🇸 美国 | USA 22
@@ -607,13 +547,12 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇺🇸US美国丨yoyapai.com
-  - 🇺🇸 美国 | USA 9
-  - 🇸🇬 新加坡 | SGP
-  - 🇺🇸 美国 | USA 8
-  - 🇸🇬 新加坡 | SGP 2
   - 🇺🇸 美国 | USA 19
-  - 🇺🇸 美国 | USA 13
-  - 🇺🇸 美国 | USA 11
+  - 🇺🇸 美国 | USA 8
+  - 🇸🇬 新加坡 | SGP
+  - 🇺🇸 美国 | USA 17
+  - 🇺🇸 美国 | USA 5
+  - 🇺🇸 美国 | USA 23
   - 🇺🇸 美国 | USA 12
   url: http://www.gstatic.com/generate_204
   interval: 120
