@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-09-10T21:44:38.604268+00:00'
+generated-at: '2026-09-10T23:36:59.914957+00:00'
 proxies:
 - name: 🇭🇰 香港 | HKG 7
   server: 68.64.181.175
@@ -47,6 +47,34 @@ proxies:
   servername: dash.cloudflare.com
   client-fingerprint: chrome
   network: tcp
+- name: 🇭🇰 香港 | HKG 3
+  server: 207.57.135.29
+  port: 54785
+  type: vless
+  uuid: 810493f7-4306-40f1-86e5-9fa7868b26b6
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: RqlCAwGrowPZDljm1O3c5jJJQmhwmSPOdgsopGTJMzE
+  servername: www.amazon.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇭🇰HK香港丨yoyapai.com_9
+  type: vmess
+  server: u2frxj0g13vdi0wo.v.3dns.vip
+  port: 443
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: U2FRxj0G13vDI0Wo.v.3dns.vip
+  udp: true
 - name: 🇭🇰 香港 | HKG 5
   server: 38.147.173.43
   port: 32073
@@ -118,6 +146,22 @@ proxies:
     headers:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
   udp: true
+- name: 🇺🇸 美国 | USA 4
+  server: a2.arshia-nova.ir
+  port: 443
+  type: vless
+  uuid: d9eda159-18d6-4457-8983-55523a21658c
+  tls: true
+  alpn:
+  - h2
+  servername: ssl.fastly.com
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: c12.com
+  udp: true
 - name: 🇺🇸US美国丨yoyapai.com
   type: trojan
   server: 216.24.57.7
@@ -129,16 +173,6 @@ proxies:
   skip-cert-verify: false
   ws-opts:
     path: /assignment
-  udp: true
-- name: 🇺🇸 美国 | USA 18
-  server: 157.238.208.110
-  port: 41834
-  type: vless
-  uuid: 5adeccb9-dfca-41de-cdf7-4d901f2e70f5
-  tls: false
-  network: ws
-  ws-opts:
-    path: /5adeccb9
   udp: true
 - name: 🇩🇪 德国 | DEU 2
   server: de1.sferavpn.pro
@@ -239,19 +273,6 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇩🇪 德国 | DEU
-  server: 172.67.71.160
-  port: 443
-  type: vless
-  uuid: 8666ab45-8e3d-4988-841b-2561d91e32d5
-  tls: true
-  servername: mianfei-73q.pages.dev
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /proxyip=154.3.33.43
-    headers:
-      Host: mianfei-73q.pages.dev
 - name: 🇩🇪 德国 | DEU 4
   server: 178.105.61.61
   port: 2083
@@ -277,6 +298,19 @@ proxies:
   servername: aws.amazon.com
   client-fingerprint: chrome
   network: tcp
+- name: 🇩🇪 德国 | DEU
+  server: 172.67.71.160
+  port: 443
+  type: vless
+  uuid: 8666ab45-8e3d-4988-841b-2561d91e32d5
+  tls: true
+  servername: mianfei-73q.pages.dev
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /proxyip=154.3.33.43
+    headers:
+      Host: mianfei-73q.pages.dev
 - name: 🇩🇪DE德国丨yoyapai.com_11
   type: vless
   server: 169.40.42.229
@@ -290,20 +324,6 @@ proxies:
     public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
     short-id: c39cc7310a
   skip-cert-verify: false
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 2
-  server: 89.105.202.115
-  port: 443
-  type: vless
-  uuid: 4550993c-2191-493a-a612-aaba4a4ec083
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: ivgTfLR13A6xBsicIA28OPoav2tXlsstTTmGuETfnSk
-    short-id: 6d6f13013d3e1d0c
-  servername: g2.steptofsvo.com
-  client-fingerprint: chrome
-  network: tcp
   udp: true
 - name: 🇳🇱 荷兰 | NLD 3
   server: 46.229.243.152
@@ -340,14 +360,16 @@ proxy-groups:
   - 🇭🇰 香港 | HKG 7
   - 🇭🇰 香港 | HKG 6
   - 🇭🇰 香港 | HKG 4
+  - 🇭🇰 香港 | HKG 3
+  - 🇭🇰HK香港丨yoyapai.com_9
   - 🇭🇰 香港 | HKG 5
   - 🇭🇰 香港 | HKG
   - 🇸🇬 新加坡 | SGP 2
   - 🇭🇰 香港 | HKG 8
   - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 3
+  - 🇺🇸 美国 | USA 4
   - 🇺🇸US美国丨yoyapai.com
-  - 🇺🇸 美国 | USA 18
   - 🇩🇪 德国 | DEU 2
   - 🇵🇱PL波兰丨yoyapai.com
   - 🇦🇺 澳大利亚 | AUS
@@ -356,11 +378,10 @@ proxy-groups:
   - 🇩🇪 德国 | DEU 6
   - 🇮🇹 意大利 | ITA
   - 🇵🇱 波兰 | POL 2
-  - 🇩🇪 德国 | DEU
   - 🇩🇪 德国 | DEU 4
   - 🇬🇧 英国 | GBR 2
+  - 🇩🇪 德国 | DEU
   - 🇩🇪DE德国丨yoyapai.com_11
-  - 🇳🇱 荷兰 | NLD 2
   - 🇳🇱 荷兰 | NLD 3
   - 🇷🇺RU俄罗斯
   - 🇬🇧 英国 | GBR
@@ -372,6 +393,8 @@ proxy-groups:
   - 🇭🇰 香港 | HKG 7
   - 🇭🇰 香港 | HKG 6
   - 🇭🇰 香港 | HKG 4
+  - 🇭🇰 香港 | HKG 3
+  - 🇭🇰HK香港丨yoyapai.com_9
   - 🇭🇰 香港 | HKG 5
   - 🇭🇰 香港 | HKG
   - 🇭🇰 香港 | HKG 8
@@ -383,8 +406,8 @@ proxy-groups:
   - 🇭🇰 香港 | HKG 7
   - 🇭🇰 香港 | HKG 6
   - 🇭🇰 香港 | HKG 4
-  - 🇭🇰 香港 | HKG 5
-  - 🇭🇰 香港 | HKG
+  - 🇭🇰 香港 | HKG 3
+  - 🇭🇰HK香港丨yoyapai.com_9
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: US-POOL
@@ -392,18 +415,18 @@ proxy-groups:
   proxies:
   - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 3
+  - 🇺🇸 美国 | USA 4
   - 🇺🇸US美国丨yoyapai.com
-  - 🇺🇸 美国 | USA 18
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: AI-POOL
   type: url-test
   proxies:
   - 🇺🇸US美国丨yoyapai.com
-  - 🇺🇸 美国 | USA 18
-  - 🇩🇪 德国 | DEU
   - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 6
+  - 🇩🇪 德国 | DEU
+  - 🇬🇧 英国 | GBR
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
