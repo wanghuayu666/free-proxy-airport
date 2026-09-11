@@ -7,8 +7,23 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-09-11T16:40:09.405070+00:00'
+generated-at: '2026-09-11T19:23:46.591460+00:00'
 proxies:
+- name: 🇭🇰HK香港丨yoyapai.com_9
+  type: vmess
+  server: u2frxj0g13vdi0wo.v.3dns.vip
+  port: 443
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: U2FRxj0G13vDI0Wo.v.3dns.vip
+  udp: true
 - name: 🇯🇵 日本 | JPN 2
   server: ot2.hyas.space
   port: 443
@@ -116,18 +131,6 @@ proxies:
     headers:
       Host: fq.jp188.dpdns.org
   udp: true
-- name: 🇺🇸US美国丨yoyapai.com
-  type: trojan
-  server: 216.24.57.7
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: false
-  ws-opts:
-    path: /assignment
-  udp: true
 - name: 🇺🇸 美国 | USA
   server: 104.17.96.211
   port: 2096
@@ -141,6 +144,18 @@ proxies:
     path: /proxyip=154.3.33.43
     headers:
       Host: mianfei-73q.pages.dev
+- name: 🇺🇸US美国丨yoyapai.com
+  type: trojan
+  server: 216.24.57.7
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: false
+  ws-opts:
+    path: /assignment
+  udp: true
 - name: 🇺🇸 美国 | USA 14
   server: 144.172.104.26
   port: 443
@@ -182,20 +197,6 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇬🇧 英国 | GBR 4
-  server: 129.151.67.14
-  port: 61312
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: WMoIim+7xARGUvBh+6A5ats5a3AgV3TaCZTq6Icb7dg=
-  udp: true
-- name: 🇨🇦 加拿大 | CAN
-  server: 35.182.182.58
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
 - name: 🇷🇺 俄罗斯 | RUS
   server: 161.104.38.98
   port: 443
@@ -211,6 +212,13 @@ proxies:
   xhttp-opts:
     path: /assets
     host: donatov.net
+  udp: true
+- name: 🇨🇦 加拿大 | CAN
+  server: 35.182.182.58
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
   udp: true
 - name: 🇦🇹 奥地利 | AUT
   server: 82.110.60.9
@@ -247,19 +255,6 @@ proxies:
     host: sberbank.ru
     mode: stream-one
   udp: true
-- name: 🇦🇺AU澳大利亚丨yoyapai.com
-  type: vless
-  server: 163.8.195.241
-  port: 2087
-  uuid: 56ba5d34-ef22-4ba6-8090-4188b807df54
-  network: ws
-  tls: false
-  ws-opts:
-    path: /29c8fed7ca22
-    headers:
-      Host: /?--v2rayNplus--v2rayNplus--v2rayNplus--
-  skip-cert-verify: false
-  udp: true
 - name: 🇮🇹 意大利 | ITA
   server: 185.164.175.81
   port: 19999
@@ -277,14 +272,6 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: 850a3fb1cd33a28f12d837578ae1a2e7
-- name: 🇫🇷 法国 | FRA 4
-  server: 13.39.117.250
-  port: 22223
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  tls: false
-  network: tcp
-  udp: true
 - name: 🇩🇪DE德国丨yoyapai.com_11
   type: vless
   server: 169.40.42.229
@@ -299,21 +286,6 @@ proxies:
     short-id: c39cc7310a
   skip-cert-verify: false
   udp: true
-- name: 🇱🇻 拉脱维亚 | LVA
-  server: lv-irancell.xelfona.ir
-  port: 20018
-  type: vless
-  uuid: 028f3908-8885-4f06-ba95-777a435074bd
-  tls: false
-  network: http
-  http-opts:
-    method: GET
-    path:
-    - /
-    headers:
-      Host:
-      - play-apps-features.googleusercontent.com
-  udp: true
 - name: 🇳🇱 荷兰 | NLD 3
   server: 158.101.199.87
   port: 45819
@@ -321,12 +293,6 @@ proxies:
   cipher: 2022-blake3-chacha20-poly1305
   password: 4TVQ2f1okbVq3+Brnm5IMRtM6r6S8HjjQpliw944wEA=
   udp: true
-- name: 🇬🇧 英国 | GBR 3
-  server: 134.65.57.209
-  port: 61312
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: wzbgRLlSeDwxHX6xLVVxKk93K5k5N8k+7rncQXn80XA=
 - name: 🇬🇧 英国 | GBR
   server: 158.173.221.214
   port: 11001
@@ -338,6 +304,7 @@ proxy-groups:
 - name: AUTO-FAST
   type: url-test
   proxies:
+  - 🇭🇰HK香港丨yoyapai.com_9
   - 🇯🇵 日本 | JPN 2
   - 🇸🇬 新加坡 | SGP
   - 🇸🇬 新加坡 | SGP 3
@@ -347,31 +314,27 @@ proxy-groups:
   - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 16
   - 🇺🇸 美国 | USA 6
-  - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA
+  - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 14
   - 🇺🇸 美国 | USA 12
   - 🇩🇪 德国 | DEU 2
-  - 🇬🇧 英国 | GBR 4
-  - 🇨🇦 加拿大 | CAN
   - 🇷🇺 俄罗斯 | RUS
+  - 🇨🇦 加拿大 | CAN
   - 🇦🇹 奥地利 | AUT
   - 🇵🇱PL波兰丨yoyapai.com
   - 🇦🇺 澳大利亚 | AUS
-  - 🇦🇺AU澳大利亚丨yoyapai.com
   - 🇮🇹 意大利 | ITA
   - 🇦🇺 澳大利亚 | AUS 2
-  - 🇫🇷 法国 | FRA 4
   - 🇩🇪DE德国丨yoyapai.com_11
-  - 🇱🇻 拉脱维亚 | LVA
   - 🇳🇱 荷兰 | NLD 3
-  - 🇬🇧 英国 | GBR 3
   - 🇬🇧 英国 | GBR
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: HK-POOL
   type: url-test
   proxies:
+  - 🇭🇰HK香港丨yoyapai.com_9
   - 🇭🇰 香港 | HKG
   url: http://www.gstatic.com/generate_204
   interval: 120
@@ -389,8 +352,8 @@ proxy-groups:
   - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 16
   - 🇺🇸 美国 | USA 6
-  - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA
+  - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 14
   - 🇺🇸 美国 | USA 12
   url: http://www.gstatic.com/generate_204
@@ -399,10 +362,10 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇺🇸US美国丨yoyapai.com
-  - 🇺🇸 美国 | USA 11
   - 🇺🇸 美国 | USA
-  - 🇺🇸 美国 | USA 12
-  - 🇨🇦 加拿大 | CAN
+  - 🇸🇬 新加坡 | SGP
+  - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 11
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
