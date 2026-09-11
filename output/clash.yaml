@@ -7,8 +7,23 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-09-11T21:49:52.847354+00:00'
+generated-at: '2026-09-11T23:46:55.471650+00:00'
 proxies:
+- name: 🇭🇰HK香港丨yoyapai.com_9
+  type: vmess
+  server: u2frxj0g13vdi0wo.v.3dns.vip
+  port: 443
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: U2FRxj0G13vDI0Wo.v.3dns.vip
+  udp: true
 - name: 🇯🇵 日本 | JPN 2
   server: ot2.hyas.space
   port: 443
@@ -93,15 +108,6 @@ proxies:
   encryption: mlkem768x25519plus.native.0rtt.axhmyvi6WAeIVHyKYLuHz7cMMow5FBwwSjs9-TIWxRY
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 16
-  server: starlink-ft.251313.xyz
-  port: 443
-  type: hysteria2
-  password: https://xship.2fa.cat
-  auth: https://xship.2fa.cat
-  sni: xship.top
-  skip-cert-verify: true
-  udp: true
 - name: 🇺🇸 美国 | USA 6
   server: 104.17.159.189
   port: 443
@@ -116,31 +122,15 @@ proxies:
     headers:
       Host: fq.jp188.dpdns.org
   udp: true
-- name: 🇺🇸US美国丨yoyapai.com
-  type: trojan
-  server: 216.24.57.7
+- name: 🇺🇸 美国 | USA 16
+  server: starlink-ft.251313.xyz
   port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: false
-  ws-opts:
-    path: /assignment
+  type: hysteria2
+  password: https://xship.2fa.cat
+  auth: https://xship.2fa.cat
+  sni: xship.top
+  skip-cert-verify: true
   udp: true
-- name: 🇺🇸 美国 | USA
-  server: 104.17.96.211
-  port: 2096
-  type: vless
-  uuid: 8666ab45-8e3d-4988-841b-2561d91e32d5
-  tls: true
-  servername: mianfei-73q.pages.dev
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /proxyip=154.3.33.43
-    headers:
-      Host: mianfei-73q.pages.dev
 - name: 🇺🇸 美国 | USA 5
   server: 104.21.103.254
   port: 443
@@ -156,6 +146,19 @@ proxies:
     headers:
       Host: www.calmlunch.com
   udp: true
+- name: 🇺🇸 美国 | USA
+  server: 104.17.96.211
+  port: 2096
+  type: vless
+  uuid: 8666ab45-8e3d-4988-841b-2561d91e32d5
+  tls: true
+  servername: mianfei-73q.pages.dev
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /proxyip=154.3.33.43
+    headers:
+      Host: mianfei-73q.pages.dev
 - name: 🇺🇸 美国 | USA 14
   server: 144.172.104.26
   port: 443
@@ -168,6 +171,18 @@ proxies:
   servername: www.nvidia.com
   client-fingerprint: firefox
   network: tcp
+  udp: true
+- name: 🇺🇸US美国丨yoyapai.com
+  type: trojan
+  server: 216.24.57.7
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: false
+  ws-opts:
+    path: /assignment
   udp: true
 - name: 🇺🇸 美国 | USA 12
   server: 172.64.53.42
@@ -268,6 +283,13 @@ proxies:
       Host: /?--v2rayNplus--v2rayNplus--v2rayNplus--
   skip-cert-verify: false
   udp: true
+- name: 🇮🇹 意大利 | ITA
+  server: 185.164.175.81
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
 - name: 🇦🇺 澳大利亚 | AUS 2
   server: 152.67.115.203
   port: 443
@@ -278,16 +300,22 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: 850a3fb1cd33a28f12d837578ae1a2e7
-- name: 🇮🇹 意大利 | ITA
-  server: 185.164.175.81
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
 - name: 🇫🇷 法国 | FRA 10
   server: 172.64.152.23
   port: 443
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
+  udp: true
+- name: 🇬🇧 英国 | GBR 2
+  server: 82.117.245.125
+  port: 2053
   type: trojan
   password: humanity
   sni: www.calmlunch.com
@@ -342,6 +370,7 @@ proxy-groups:
 - name: AUTO-FAST
   type: url-test
   proxies:
+  - 🇭🇰HK香港丨yoyapai.com_9
   - 🇯🇵 日本 | JPN 2
   - 🇸🇬 新加坡 | SGP
   - 🇸🇬 新加坡 | SGP 3
@@ -349,12 +378,12 @@ proxy-groups:
   - 🇺🇸 美国 | USA 11
   - 🇺🇸 美国 | USA 9
   - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 16
   - 🇺🇸 美国 | USA 6
-  - 🇺🇸US美国丨yoyapai.com
-  - 🇺🇸 美国 | USA
+  - 🇺🇸 美国 | USA 16
   - 🇺🇸 美国 | USA 5
+  - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 14
+  - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 12
   - 🇩🇪 德国 | DEU 2
   - 🇨🇦 加拿大 | CAN
@@ -363,9 +392,10 @@ proxy-groups:
   - 🇵🇱PL波兰丨yoyapai.com
   - 🇦🇺 澳大利亚 | AUS
   - 🇦🇺AU澳大利亚丨yoyapai.com
-  - 🇦🇺 澳大利亚 | AUS 2
   - 🇮🇹 意大利 | ITA
+  - 🇦🇺 澳大利亚 | AUS 2
   - 🇫🇷 法国 | FRA 10
+  - 🇬🇧 英国 | GBR 2
   - 🇩🇪DE德国丨yoyapai.com_11
   - 🇷🇺RU俄罗斯
   - 🇬🇧 英国 | GBR 3
@@ -375,6 +405,7 @@ proxy-groups:
 - name: HK-POOL
   type: url-test
   proxies:
+  - 🇭🇰HK香港丨yoyapai.com_9
   - 🇭🇰 香港 | HKG
   url: http://www.gstatic.com/generate_204
   interval: 120
@@ -390,12 +421,12 @@ proxy-groups:
   - 🇺🇸 美国 | USA 11
   - 🇺🇸 美国 | USA 9
   - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 16
   - 🇺🇸 美国 | USA 6
-  - 🇺🇸US美国丨yoyapai.com
-  - 🇺🇸 美国 | USA
+  - 🇺🇸 美国 | USA 16
   - 🇺🇸 美国 | USA 5
+  - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 14
+  - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 12
   url: http://www.gstatic.com/generate_204
   interval: 120
@@ -404,9 +435,10 @@ proxy-groups:
   proxies:
   - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 11
+  - 🇺🇸 美国 | USA 12
+  - 🇺🇸 美国 | USA 6
   - 🇸🇬 新加坡 | SGP
   - 🇺🇸 美国 | USA
-  - 🇺🇸 美国 | USA 12
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
