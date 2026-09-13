@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-09-13T19:37:21.672240+00:00'
+generated-at: '2026-09-13T22:00:11.614539+00:00'
 proxies:
 - name: 🇭🇰 香港 | HKG 2
   server: hk01.kfc-520.com
@@ -17,17 +17,6 @@ proxies:
   auth: 49f7ff21-a176-30cc-ab60-a5988fd85ce0
   sni: hk01.kfc-520.com
   skip-cert-verify: true
-- name: 🇭🇰 香港 | HKG 3
-  server: 47.238.126.123
-  port: 443
-  type: hysteria2
-  password: c77540fdeabd19986d27960142b66f52
-  auth: c77540fdeabd19986d27960142b66f52
-  sni: 47.238.126.123
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: 5c8f1a3e7b2d9046c1f8a5e3b7d04f2a
-  udp: true
 - name: 🇯🇵 日本 | JPN 6
   server: 103.137.215.189
   port: 443
@@ -110,20 +99,6 @@ proxies:
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: jyWBH8PWys7muYTwrV1sXByMIbElJrWCu+Jcx2v4C3Q=
-- name: 🇺🇸 美国 | USA 24
-  server: 47.251.108.158
-  port: 443
-  type: vless
-  uuid: 975fc322-6e38-434b-a53c-d39fed49b9a9
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: SmgYcFIvvFXW3xh4gvGhIJuQsaZvWkAylcjB6TEddEs
-    short-id: 896f52ba2cfca903
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
 - name: 🇺🇸 美国 | USA 16
   server: 140.235.168.2
   port: 443
@@ -139,6 +114,14 @@ proxies:
     path: /
     host: download.nvidia.com
   udp: true
+- name: 🇺🇸 美国 | USA 3
+  server: 198.46.215.223
+  port: 4443
+  type: hysteria2
+  password: 31329f25
+  auth: 31329f25
+  sni: proxy.bingtao.xyz
+  skip-cert-verify: true
 - name: 🇺🇸 美国 | USA 10
   server: 162.159.43.187
   port: 8080
@@ -152,14 +135,6 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
-- name: 🇺🇸 美国 | USA 3
-  server: 198.46.215.223
-  port: 4443
-  type: hysteria2
-  password: 31329f25
-  auth: 31329f25
-  sni: proxy.bingtao.xyz
-  skip-cert-verify: true
 - name: 🇺🇸 美国 | USA 5
   server: us1-r.link-t7.com
   port: 10238
@@ -276,18 +251,19 @@ proxies:
   auth: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
   sni: admin.wwwinternetvideo.click
   skip-cert-verify: true
-- name: 🇦🇺AU澳大利亚丨yoyapai.com
+- name: 🇩🇪 德国 | DEU 3
+  server: app-ms-35.ecom-ai-solutions.com
+  port: 443
   type: vless
-  server: 163.8.195.241
-  port: 2087
-  uuid: 56ba5d34-ef22-4ba6-8090-4188b807df54
-  network: ws
-  tls: false
-  ws-opts:
-    path: /29c8fed7ca22
-    headers:
-      Host: /?--v2rayNplus--v2rayNplus--v2rayNplus--
-  skip-cert-verify: false
+  uuid: a71ad164-3b29-4dbe-aa66-24d095ca7b6d
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: NA5eMfdHkl_L80S75uxQwUirS9nvZ80V2u1s71KeXkc
+    short-id: 2de63d3fd7261b7e
+  servername: assets-ms-35.ecom-ai-solutions.com
+  client-fingerprint: randomized
+  network: tcp
   udp: true
 - name: 🇩🇪DE德国丨yoyapai.com_13
   type: vless
@@ -303,28 +279,25 @@ proxies:
     short-id: c39cc7310a
   skip-cert-verify: false
   udp: true
+- name: 🇦🇺AU澳大利亚丨yoyapai.com
+  type: vless
+  server: 163.8.195.241
+  port: 2087
+  uuid: 56ba5d34-ef22-4ba6-8090-4188b807df54
+  network: ws
+  tls: false
+  ws-opts:
+    path: /29c8fed7ca22
+    headers:
+      Host: /?--v2rayNplus--v2rayNplus--v2rayNplus--
+  skip-cert-verify: false
+  udp: true
 - name: 🇬🇧 英国 | GBR 2
   server: 129.151.87.146
   port: 61312
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: Qye4JK+lHU/8aJtTB5om+IMoxG4r3luE4ogzVo1+Oxk=
-  udp: true
-- name: 🇰🇷 韩国 | KOR
-  server: kr4-r.link-t7.com
-  port: 10049
-  type: vless
-  uuid: 7134DB35-F254-4468-BA00-D9C099CF5AF7
-  tls: true
-  reality-opts:
-    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
-    short-id: 686c0ef0
-  servername: s0.awsstatic.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: update
   udp: true
 - name: 🇳🇱NL荷兰丨yoyapai.com_5
   type: vless
@@ -351,15 +324,6 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇳🇱 荷兰 | NLD 3
-  server: 134.98.155.71
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  servername: 134.98.155.71
-  network: tcp
-  udp: true
 - name: 🇳🇴 挪威 | NOR
   server: aldebaran.yokkastars.com
   port: 40443
@@ -373,19 +337,11 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇬🇧 英国 | GBR
-  server: 129.151.80.3
-  port: 61312
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: K0TpYu/15IWNGjVIozBua1uU5B9QB+LZRvFkP6fSAfY=
-  udp: true
 proxy-groups:
 - name: AUTO-FAST
   type: url-test
   proxies:
   - 🇭🇰 香港 | HKG 2
-  - 🇭🇰 香港 | HKG 3
   - 🇯🇵 日本 | JPN 6
   - 🇸🇬 新加坡 | SGP 3
   - 🇭🇰 香港 | HKG
@@ -393,10 +349,9 @@ proxy-groups:
   - 🇺🇸 美国 | USA 26
   - 🇺🇸 美国 | USA 21
   - 🇺🇸 美国 | USA 25
-  - 🇺🇸 美国 | USA 24
   - 🇺🇸 美国 | USA 16
-  - 🇺🇸 美国 | USA 10
   - 🇺🇸 美国 | USA 3
+  - 🇺🇸 美国 | USA 10
   - 🇺🇸 美国 | USA 5
   - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 27
@@ -406,22 +361,19 @@ proxy-groups:
   - 🇳🇱 荷兰 | NLD
   - 🇺🇦 乌克兰 | UKR
   - 🇷🇺 俄罗斯 | RUS
-  - 🇦🇺AU澳大利亚丨yoyapai.com
+  - 🇩🇪 德国 | DEU 3
   - 🇩🇪DE德国丨yoyapai.com_13
+  - 🇦🇺AU澳大利亚丨yoyapai.com
   - 🇬🇧 英国 | GBR 2
-  - 🇰🇷 韩国 | KOR
   - 🇳🇱NL荷兰丨yoyapai.com_5
   - 🇩🇪 德国 | DEU
-  - 🇳🇱 荷兰 | NLD 3
   - 🇳🇴 挪威 | NOR
-  - 🇬🇧 英国 | GBR
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: HK-POOL
   type: url-test
   proxies:
   - 🇭🇰 香港 | HKG 2
-  - 🇭🇰 香港 | HKG 3
   - 🇭🇰 香港 | HKG
   url: http://www.gstatic.com/generate_204
   interval: 120
@@ -438,10 +390,9 @@ proxy-groups:
   - 🇺🇸 美国 | USA 26
   - 🇺🇸 美国 | USA 21
   - 🇺🇸 美国 | USA 25
-  - 🇺🇸 美国 | USA 24
   - 🇺🇸 美国 | USA 16
-  - 🇺🇸 美国 | USA 10
   - 🇺🇸 美国 | USA 3
+  - 🇺🇸 美国 | USA 10
   - 🇺🇸 美国 | USA 5
   - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 27
@@ -455,9 +406,8 @@ proxy-groups:
   - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 10
   - 🇺🇸 美国 | USA 11
-  - 🇺🇸 美国 | USA 25
-  - 🇺🇸 美国 | USA 5
   - 🇩🇪DE德国丨yoyapai.com_13
+  - 🇺🇸 美国 | USA 25
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
