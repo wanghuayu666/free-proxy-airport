@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-09-17T20:27:39.732145+00:00'
+generated-at: '2026-09-17T22:58:45.409351+00:00'
 proxies:
 - name: 🇯🇵 日本 | JPN 3
   server: 8.211.175.129
@@ -48,20 +48,6 @@ proxies:
     headers:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
   udp: true
-- name: 🇯🇵 日本 | JPN
-  server: 1-jp.ap.ku-ke.cc
-  port: 443
-  type: vless
-  uuid: d03c34c3-98fa-42ff-80a8-6ea1d0b24ac9
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: ImUbTZ1OKgAaiNlCf8zkeO5NnbAdKHdm2fhphvEZNxY
-    short-id: '56'
-  servername: cdn.jsdelivr.net
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
 - name: 🇸🇬 新加坡 | SGP 4
   server: 172.64.146.211
   port: 2087
@@ -76,6 +62,20 @@ proxies:
     headers:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
   udp: true
+- name: 🇯🇵 日本 | JPN
+  server: 1-jp.ap.ku-ke.cc
+  port: 443
+  type: vless
+  uuid: d03c34c3-98fa-42ff-80a8-6ea1d0b24ac9
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: ImUbTZ1OKgAaiNlCf8zkeO5NnbAdKHdm2fhphvEZNxY
+    short-id: '56'
+  servername: cdn.jsdelivr.net
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
 - name: 🇺🇸 美国 | USA 8
   server: 172.64.146.211
   port: 2083
@@ -89,6 +89,18 @@ proxies:
     path: /
     headers:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  udp: true
+- name: 🇺🇸 美国 | USA 16
+  server: 162.159.39.218
+  port: 8080
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
 - name: 🇺🇸US美国丨yoyapai.com
   type: trojan
@@ -253,20 +265,6 @@ proxies:
   auth: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: vpn-fr-002.fastervpn.world
   skip-cert-verify: true
-- name: 🇳🇱 荷兰 | NLD 3
-  server: 78.159.245.51
-  port: 6443
-  type: vless
-  uuid: bcc2f72f-62ea-4d2d-914a-8a6ae5409724
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: o-QrksJtRE_UOjwUEAkN_T_3wo8HWXFo5F97BOmzKAw
-    short-id: 4c2f8435d7555b76
-  servername: docs.helpscenter.xyz
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
 - name: 🇷🇺RU俄罗斯
   type: vmess
   server: renderer-stream-2-62.mirra.now
@@ -294,9 +292,10 @@ proxy-groups:
   - 🇯🇵 日本 | JPN 3
   - 🇸🇬 新加坡 | SGP
   - 🇸🇬 新加坡 | SGP 2
-  - 🇯🇵 日本 | JPN
   - 🇸🇬 新加坡 | SGP 4
+  - 🇯🇵 日本 | JPN
   - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 16
   - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 12
   - 🇺🇸 美国 | USA 2
@@ -311,7 +310,6 @@ proxy-groups:
   - 🇬🇧 英国 | GBR 2
   - 🇫🇷 法国 | FRA 4
   - 🇫🇷 法国 | FRA 2
-  - 🇳🇱 荷兰 | NLD 3
   - 🇷🇺RU俄罗斯
   - 🇪🇸 西班牙 | ESP
   url: http://www.gstatic.com/generate_204
@@ -322,8 +320,8 @@ proxy-groups:
   - 🇯🇵 日本 | JPN 3
   - 🇸🇬 新加坡 | SGP
   - 🇸🇬 新加坡 | SGP 2
-  - 🇯🇵 日本 | JPN
   - 🇸🇬 新加坡 | SGP 4
+  - 🇯🇵 日本 | JPN
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: JP-POOL
@@ -337,6 +335,7 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 16
   - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 12
   - 🇺🇸 美国 | USA 2
@@ -346,7 +345,7 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇺🇸US美国丨yoyapai.com
-  - 🇸🇬 新加坡 | SGP
+  - 🇺🇸 美国 | USA 16
   - 🇺🇸 美国 | USA 12
   - 🇸🇬 新加坡 | SGP 4
   url: http://www.gstatic.com/generate_204
