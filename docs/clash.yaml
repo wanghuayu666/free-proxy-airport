@@ -7,42 +7,14 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-09-19T14:35:51.730352+00:00'
+generated-at: '2026-09-19T17:39:56.439940+00:00'
 proxies:
-- name: 🇭🇰HK香港節點丨yoyapai.com_3
-  type: vless
-  server: 91.193.58.117
-  port: 443
-  uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
-  network: ws
-  servername: jamph131-1228.pages.dev
-  tls: true
-  ws-opts:
-    path: Telegram-WangCai2🇨🇳
-    headers:
-      Host: jamph131-1228.pages.dev
-  skip-cert-verify: false
-  udp: true
 - name: 🇸🇬 新加坡 | SGP 5
   server: 138.2.71.128
   port: 56927
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: mYD6SNVk6rYfSsNcRE54unnYKlp5hRZk+XTtDnjEzjY=
-  udp: true
-- name: 🇭🇰HK香港節點丨yoyapai.com
-  type: vless
-  server: 91.193.58.93
-  port: 443
-  uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
-  network: ws
-  servername: jamph131-1228.pages.dev
-  tls: true
-  ws-opts:
-    path: Telegram-WangCai2🇨🇳
-    headers:
-      Host: jamph131-1228.pages.dev
-  skip-cert-verify: false
   udp: true
 - name: 🇸🇬 新加坡 | SGP 3
   server: 161.118.253.238
@@ -52,101 +24,6 @@ proxies:
   auth: 1027576c-c4df-4277-b3ef-38d3213b6574
   sni: www.bing.com
   skip-cert-verify: true
-- name: 🇭🇰HK香港節點丨yoyapai.com_1
-  type: vless
-  server: 91.193.58.195
-  port: 443
-  uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
-  network: ws
-  servername: jamph131-1228.pages.dev
-  tls: true
-  ws-opts:
-    path: Telegram-WangCai2🇨🇳
-    headers:
-      Host: jamph131-1228.pages.dev
-  skip-cert-verify: false
-  udp: true
-- name: 🇭🇰HK香港節點丨yoyapai.com_2
-  type: vless
-  server: 91.193.58.141
-  port: 443
-  uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
-  network: ws
-  servername: jamph131-1228.pages.dev
-  tls: true
-  ws-opts:
-    path: Telegram-WangCai2🇨🇳
-    headers:
-      Host: jamph131-1228.pages.dev
-  skip-cert-verify: false
-  udp: true
-- name: 🇺🇸 美国 | USA 9
-  server: adheres-scruple.quick-cdn.net
-  port: 443
-  type: vless
-  uuid: 5db320bf-0092-4871-9062-83f5cd00cbe4
-  tls: true
-  alpn:
-  - http/1.1
-  packet-encoding: xudp
-  servername: adheres-scruple.quick-cdn.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: adheres-scruple.quick-cdn.net
-  udp: true
-- name: 🇺🇸 美国 | USA 20
-  server: 176.109.104.195
-  port: 9873
-  type: vless
-  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
-  tls: true
-  reality-opts:
-    public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
-    short-id: aabb
-  servername: dl.google.com
-  client-fingerprint: qq
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: grpc-tunnel
-  udp: true
-- name: 🇺🇸 美国 | USA 3
-  server: piracy-android.video-streams.org
-  port: 443
-  type: vless
-  uuid: 5db320bf-0092-4871-9062-83f5cd00cbe4
-  tls: true
-  alpn:
-  - http/1.1
-  packet-encoding: xudp
-  servername: piracy-android.video-streams.org
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: piracy-android.video-streams.org
-  udp: true
-- name: 🇺🇸 美国 | USA 4
-  server: bounded-crammed.video-streams.org
-  port: 443
-  type: vless
-  uuid: 5db320bf-0092-4871-9062-83f5cd00cbe4
-  tls: true
-  alpn:
-  - http/1.1
-  packet-encoding: xudp
-  servername: bounded-crammed.video-streams.org
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: bounded-crammed.video-streams.org
-  udp: true
 - name: 🇺🇸 美国 | USA
   server: 138.124.60.146
   port: 443
@@ -159,18 +36,6 @@ proxies:
   servername: usa.oblaco.bet
   client-fingerprint: chrome
   network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 10
-  server: 172.64.154.8
-  port: 2052
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
 - name: 🇺🇸 美国 | USA 13
   server: 172.64.146.211
@@ -204,6 +69,12 @@ proxies:
   ws-opts:
     path: /assignment
   udp: true
+- name: 🇺🇸 美国 | USA 17
+  server: 121.46.230.139
+  port: 65443
+  type: ss
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
 - name: 🇺🇸 美国 | USA 15
   server: grimness-backlogs.cdn-content.com
   port: 443
@@ -221,6 +92,14 @@ proxies:
     headers:
       Host: grimness-backlogs.cdn-content.com
   udp: true
+- name: 🇺🇸 美国 | USA 2
+  server: aws.bossonlineshop.info
+  port: 80
+  type: vless
+  uuid: f657645c-406a-48d6-bb62-f6da673f6a7c
+  tls: false
+  network: tcp
+  udp: true
 - name: 🇺🇸 美国 | USA 12
   server: 45.159.79.71
   port: 4443
@@ -234,14 +113,6 @@ proxies:
   servername: sentry.io
   client-fingerprint: chrome
   network: tcp
-- name: 🇺🇸 美国 | USA 2
-  server: aws.bossonlineshop.info
-  port: 80
-  type: vless
-  uuid: f657645c-406a-48d6-bb62-f6da673f6a7c
-  tls: false
-  network: tcp
-  udp: true
 - name: 🇩🇪 德国 | DEU 2
   server: 65.109.178.205
   port: 5434
@@ -272,41 +143,6 @@ proxies:
     headers:
       Host: nb.lovecf.ggff.net
   udp: true
-- name: 🇳🇱 荷兰 | NLD
-  server: 158.101.210.92
-  port: 45819
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: Lkuvq8NB1/tDZYrDCNcvxZMC7ISuX6oMGYUEAvk966s=
-  udp: true
-- name: 🇱🇹 立陶宛 | LTU
-  server: mail.figmafound.org
-  port: 443
-  type: vless
-  uuid: 71b91642-93ed-4923-8cab-877e19bfc2d6
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: H5CXI4RvEWW0TFPvFrnF1iX-05Y57ZYMMngjmkMfv24
-    short-id: 711ad7f475c35e5e
-  servername: mail.figmafound.org
-  client-fingerprint: random
-  network: tcp
-  udp: true
-- name: 🇸🇪 瑞典 | SWE 2
-  server: 103.139.51.31
-  port: 443
-  type: vless
-  uuid: 71b91642-93ed-4923-8cab-877e19bfc2d6
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: H5CXI4RvEWW0TFPvFrnF1iX-05Y57ZYMMngjmkMfv24
-    short-id: 711ad7f475c35e5e
-  servername: api.figmafound.org
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
 - name: 🇩🇪 德国 | DEU 3
   server: finkafsb.finiki.lol
   port: 443
@@ -334,33 +170,6 @@ proxies:
   servername: estomin1.vodniki.monster
   client-fingerprint: random
   network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 5
-  server: 185.126.67.52
-  port: 443
-  type: vless
-  uuid: 8ff62004-b728-4be5-b7e9-5f5c85489921
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: www.vk.com
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇩🇪DE德国丨yoyapai.com_13
-  type: vless
-  server: 169.40.42.229
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  servername: yahoo.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: ios
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  skip-cert-verify: false
   udp: true
 - name: 🇦🇺 澳大利亚 | AUS
   server: 34.87.244.111
@@ -415,19 +224,19 @@ proxies:
       Host: /?--v2rayNplus--v2rayNplus--v2rayNplus--
   skip-cert-verify: false
   udp: true
-- name: 🇸🇪 瑞典 | SWE
-  server: 103.139.51.41
-  port: 443
+- name: 🇩🇪DE德国丨yoyapai.com_13
   type: vless
-  uuid: 71b91642-93ed-4923-8cab-877e19bfc2d6
+  server: 169.40.42.229
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  servername: yahoo.com
   tls: true
   flow: xtls-rprx-vision
+  client-fingerprint: ios
   reality-opts:
-    public-key: H5CXI4RvEWW0TFPvFrnF1iX-05Y57ZYMMngjmkMfv24
-    short-id: 711ad7f475c35e5e
-  servername: mail.figmafound.org
-  client-fingerprint: firefox
-  network: tcp
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  skip-cert-verify: false
   udp: true
 - name: 🇩🇪 德国 | DEU 4
   server: 109.107.155.76
@@ -469,12 +278,6 @@ proxies:
     headers:
       Host: nb.lovecf.ggff.net
   udp: true
-- name: 🇩🇪 德国 | DEU
-  server: 130.61.130.160
-  port: 59924
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: Agibj1Vmrbe4+wbHOjbYmeiae3Wi3nnIMa1mmgiKcu0=
 - name: 🇬🇧 英国 | GBR 3
   server: 144.24.228.5
   port: 61312
@@ -492,42 +295,28 @@ proxy-groups:
 - name: AUTO-FAST
   type: url-test
   proxies:
-  - 🇭🇰HK香港節點丨yoyapai.com_3
   - 🇸🇬 新加坡 | SGP 5
-  - 🇭🇰HK香港節點丨yoyapai.com
   - 🇸🇬 新加坡 | SGP 3
-  - 🇭🇰HK香港節點丨yoyapai.com_1
-  - 🇭🇰HK香港節點丨yoyapai.com_2
-  - 🇺🇸 美国 | USA 9
-  - 🇺🇸 美国 | USA 20
-  - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA
-  - 🇺🇸 美国 | USA 10
   - 🇺🇸 美国 | USA 13
   - 🇺🇸 美国 | USA 19
   - 🇺🇸US美国丨yoyapai.com
+  - 🇺🇸 美国 | USA 17
   - 🇺🇸 美国 | USA 15
-  - 🇺🇸 美国 | USA 12
   - 🇺🇸 美国 | USA 2
+  - 🇺🇸 美国 | USA 12
   - 🇩🇪 德国 | DEU 2
   - 🇨🇿 捷克 | CZE
-  - 🇳🇱 荷兰 | NLD
-  - 🇱🇹 立陶宛 | LTU
-  - 🇸🇪 瑞典 | SWE 2
   - 🇩🇪 德国 | DEU 3
   - 🇪🇪 爱沙尼亚 | EST
-  - 🇩🇪 德国 | DEU 5
-  - 🇩🇪DE德国丨yoyapai.com_13
   - 🇦🇺 澳大利亚 | AUS
   - 🇫🇷 法国 | FRA 13
   - 🇩🇪 德国 | DEU 6
   - 🇦🇺AU澳大利亚丨yoyapai.com
-  - 🇸🇪 瑞典 | SWE
+  - 🇩🇪DE德国丨yoyapai.com_13
   - 🇩🇪 德国 | DEU 4
   - 🇬🇧 英国 | GBR 2
   - 🇨🇿 捷克 | CZE 2
-  - 🇩🇪 德国 | DEU
   - 🇬🇧 英国 | GBR 3
   - 🇬🇧 英国 | GBR
   url: http://www.gstatic.com/generate_204
@@ -535,49 +324,43 @@ proxy-groups:
 - name: HK-POOL
   type: url-test
   proxies:
-  - 🇭🇰HK香港節點丨yoyapai.com_3
-  - 🇭🇰HK香港節點丨yoyapai.com
-  - 🇭🇰HK香港節點丨yoyapai.com_1
-  - 🇭🇰HK香港節點丨yoyapai.com_2
+  - 🇸🇬 新加坡 | SGP 5
+  - 🇸🇬 新加坡 | SGP 3
+  - 🇺🇸 美国 | USA
+  - 🇺🇸 美国 | USA 13
+  - 🇺🇸 美国 | USA 19
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: JP-POOL
   type: url-test
   proxies:
-  - 🇭🇰HK香港節點丨yoyapai.com_3
   - 🇸🇬 新加坡 | SGP 5
-  - 🇭🇰HK香港節點丨yoyapai.com
   - 🇸🇬 新加坡 | SGP 3
-  - 🇭🇰HK香港節點丨yoyapai.com_1
+  - 🇺🇸 美国 | USA
+  - 🇺🇸 美国 | USA 13
+  - 🇺🇸 美国 | USA 19
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: US-POOL
   type: url-test
   proxies:
-  - 🇺🇸 美国 | USA 9
-  - 🇺🇸 美国 | USA 20
-  - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA
-  - 🇺🇸 美国 | USA 10
   - 🇺🇸 美国 | USA 13
   - 🇺🇸 美国 | USA 19
   - 🇺🇸US美国丨yoyapai.com
+  - 🇺🇸 美国 | USA 17
   - 🇺🇸 美国 | USA 15
-  - 🇺🇸 美国 | USA 12
   - 🇺🇸 美国 | USA 2
+  - 🇺🇸 美国 | USA 12
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: AI-POOL
   type: url-test
   proxies:
   - 🇺🇸US美国丨yoyapai.com
-  - 🇩🇪DE德国丨yoyapai.com_13
-  - 🇺🇸 美国 | USA 10
+  - 🇺🇸 美国 | USA 2
   - 🇺🇸 美国 | USA 13
   - 🇨🇿 捷克 | CZE 2
-  - 🇺🇸 美国 | USA
-  - 🇨🇿 捷克 | CZE
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
