@@ -7,29 +7,8 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-09-30T19:33:00.509424+00:00'
+generated-at: '2026-09-30T23:22:44.156073+00:00'
 proxies:
-- name: 🇭🇰 香港 | HKG 6
-  server: 202.146.222.29
-  port: 443
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  auth: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 202.146.222.29
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 | SGP 7
-  server: 162.159.43.187
-  port: 2052
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  udp: true
 - name: 🇭🇰 香港 | HKG 5
   server: mz.hkychina.com
   port: 8443
@@ -76,19 +55,6 @@ proxies:
     path: /
     headers:
       Host: edgetunnel-4uw.pages.dev
-  udp: true
-- name: 🇺🇸 美国 | USA 8
-  server: 91.193.59.194
-  port: 2083
-  type: trojan
-  password: 54df124b-c11c-41b0-86da-9d642125671f
-  sni: vpn2.xiweini.dpdns.org
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /proxyip=156.154.245.83,45.76.244.88,38.65.9.110,131.143.251.20,203.88.112.62
-    headers:
-      Host: vpn2.xiweini.dpdns.org
   udp: true
 - name: 🇺🇸 美国 | USA 9
   server: 35.199.19.90
@@ -138,18 +104,6 @@ proxies:
   auth: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
   sni: mg.mangshe.xyz
   skip-cert-verify: true
-- name: 🇺🇸 美国 | USA 14
-  server: 34.66.64.236
-  port: 443
-  type: vless
-  uuid: 3893f05b-9b24-4bb1-a1dc-ba55509b0a01
-  tls: true
-  reality-opts:
-    public-key: Th2whwnn3zQaHdImi5B1wYn8hxXz3JQs3_AQCuHfanQ
-    short-id: 76d093d99ceaf06a
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-  network: tcp
 - name: 🇺🇸US美国丨yoyapai.com
   type: trojan
   server: 216.24.57.7
@@ -162,6 +116,35 @@ proxies:
   ws-opts:
     path: /assignment
   udp: true
+- name: 🇺🇸US美國丨yoyapai.com
+  type: vless
+  server: dey.lnmarketplace.net
+  port: 443
+  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+  network: xhttp
+  servername: dey.lnmarketplace.net
+  tls: true
+  client-fingerprint: firefox
+  alpn:
+  - h2
+  xhttp-opts:
+    path: /kavir
+    host: dey.lnmarketplace.net
+    mode: stream-one
+  skip-cert-verify: true
+  udp: true
+- name: 🇺🇸 美国 | USA 14
+  server: 34.66.64.236
+  port: 443
+  type: vless
+  uuid: 3893f05b-9b24-4bb1-a1dc-ba55509b0a01
+  tls: true
+  reality-opts:
+    public-key: Th2whwnn3zQaHdImi5B1wYn8hxXz3JQs3_AQCuHfanQ
+    short-id: 76d093d99ceaf06a
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+  network: tcp
 - name: 🇧🇪 比利时 | BEL
   server: 35.233.94.80
   port: 443
@@ -171,18 +154,6 @@ proxies:
   reality-opts:
     public-key: OQ0MKzP5TYtlJCteckb25tD6USBH__D1z28Y8BOcdG4
     short-id: b4f2c0e3d8668c2f
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-  network: tcp
-- name: 🇮🇹 意大利 | ITA 2
-  server: 34.154.251.151
-  port: 443
-  type: vless
-  uuid: 4d4bfd21-88fc-4de7-87bd-c2ddaedc4078
-  tls: true
-  reality-opts:
-    public-key: jGfJxbIyf2aLRFQyT9NsJBu1CzJmrAa2sF19GNw46z8
-    short-id: 29615707650b941d
   servername: www.cloudflare.com
   client-fingerprint: chrome
   network: tcp
@@ -232,6 +203,19 @@ proxies:
     public-key: XRYeVrK7q9baNj66NmBBIX_sllPJtxOBTjrxTaQMQ2U
     short-id: 7394ea3cc2106697
   servername: www.cloudflare.com
+  client-fingerprint: chrome
+  network: tcp
+- name: 🇩🇪 德国 | DEU 5
+  server: 31.70.111.146
+  port: 443
+  type: vless
+  uuid: 84ed0e09-6803-4ef9-a977-74b657d971e5
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: ZNmuzIn-zyJi2C0sWRpL9fsMYCgYauXpJElXTqY_LEE
+    short-id: d7de3a6ff4018957
+  servername: www.apple.com
   client-fingerprint: chrome
   network: tcp
 - name: 🇮🇪 爱尔兰 | IRL
@@ -394,25 +378,23 @@ proxy-groups:
 - name: AUTO-FAST
   type: url-test
   proxies:
-  - 🇭🇰 香港 | HKG 6
-  - 🇸🇬 新加坡 | SGP 7
   - 🇭🇰 香港 | HKG 5
   - 🇸🇬 新加坡 | SGP
   - 🇸🇬 新加坡 | SGP 6
   - 🇯🇵 日本 | JPN
-  - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 9
   - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 7
   - 🇺🇸 美国 | USA
-  - 🇺🇸 美国 | USA 14
   - 🇺🇸US美国丨yoyapai.com
+  - 🇺🇸US美國丨yoyapai.com
+  - 🇺🇸 美国 | USA 14
   - 🇧🇪 比利时 | BEL
-  - 🇮🇹 意大利 | ITA 2
   - 🇷🇺 俄罗斯 | RUS 2
   - 🇳🇱 荷兰 | NLD 4
   - 🇱🇹 立陶宛 | LTU
   - 🇩🇪 德国 | DEU 3
+  - 🇩🇪 德国 | DEU 5
   - 🇮🇪 爱尔兰 | IRL
   - 🇩🇪 德国 | DEU 6
   - 🇮🇹 意大利 | ITA
@@ -432,7 +414,6 @@ proxy-groups:
 - name: HK-POOL
   type: url-test
   proxies:
-  - 🇭🇰 香港 | HKG 6
   - 🇭🇰 香港 | HKG 5
   url: http://www.gstatic.com/generate_204
   interval: 120
@@ -445,24 +426,24 @@ proxy-groups:
 - name: US-POOL
   type: url-test
   proxies:
-  - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 9
   - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 7
   - 🇺🇸 美国 | USA
-  - 🇺🇸 美国 | USA 14
   - 🇺🇸US美国丨yoyapai.com
+  - 🇺🇸US美國丨yoyapai.com
+  - 🇺🇸 美国 | USA 14
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: AI-POOL
   type: url-test
   proxies:
   - 🇺🇸US美国丨yoyapai.com
-  - 🇸🇬 新加坡 | SGP 7
-  - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 6
-  - 🇲🇽 墨西哥 | MEX 2
   - 🇺🇸 美国 | USA 14
+  - 🇩🇪DE德国丨yoyapai.com_12
+  - 🇺🇸 美国 | USA 9
+  - 🇳🇱 荷兰 | NLD 4
+  - 🇳🇱 荷兰 | NLD 3
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
