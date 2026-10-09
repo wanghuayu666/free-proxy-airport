@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-10-09T13:35:10.604305+00:00'
+generated-at: '2026-10-09T19:11:08.948001+00:00'
 proxies:
 - name: 🇭🇰 香港 | HKG 12
   server: full-ox.rooster465.autos
@@ -65,14 +65,6 @@ proxies:
       Host:
       - sjskendn.dingtalk.com
   udp: true
-- name: 🇯🇵 日本 | JPN 2
-  server: stable-python.rooster465.autos
-  port: 443
-  type: trojan
-  password: UX82473651
-  sni: stable-python.rooster465.autos
-  skip-cert-verify: true
-  udp: true
 - name: 🇯🇵 日本 | JPN 7
   server: japro02.xyy123.bid
   port: 443
@@ -86,6 +78,14 @@ proxies:
   servername: p-nt-www-amazon-com-kalias.amazon.com
   client-fingerprint: chrome
   network: tcp
+- name: 🇯🇵 日本 | JPN 2
+  server: stable-python.rooster465.autos
+  port: 443
+  type: trojan
+  password: UX82473651
+  sni: stable-python.rooster465.autos
+  skip-cert-verify: true
+  udp: true
 - name: 🇯🇵 日本 | JPN 6
   server: legible-ram.rooster465.autos
   port: 443
@@ -141,20 +141,20 @@ proxies:
   sni: glorious-glider.rooster465.autos
   skip-cert-verify: true
   udp: true
-- name: 🇯🇵 日本 | JPN 4
-  server: live-stallion.rooster465.autos
-  port: 443
-  type: trojan
-  password: UX82473651
-  sni: live-stallion.rooster465.autos
-  skip-cert-verify: true
-  udp: true
 - name: 🇸🇬 新加坡 | SGP
   server: rested-seahorse.rooster465.autos
   port: 443
   type: trojan
   password: UX82473651
   sni: rested-seahorse.rooster465.autos
+  skip-cert-verify: true
+  udp: true
+- name: 🇯🇵 日本 | JPN 4
+  server: live-stallion.rooster465.autos
+  port: 443
+  type: trojan
+  password: UX82473651
+  sni: live-stallion.rooster465.autos
   skip-cert-verify: true
   udp: true
 - name: 🇸🇬 新加坡 | SGP 2
@@ -499,15 +499,15 @@ proxy-groups:
   - 🇭🇰 香港 | HKG 7
   - 🇭🇰 香港 | HKG 2
   - 🇭🇰 香港 | HKG 3
-  - 🇯🇵 日本 | JPN 2
   - 🇯🇵 日本 | JPN 7
+  - 🇯🇵 日本 | JPN 2
   - 🇯🇵 日本 | JPN 6
   - 🇯🇵 日本 | JPN 3
   - 🇭🇰 香港 | HKG 5
   - 🇭🇰 香港 | HKG 10
   - 🇸🇬 新加坡 | SGP 3
-  - 🇯🇵 日本 | JPN 4
   - 🇸🇬 新加坡 | SGP
+  - 🇯🇵 日本 | JPN 4
   - 🇸🇬 新加坡 | SGP 2
   - 🇯🇵 日本 | JPN
   - 🇸🇬 新加坡 | SGP 4
@@ -554,8 +554,8 @@ proxy-groups:
 - name: JP-POOL
   type: url-test
   proxies:
-  - 🇯🇵 日本 | JPN 2
   - 🇯🇵 日本 | JPN 7
+  - 🇯🇵 日本 | JPN 2
   - 🇯🇵 日本 | JPN 6
   - 🇯🇵 日本 | JPN 3
   - 🇯🇵 日本 | JPN 4
@@ -578,14 +578,14 @@ proxy-groups:
 - name: AI-POOL
   type: url-test
   proxies:
-  - 🇺🇸US美国丨yoyapai.com_3
-  - 🇺🇸 美国 | USA 7
-  - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 4
-  - 🇺🇸 美国 | USA 5
-  - ❓未知丨yoyapai.com_1
-  - 🇺🇸 美国 | USA 10
-  - 🇺🇸 美国 | USA 6
+  - 🇭🇰 香港 | HKG 12
+  - 🇭🇰 香港 | HKG 7
+  - 🇭🇰 香港 | HKG 2
+  - 🇭🇰 香港 | HKG 3
+  - 🇯🇵 日本 | JPN 7
+  - 🇯🇵 日本 | JPN 2
+  - 🇯🇵 日本 | JPN 6
+  - 🇯🇵 日本 | JPN 3
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
