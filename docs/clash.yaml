@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-10-11T14:33:11.140244+00:00'
+generated-at: '2026-10-11T19:18:02.253498+00:00'
 proxies:
 - name: 🇭🇰 香港 | HKG 2
   server: 47.86.167.194
@@ -62,36 +62,6 @@ proxies:
   type: ss
   cipher: aes-256-gcm
   password: bd962c9a-d6f2-4561-bd80-34206c4d5279
-  udp: true
-- name: 🇭🇰 香港 | HKG
-  server: 8.217.254.88
-  port: 443
-  type: vmess
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: 2b9hwy8ocx7q74nm.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: 2b9hwy8ocx7q74nm.v.3dns.vip
-  udp: true
-- name: 🇺🇸 美国 | USA 7
-  server: 104.21.0.87
-  port: 443
-  type: vless
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  tls: true
-  servername: jp3.yohototo.top
-  client-fingerprint: unsafe
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
   udp: true
 - name: 🇺🇸 美国 | USA 3
   server: whuiy.xyz
@@ -156,22 +126,6 @@ proxies:
     headers:
       Host: hhlfy.twiladaphne.ndjp.net
   udp: true
-- name: 🇩🇪 德国 | DEU 2
-  server: 151.243.180.6
-  port: 2443
-  type: vless
-  uuid: b8df3f50-ffef-4c7e-9ef3-d5b156a47c02
-  tls: true
-  reality-opts:
-    public-key: fMAqXAHwjbCOuC8d5Ur-xx8aizM8mNrbI9na0KE-uEw
-    short-id: a7c4e91b
-  servername: vedomosti.ru
-  client-fingerprint: random
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: grpc
-  udp: true
 - name: 🇻🇳VN越南丨yoyapai.com
   type: vless
   server: 104.27.0.121
@@ -219,6 +173,20 @@ proxies:
     grpc-mode: gun
     grpc-service-name: astracat
   udp: true
+- name: 🇳🇱 荷兰 | NLD 4
+  server: c20s5.portablesubmarines.com
+  port: 443
+  type: vless
+  uuid: 85fe968d-fbb5-40dc-8422-30635eccb149
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: BlSccfT5tvDIOS7v9VaPd0ulUNhUdvlMjGiNzDNDUHE
+    short-id: 051f20c2344a2dfd
+  servername: portal.citygrainla.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
 - name: 🇹🇼 🇨🇳 台湾 | TWN
   server: 654168416355441.d6f54hd1j.cc
   port: 443
@@ -256,48 +224,6 @@ proxies:
     x-padding-bytes: 100-1000
     x-padding-obfs-mode: false
   udp: true
-- name: 🇩🇪 德国 | DEU 3
-  server: 144.31.156.82
-  port: 443
-  type: vless
-  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: ZqVz1kWNxh_5zQ5PPkoPHoaXQOvppM0ZyIo8uKp2dCg
-    short-id: bdf5852d1423e694
-  servername: fi.pythonsetupbib.online
-  client-fingerprint: random
-  network: tcp
-  udp: true
-- name: 🇪🇪 爱沙尼亚 | EST
-  server: 185.31.242.61
-  port: 443
-  type: vless
-  uuid: ee18d188-14cc-417e-beb1-70e4add6d023
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 7mRrVzTchVLWWBru5fCgTvtdkL7lVJ_qRj9HW8Rd8X0
-    short-id: 0da7e14db353e7d0
-  servername: est.nztvpn.com
-  client-fingerprint: random
-  network: tcp
-  udp: true
-- name: ❓未知丨yoyapai.com_33
-  type: vless
-  server: www.gov.se
-  port: 8080
-  uuid: 989d58b8-d2ea-4d28-b5ff-0f3cd078f2cf
-  network: ws
-  servername: www.gov.se
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: sdf23g-billowing-moon-348e.mzm468gc.workers.dev
-  skip-cert-verify: false
-  udp: true
 - name: ❓未知丨yoyapai.com_1
   type: vless
   server: dey.lnmarketplace.net
@@ -328,20 +254,6 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇩🇪 德国 | DEU 6
-  server: 84.200.62.50
-  port: 443
-  type: vless
-  uuid: 249cce58-48ab-49a0-8aa1-fb8cd68a1104
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 4EUWyCLFjgb-cDwj8ws2nC82mCY_L5VvoCia7mHPH2o
-    short-id: adbbecad
-  servername: de2.my-cdn.org
-  client-fingerprint: random
-  network: tcp
-  udp: true
 - name: 🇩🇪DE德国丨yoyapai.com_13
   type: vless
   server: 169.40.42.229
@@ -356,6 +268,19 @@ proxies:
     short-id: c39cc7310a
   skip-cert-verify: false
   udp: true
+- name: 🇵🇱 波兰 | POL 2
+  server: 2.26.231.218
+  port: 2063
+  type: vless
+  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
+  servername: rusbid.de
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
 - name: 🇫🇷 法国 | FRA 3
   server: 88.151.197.213
   port: 443
@@ -368,19 +293,6 @@ proxies:
     short-id: 0da7e14db353e7d0
   servername: frafra.nztvpn.com
   client-fingerprint: random
-  network: tcp
-  udp: true
-- name: 🇵🇱 波兰 | POL 2
-  server: 2.26.231.218
-  port: 2063
-  type: vless
-  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
-  servername: rusbid.de
-  client-fingerprint: chrome
   network: tcp
   udp: true
 - name: 🇧🇷 巴西 | BRA
@@ -409,16 +321,6 @@ proxies:
       Host: love-paris.roxa.org
     v2ray-http-upgrade: true
   udp: true
-- name: 🇫🇷 法国 | FRA 4
-  server: 4vs112dq.zibayeman.com
-  port: 48544
-  type: hysteria2
-  password: xm32boc9y175kedm
-  auth: xm32boc9y175kedm
-  sni: 4vs112dq.zibayeman.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: 7tqfhx24g5blwlfu
 - name: 🇬🇧 英国 | GBR 2
   server: de2.srv.vbuste.ru
   port: 443
@@ -462,6 +364,21 @@ proxies:
     headers:
       Host: f4.vimeostream.online
   udp: true
+- name: 🇳🇱 荷兰 | NLD 2
+  server: 146.0.75.155
+  port: 995
+  type: vless
+  uuid: 34066ca5-7755-4443-8fce-84d5ff435eef
+  tls: true
+  servername: nider-bel.mysynology.net
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /api/v1
+    headers:
+      Host: nider-bel.mysynology.net
+    v2ray-http-upgrade: true
+  udp: true
 - name: 🇩🇪 德国 | DEU
   server: 109.172.54.135
   port: 8444
@@ -492,19 +409,12 @@ proxies:
     grpc-mode: gun
     grpc-service-name: fr5grpc
   udp: true
-- name: 🇳🇱 荷兰 | NLD 3
-  server: www.visa.com.hk
+- name: 🇬🇧 英国 | GBR
+  server: 13.40.25.145
   port: 443
-  type: vless
-  uuid: 084cbecb-54d3-4da0-8c06-61758a147c47
-  tls: true
-  servername: nl-ams.862400.xyz
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /announcement?ed=2048
-    headers:
-      Host: nl-ams.862400.xyz
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
   udp: true
 - name: 🇳🇱 荷兰 | NLD 5
   server: 185.209.15.100
@@ -528,37 +438,31 @@ proxy-groups:
   - 🇭🇰 香港 | HKG 3
   - 🇯🇵 日本 | JPN 2
   - 🇯🇵 日本 | JPN 3
-  - 🇭🇰 香港 | HKG
-  - 🇺🇸 美国 | USA 7
   - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA
   - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 2
-  - 🇩🇪 德国 | DEU 2
   - 🇻🇳VN越南丨yoyapai.com
   - 🇪🇪 爱沙尼亚 | EST 2
   - 🇳🇱 荷兰 | NLD
+  - 🇳🇱 荷兰 | NLD 4
   - 🇹🇼 🇨🇳 台湾 | TWN
   - 🇷🇺 俄罗斯 | RUS
-  - 🇩🇪 德国 | DEU 3
-  - 🇪🇪 爱沙尼亚 | EST
-  - ❓未知丨yoyapai.com_33
   - ❓未知丨yoyapai.com_1
   - 🇵🇱 波兰 | POL
-  - 🇩🇪 德国 | DEU 6
   - 🇩🇪DE德国丨yoyapai.com_13
-  - 🇫🇷 法国 | FRA 3
   - 🇵🇱 波兰 | POL 2
+  - 🇫🇷 法国 | FRA 3
   - 🇧🇷 巴西 | BRA
   - 🇩🇪 德国 | DEU 4
-  - 🇫🇷 法国 | FRA 4
   - 🇬🇧 英国 | GBR 2
   - 🇳🇱 荷兰 | NLD 6
   - 🇫🇷 法国 | FRA
+  - 🇳🇱 荷兰 | NLD 2
   - 🇩🇪 德国 | DEU
   - 🇫🇷 法国 | FRA 2
-  - 🇳🇱 荷兰 | NLD 3
+  - 🇬🇧 英国 | GBR
   - 🇳🇱 荷兰 | NLD 5
   url: http://www.gstatic.com/generate_204
   interval: 120
@@ -567,7 +471,6 @@ proxy-groups:
   proxies:
   - 🇭🇰 香港 | HKG 2
   - 🇭🇰 香港 | HKG 3
-  - 🇭🇰 香港 | HKG
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: JP-POOL
@@ -580,7 +483,6 @@ proxy-groups:
 - name: US-POOL
   type: url-test
   proxies:
-  - 🇺🇸 美国 | USA 7
   - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA
@@ -594,10 +496,9 @@ proxy-groups:
   - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 2
   - 🇺🇸 美国 | USA
-  - 🇳🇱 荷兰 | NLD 5
-  - 🇫🇷 法国 | FRA 4
-  - 🇫🇷 法国 | FRA 3
+  - 🇬🇧 英国 | GBR
   - 🇫🇷 法国 | FRA 2
+  - 🇺🇸 美国 | USA 3
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
